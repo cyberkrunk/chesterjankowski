@@ -1,0 +1,7 @@
+# Building Networks; Cool Sounds; Semi-ready; Intercepted Messages; Intuitive Design, 1993.
+
+For 2 accordions and 2 percussion.
+
+If you had asked me before 1993 whether I would ever write a concert piece for accordions, I might have been a little doubtful. But the opportunity arose when some visiting accordion players from Germany were interested in playing some new music at U of T. But it was actually two other U of T students who ended up performing this piece under Gary Kulesha for the Contemporary Music Ensemble. It's a lighter piece that includes a few music jokes and quotes, especially in the opening section. And now after all these years, I feel that it's time to explain the title. I can't remember who it was that first used the term "Scientific American music" to, somewhat derisively, describe composers like me who seem at times to be writing a Martin Gardner or Doug Hofstadter column rather than a piece of music. Well, being an avid reader of SA, I came across an issue that had a section of small articles titled: Building Networks; Cool Sounds; Semi-ready; Intercepted Messages; Intuitive Design, and was instantly inspired. Without being too slavish or literal, you can nevertheless hear how the titles are reflected in the music of each of the piece's five sections.
+
+Duration = 7'30"
