@@ -2,8 +2,8 @@
 layout: layouts/home.njk
 ---
 
+![Chester Jankowski playing guitar on the dock at Fair Harbor, Fire Island, NY](/img/chester-jankowski-guitar-dock.jpg)
+
 # About
 
 Chester Jankowski is a composer, musician, and technologist based in New York. He earned a doctorate in composition at the University of Toronto in 1998. His music has been performed by leading virtuosi and new music groups including [Array Music](https://www.arraymusic.ca/), Millennium, pianist [Stephen Clarke](https://www.nytimes.com/2011/01/05/arts/music/05stephen.html?smid=url-share), violinist [Scott St. John](http://www.scottstjohn.com/wp) and many others, with broadcasts on CBC’s Two New Hours and The Arts Tonight. Jankowski studied with [Lothar Klein](https://www.lotharklein.org/) and [Gustav Ciamaga](https://en.wikipedia.org/wiki/Gustav_Ciamaga) at the University of Toronto; with [John Weinzweig](https://en.wikipedia.org/wiki/John_Weinzweig) and [Gary Kulesha](http://kulesha.com/) at the first ever Composer’s Workshop, Academy of Advanced Study at the [Festival of the Sound](https://festivalofthesound.ca/); with [George Tsontakis](https://en.wikipedia.org/wiki/George_Tsontakis) at Aspen; with [Alexina Louie](http://www.alexinalouie.ca/), [Sydney Hodkinson](https://composers.com/composers/sydney-hodkinson), [Peter Paul Koprowski](https://ppkoprowski.com/), [Jack Behrens](https://en.wikipedia.org/wiki/Jack_Behrens), and [David Myska](https://music.uwo.ca/faculty/emeriti/david-myska.html) at the University of Western Ontario. In 1997, Jankowski was the recipient of the [Sir Ernest MacMillan Foundation](https://www.thecanadianencyclopedia.ca/en/article/sir-ernest-macmillan-memorial-foundation-emc) composition award, one of Canada’s most prestigious national awards for composers under the age of 30. Since 1997, Jankowski has lived in New York City, where he plays jazz guitar, and continues to compose and record music in a variety of genres in his home recording studio.
-
----

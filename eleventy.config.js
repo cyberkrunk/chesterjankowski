@@ -65,10 +65,10 @@ export default async function(eleventyConfig) {
 		outputPath: "/feed/feed.xml",
 		stylesheet: "pretty-atom-feed.xsl",
 		templateData: {
-			eleventyNavigation: {
-				key: "Feed",
-				order: 4
-			}
+			// eleventyNavigation: {
+			// 	key: "Feed",
+			// 	order: 4
+			// }
 		},
 		collection: {
 			name: "posts",
@@ -86,25 +86,25 @@ export default async function(eleventyConfig) {
 	});
 
 	// Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
-	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-		// Output formats for each image.
-		formats: ["avif", "webp", "auto"],
+	// eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+	// 	// Output formats for each image.
+	// 	formats: ["jpeg", "avif", "webp", "auto"],
 
-		// widths: ["auto"],
+	// 	// widths: ["auto"],
 
-		failOnError: false,
-		htmlOptions: {
-			imgAttributes: {
-				// e.g. <img loading decoding> assigned on the HTML tag will override these values.
-				loading: "lazy",
-				decoding: "async",
-			}
-		},
+	// 	failOnError: false,
+	// 	htmlOptions: {
+	// 		imgAttributes: {
+	// 			// e.g. <img loading decoding> assigned on the HTML tag will override these values.
+	// 			loading: "lazy",
+	// 			decoding: "async",
+	// 		}
+	// 	},
 
-		sharpOptions: {
-			animated: true,
-		},
-	});
+	// 	sharpOptions: {
+	// 		animated: true,
+	// 	},
+	// });
 
 	// Filters
 	eleventyConfig.addPlugin(pluginFilters);
