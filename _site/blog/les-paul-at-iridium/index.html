@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Les Paul at Iridium</title>
+		<meta name="description" content="The home page of Chester Jankowski, a composer, musician, and technologist based in nyc.">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Chester Jankowski">
+		<meta name="generator" content="Eleventy v4.0.0">
+		
+		
+		
+		<style>/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+	--quote-background: var(--color-gray-20);
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+		--quote-background: #333;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+	min-height: 100vh;
+	display: flex;
+    flex-direction: column;
+	font-family: "Times New Roman", serif;
+    font-size: 20px;
+}
+
+blockquote {
+	background-color: var(--quote-background);
+	padding: 10px 20px 10px 20px;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	width: 100%;
+	height: auto;
+}
+iframe {
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+footer{
+    margin-top: auto;
+    padding-top: 1em;
+    /* border-top: 1px solid gray; */
+    font-size: 14px;
+    padding-bottom: 0.5em;
+}
+footer ul{
+    list-style-type: none;
+}
+footer a:link{
+    color: #3345cc;
+}
+footer a:visited{
+    color: #3345cc;
+}
+
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	/* border-bottom: 1px dashed var(--color-gray-20); */
+}
+
+#skip-link {
+	text-decoration: none;
+	background: var(--background-color);
+	color: var(--text-color);
+	padding: 0.5rem 1rem;
+	border: 1px solid var(--color-gray-90);
+	border-radius: 2px;
+}
+
+/* Prevent visually-hidden skip link fom pushing content around when focused */
+#skip-link.visually-hidden:focus {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	/* Ensure it is positioned on top of everything else when it is shown */
+	z-index: 999;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	/* border-top: 1px dashed var(--color-gray-20); */
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	flex-grow: 1;
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	gap: .5em 1em;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+hr {
+	background-color: lightgray;
+	border: none;
+	height: 1px;
+}
+
+/* Posts list */
+.postlist {
+	counter-reset: start-from var(--postlist-index);
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+.byline{
+    font-size: smaller;
+	font-style: italic;
+
+.fa-solid {
+	color: var(--color-gray-50);
+}
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}</style>
+		
+		<script src="https://kit.fontawesome.com/12fe9f9908.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<a href="#main" id="skip-link" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">Chester Jankowski</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/music/">Music</a></li>
+					<li class="nav-item"><a href="/writing/">Writing</a></li>
+					<li class="nav-item"><a href="/photos/">Photos</a></li>
+					<li class="nav-item"><a href="/blog/">Blog</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="main">
+			<hr>
+			<heading-anchors>
+				
+
+
+<h1 id="les-paul-at-iridium">Les Paul at Iridium</h1>
+
+
+
+
+<div class="byline">
+
+<i class="fa-solid fa-calendar"></i> February 24 2005 
+
+
+
+<i class="fa-solid fa-folder"></i>
+
+	<a href="/categories/music"> music</a>
+
+
+
+
+		
+		<i class="fa-solid fa-tags"></i>
+		
+		<a href="/tags/reviews">reviews</a>
+
+</div>
+
+<p>From the &quot;good-things-come-from-Waukesha&quot; department:</p>
+<p>Not to be ghoulish about it, but the death of Bobby Short yesterday created a real sense of urgency about seeing Les Paul do his regular Monday night gig at <a href="http://www.iridiumjazzclub.com/">Iridium</a>. I had lost my chance to see Bobby, and wasn't going to miss out on seeing Les. As soon as the box office opened, I made the reservations. If you're not an electric guitarist, you're forgiven if you don't know that he is the living patron saint of the instrument. He was monstrously famous as a performer in the 50s, but he's equally important for the engineering and design work he did in the early days of the electric, culminating in the creation of his namesake guitar, which is one of the true icons of Rock and/or Roll. But what's truly amazing about him is that he'll turn 90 this June and he still gigs, doing two shows every Monday night...</p>
+<p>Iridium is tucked away into the basement of 1650 Broadway, which cyberkrunk insiders know as the original home of the studio I helped to found. It's also a famous old music building where people as diverse as Irving Berlin and Don Kirshner worked. Kind of an annex to the Brill building, which is just down the street. After hanging out for a while in a line that was already startlingly long at 9:30, we were whisked in and seated at a long communal table front and center. It's a mid-sized club that probably seats about two hundred; the site lines and sound are both good. They've made some effort at putting together a menu, but I especially liked the wine list and found a nice Croze-Hermitage with which to settle the drink minimum.</p>
+<p>Les plays with a quartet now. Les' main sideman for the last 20 years is guitarist <a href="http://www.loupallo.com/">Lou Pallo</a>. Lou is just a kid, he can't be more than 65 years old. He's an amazing guitarist in his own right, and seems to have an extremely humble approach when playing with Les. Rounding out the combo is <a href="http://www.parrottmusic.com/nicki.htm">Nicky Parrott</a> on bass and <a href="http://www.johncolianni.com/">John Colianni</a> on piano. They play really well together, do a lot of listening to each other, and just make it all work.</p>
+<p>To be sure, Les no longer plays the way he used to, but he still plays damn well. Since his fingers are no longer so nimble, he has stripped out the pyrotechnic figuration that used to be one of the cornerstones of his style--this duty has been taken over by the group's pianist. Instead, Les focuses on the melody and some simple comping. But he's still got his characterstic phrasing and flourishes and above all, simply beautiful tone. Any guitarist can learn a lot from watching him play. We were very close to the stage, so I could see clearly what he was doing. There was a lot variation in where he picked the strings, often picking close to his left hand over the fingerboard. A lot of variation of pickup selection, too. His left hand technique looked a little strange; I'm guessing that he has lost strength in his fingers and makes up for it by doubling one finger over another. But the really strange thing is how much he uses his left hand thumb. Almost everything he played on the sixth string was with his thumb; I only saw him use regular fingering on the sixth string in one passage in one song. He rarely touched his vibrato bar. I was also extremely surprised to see that he seemed to be using nothing but stock effects pedals--he even made a joke about buying them all at Sam Ash (a couple of blocks away on 48th street). The effects were used spraingly and tasefully, mostly delay, a bit of tremolo. The volume level was quite low, so low that Colliani was playing his piano with a closed lid <em>and</em> a leather cover.</p>
+<p>There's a style of Jazz gig that seeks to create the ambiance of a chamber music recital. Man, this wasn't that kind of gig! Les had a TV show in the 50s and I've never seen it, but it must have been something like his gig last night. The group played a few numbers, then started hamming around and bringing out guests. When you're 90 years old, you can make any kind of tasteless joke and not only get away with it, but get a laugh too! Bassist Nick Parrott is very easy on the eyes, so inneundo jokes with Les are expected, even though she could be his _great-_grandaughter. Sometimes Les will bring out a Keith Richards-cailbre guest, but tonight we weren't so lucky. We had a Nashville couple playing a Beatles medley, a vocal beatbox artist, a sax player, who did &quot;Lester leaps in&quot; for his second number, a harmonica-playing dude from Wisconsin, and a 7-year-old who, while cute, really couldn't play too well. Even though it wasn't a stellar bunch, we all had fun--it was a great vibe, just like hanging out and jamming with friends.</p>
+<p>Knowing full well that most in the audience are there just to worship him, Les sets the standard for making himself available to his fans. I've never seen anything like it! Flash photographs are allowed throughout the show. Following the second set, Les meets with every single person who wants to see him, whether they want him to sign an autograph or just shake his hand. A long line formed as soon as the set was over, maybe half of the people at the show. Lots of them were carrying guitars for Les to sign--would it be in bad taste to bring in an SG? Apparently, some nights, this goes on for hours and hours, maybe til three in the morning. He's more than fifty years older than I am, and I'm no kid anymore. Not only that, but he had a cold tonight, and his runny nose didn't phase him a bit. When I grow up, I want to be Les Paul.</p>
+<p>Since it wasn't midnight yet, we decided to press on for a blues nightcap. After a brief diversion scarfing a slice at Ray's on 8th Avenue, we headed down to 42nd street. That is, the <em>new</em> 42nd street, aka the Disney block. Generally this is a place to avoid at all costs, but our destination--the B.B. King Blues Club and Grill--is one of the few exceptions to this rule. Downstairs at Lucile's bar, they have free music every night. This is a very good thing to keep in mind! We caught the last 45 minutes of the <a href="http://www.jrmack.com/home.shtml">Jr. Mack</a> band's set. Jr. was playing a mixed bag of blues, rock and some gospely pop (poppy gospel?), but he really had the BB guitar style down pat. It's really great to be able to stroll in at midnight on a Monday night and hear some really great music for no more than the cost of a couple of over-priced drinks. The scene was a little weird, a few working stiffs, a couple, and thirty-odd Italian exchange students. It'll be worth another visit, and the man himself if playing there this summer.</p>
+<p><em>Fade out to Bobby Short singing &quot;I happen to like New York...&quot;</em></p>
+
+
+<hr>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/10-great-movies/">10 great movies</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/ex-sedrick-fan-1/">(ex-) Sedrick fan #1</a></li>
+</ul>
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<hr>
+			Web site for composer <a href="/">Chester Jankowski</a> • <a href="/feed/feed.xml">RSS</a><br>
+			Written by humans for humans. • No ads, no trackers, no affiliate links, no pop-ups, no AI.<br>	
+			Built with <a href="https://www.11ty.dev/">Eleventy v4.0.0</a> • “Keep building for the web!” -- Zach Leatherman<br>
+		</footer>
+
+		<!-- This page `/blog/les-paul-at-iridium/` was built on 2025-10-16T21:54:44.478Z -->
+		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
+	</body>
+</html>

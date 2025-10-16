@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Resources For Composers: Violin Pedagogy</title>
+		<meta name="description" content="The home page of Chester Jankowski, a composer, musician, and technologist based in nyc.">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Chester Jankowski">
+		<meta name="generator" content="Eleventy v4.0.0">
+		
+		
+		
+		<style>/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+	--quote-background: var(--color-gray-20);
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+		--quote-background: #333;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+	min-height: 100vh;
+	display: flex;
+    flex-direction: column;
+	font-family: "Times New Roman", serif;
+    font-size: 20px;
+}
+
+blockquote {
+	background-color: var(--quote-background);
+	padding: 10px 20px 10px 20px;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	width: 100%;
+	height: auto;
+}
+iframe {
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+footer{
+    margin-top: auto;
+    padding-top: 1em;
+    /* border-top: 1px solid gray; */
+    font-size: 14px;
+    padding-bottom: 0.5em;
+}
+footer ul{
+    list-style-type: none;
+}
+footer a:link{
+    color: #3345cc;
+}
+footer a:visited{
+    color: #3345cc;
+}
+
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	/* border-bottom: 1px dashed var(--color-gray-20); */
+}
+
+#skip-link {
+	text-decoration: none;
+	background: var(--background-color);
+	color: var(--text-color);
+	padding: 0.5rem 1rem;
+	border: 1px solid var(--color-gray-90);
+	border-radius: 2px;
+}
+
+/* Prevent visually-hidden skip link fom pushing content around when focused */
+#skip-link.visually-hidden:focus {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	/* Ensure it is positioned on top of everything else when it is shown */
+	z-index: 999;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	/* border-top: 1px dashed var(--color-gray-20); */
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	flex-grow: 1;
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	gap: .5em 1em;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+hr {
+	background-color: lightgray;
+	border: none;
+	height: 1px;
+}
+
+/* Posts list */
+.postlist {
+	counter-reset: start-from var(--postlist-index);
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+.byline{
+    font-size: smaller;
+	font-style: italic;
+
+.fa-solid {
+	color: var(--color-gray-50);
+}
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}</style>
+		
+		<script src="https://kit.fontawesome.com/12fe9f9908.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<a href="#main" id="skip-link" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">Chester Jankowski</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/music/">Music</a></li>
+					<li class="nav-item"><a href="/writing/">Writing</a></li>
+					<li class="nav-item"><a href="/photos/">Photos</a></li>
+					<li class="nav-item"><a href="/blog/">Blog</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="main">
+			<hr>
+			<heading-anchors>
+				
+
+
+<h1 id="resources-for-composers-violin-pedagogy">Resources For Composers: Violin Pedagogy</h1>
+
+
+
+
+<div class="byline">
+
+<i class="fa-solid fa-calendar"></i> July 30 2022 
+
+
+
+<i class="fa-solid fa-folder"></i>
+
+	<a href="/categories/music"> music</a>
+
+
+
+
+		
+		<i class="fa-solid fa-tags"></i>
+		
+		<a href="/tags/pedagogy">pedagogy</a>, 
+
+		
+		<a href="/tags/violin">violin</a>, 
+
+		
+		<a href="/tags/musictheory">musictheory</a>
+
+</div>
+
+<p>I'm writing a string quartet and have been reviewing violin technique. I though it would be helpful to compile a list of the classics of violin pedagogy: method books, treatises, exercises and so forth. Here's the list, which I will continue to update. I'll link to <a href="https://imslp.org">IMSLP</a> files when they're available. Please let me know if I've missed anything you consider essential.</p>
+<h4 id="auer-leopold-1845-1930"><strong><a href="https://en.wikipedia.org/wiki/Leopold_Auer">Auer, Leopold</a> (1845-1930)</strong></h4>
+<ul>
+<li><a href="https://imslp.org/wiki/Violin_Playing_as_I_Teach_It_(Auer%2C_Leopold)">Violin Playing As I Teach It</a> (1920)</li>
+<li><a href="https://openlibrary.org/books/OL13549320M/My_long_life_in_music">My Long Life In Music</a> (1923)</li>
+<li>Violin Master Works And Their Interpretation (1925)</li>
+</ul>
+<h4 id="bang-maia-1877-1940"><strong>Bang, Maia (1877-1940)</strong></h4>
+<ul>
+<li><a href="https://imslp.org/wiki/Violin_Method_(Bang%2C_Maia)">Violin Method</a></li>
+</ul>
+<h4 id="casorti-august-1830-1867"><strong>Casorti, August (1830-1867)</strong></h4>
+<ul>
+<li><a href="https://imslp.org/wiki/The_Techniques_of_Bowing%2C_Op.50_(Casorti%2C_August)">Techniques of Bowing, Op. 50</a> (1880)</li>
+<li><a href="https://imslp.org/wiki/Etude_du_sautill%C3%A9_No.2%2C_Op.60_(Casorti%2C_August)">Étude du Sautillé No. 2, Op. 60</a></li>
+<li><a href="https://imslp.org/wiki/%C3%9Cbungen_in_Doppelgriffen_f%C3%BCr_Violine%2C_Op.61_(Casorti%2C_August)">Exercises in Double-Stops, Op. 61</a> (1896)</li>
+</ul>
+<h4 id="flesch-carl-1873-1944"><strong><a href="https://en.wikipedia.org/wiki/Carl_Flesch">Flesch, Carl</a> (1873-1944)</strong></h4>
+<ul>
+<li><a href="https://imslp.org/wiki/Urstudien_f%C3%BCr_Violine_(Flesch%2C_Carl)">Urstudien</a> (1911)</li>
+<li>The Art of Violin Playing (1923)</li>
+<li><a href="https://imslp.org/wiki/Das_Skalensystem_(Flesch%2C_Carl)">The Scale System</a> (1926)</li>
+</ul>
+<h4 id="galamian-ivan-1903-1981"><strong><a href="https://en.wikipedia.org/wiki/Ivan_Galamian">Galamian, Ivan</a> (1903-1981)</strong></h4>
+<ul>
+<li>Principles of Violin Playing and Teaching (1962)</li>
+<li>Contemporary Violin Technique (1962)</li>
+</ul>
+<h4 id="hrimaly-jan-1844-1915"><strong><a href="https://en.wikipedia.org/wiki/Jan_H%C5%99%C3%ADmal%C3%BD">Hřímalý, Jan</a> (1844-1915)</strong></h4>
+<ul>
+<li><a href="https://imslp.org/wiki/Scale-Studies_for_Violin_(H%C5%99%C3%ADmal%C3%BD,_Jan)">Scale-Studies for Violin</a></li>
+</ul>
+<h4 id="kreutzer-rodolphe-1766-1831"><strong><a href="https://en.wikipedia.org/wiki/Rodolphe_Kreutzer">Kreutzer, Rodolphe</a> (1766-1831)</strong></h4>
+<ul>
+<li><a href="https://imslp.org/wiki/%C3%89tudes_ou_caprices_(Kreutzer%2C_Rodolphe)">Études ou Caprices</a> (1805)</li>
+</ul>
+<h4 id="paganini-niccolo-1782-1840"><strong><a href="https://en.wikipedia.org/wiki/Niccol%C3%B2_Paganini">Paganini, Niccolò</a> (1782-1840)</strong></h4>
+<ul>
+<li><a href="https://imslp.org/wiki/24_Caprices_for_Solo_Violin%2C_Op.1_(Paganini%2C_Niccol%C3%B2)">24 Caprices for Solo Violin, Op. 1</a></li>
+</ul>
+<h4 id="schradieck-henry-1846-1918"><strong><a href="https://en.wikipedia.org/wiki/Henry_Schradieck">Schradieck, Henry</a> (1846-1918)</strong></h4>
+<ul>
+<li><a href="https://imslp.org/wiki/Scale_Studies_for_the_Violin_(Schradieck%2C_Henry)">Scale-Studies for the Violin</a></li>
+<li><a href="https://imslp.org/wiki/School_of_Violin_Technics_(Schradieck%2C_Henry)">School of Violin Technics</a> (1899)</li>
+<li><a href="https://imslp.org/wiki/Guide_to_the_Study_of_Chords_for_Violin_(Schradieck%2C_Henry)">Guide to the Study of Chords</a></li>
+</ul>
+<h4 id="sevcik-otakar-1852-1934"><strong><a href="https://en.wikipedia.org/wiki/Otakar_%C5%A0ev%C4%8D%C3%ADk">Ševčík, Otakar</a> (1852-1934)</strong></h4>
+<ul>
+<li><a href="https://imslp.org/wiki/School_of_Violin_Technique%2C_Op.1_(%C5%A0ev%C4%8D%C3%ADk%2C_Otakar)">School of Violin Technique, Op. 1</a> (1881)</li>
+<li><a href="https://imslp.org/wiki/School_of_Bowing_Technique%2C_Op.2_(%C5%A0ev%C4%8D%C3%ADk%2C_Otakar)">School of Bowing Technique, Op. 2</a> (1894)</li>
+<li><a href="https://imslp.org/wiki/Violin_School_for_Beginners%2C_Op.6_(%C5%A0ev%C4%8D%C3%ADk%2C_Otakar)">Violin School for Beginners, Op. 6</a></li>
+<li><a href="https://imslp.org/wiki/Changes_of_Position_and_Preparatory_Scale_Studies%2C_Op.8_(%C5%A0ev%C4%8D%C3%ADk%2C_Otakar)">Changes of Position and Preparatory Scale Studies, Op. 8</a> (1895)</li>
+<li><a href="https://imslp.org/wiki/Preparatory_Exercises_in_Double-Stopping%2C_Op.9_(%C5%A0ev%C4%8D%C3%ADk%2C_Otakar)">Preparatory Exercises in Double-Stopping, Op. 9</a></li>
+<li><a href="https://imslp.org/wiki/School_of_Intonation_on_an_Harmonic_Basis_for_Violin%2C_Op.11_(%C5%A0ev%C4%8D%C3%ADk%2C_Otakar)">School of Intonation on a Harmonic Basis for Violin, Op. 11</a></li>
+<li><a href="https://imslp.org/wiki/School_of_Interpretation_for_the_Violin%2C_Op.16_(%C5%A0ev%C4%8D%C3%ADk%2C_Otakar)">School of Interpretation for the Violin, Op. 16</a></li>
+</ul>
+<h4 id="spohr-louis-1784-1859"><strong><a href="https://en.wikipedia.org/wiki/Louis_Spohr">Spohr, Louis (1784-1859)</a></strong></h4>
+<ul>
+<li><a href="https://imslp.org/wiki/Violinschule_(Spohr%2C_Louis)">Violin School (1832)</a></li>
+</ul>
+
+
+<hr>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/new-fiction-from-writer-nora-maynard/">New Fiction From Writer Nora Maynard</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/resources-for-jazz-guitar-three-octave-runs/">Resources for Jazz Guitar: three octave runs</a></li>
+</ul>
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<hr>
+			Web site for composer <a href="/">Chester Jankowski</a> • <a href="/feed/feed.xml">RSS</a><br>
+			Written by humans for humans. • No ads, no trackers, no affiliate links, no pop-ups, no AI.<br>	
+			Built with <a href="https://www.11ty.dev/">Eleventy v4.0.0</a> • “Keep building for the web!” -- Zach Leatherman<br>
+		</footer>
+
+		<!-- This page `/blog/resources-for-composers-violin-pedagogy/` was built on 2025-10-16T21:54:44.496Z -->
+		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
+	</body>
+</html>

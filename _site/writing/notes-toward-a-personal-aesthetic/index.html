@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Notes Toward a Personal Aesthetic</title>
+		<meta name="description" content="The home page of Chester Jankowski, a composer, musician, and technologist based in nyc.">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Chester Jankowski">
+		<meta name="generator" content="Eleventy v4.0.0">
+		
+		
+		
+		<style>/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+	--quote-background: var(--color-gray-20);
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+		--quote-background: #333;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+	min-height: 100vh;
+	display: flex;
+    flex-direction: column;
+	font-family: "Times New Roman", serif;
+    font-size: 20px;
+}
+
+blockquote {
+	background-color: var(--quote-background);
+	padding: 10px 20px 10px 20px;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	width: 100%;
+	height: auto;
+}
+iframe {
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+footer{
+    margin-top: auto;
+    padding-top: 1em;
+    /* border-top: 1px solid gray; */
+    font-size: 14px;
+    padding-bottom: 0.5em;
+}
+footer ul{
+    list-style-type: none;
+}
+footer a:link{
+    color: #3345cc;
+}
+footer a:visited{
+    color: #3345cc;
+}
+
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	/* border-bottom: 1px dashed var(--color-gray-20); */
+}
+
+#skip-link {
+	text-decoration: none;
+	background: var(--background-color);
+	color: var(--text-color);
+	padding: 0.5rem 1rem;
+	border: 1px solid var(--color-gray-90);
+	border-radius: 2px;
+}
+
+/* Prevent visually-hidden skip link fom pushing content around when focused */
+#skip-link.visually-hidden:focus {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	/* Ensure it is positioned on top of everything else when it is shown */
+	z-index: 999;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	/* border-top: 1px dashed var(--color-gray-20); */
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	flex-grow: 1;
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	gap: .5em 1em;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+hr {
+	background-color: lightgray;
+	border: none;
+	height: 1px;
+}
+
+/* Posts list */
+.postlist {
+	counter-reset: start-from var(--postlist-index);
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+.byline{
+    font-size: smaller;
+	font-style: italic;
+
+.fa-solid {
+	color: var(--color-gray-50);
+}</style>
+		
+		<script src="https://kit.fontawesome.com/12fe9f9908.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<a href="#main" id="skip-link" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">Chester Jankowski</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/music/">Music</a></li>
+					<li class="nav-item"><a href="/writing/">Writing</a></li>
+					<li class="nav-item"><a href="/photos/">Photos</a></li>
+					<li class="nav-item"><a href="/blog/">Blog</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="main">
+			<hr>
+			<heading-anchors>
+				
+<h1 id="notes-toward-a-personal-aesthetic">Notes Toward a Personal Aesthetic</h1>
+<h2 id="i-inspiration-and-influence">I Inspiration and Influence</h2>
+<hr>
+<p>A young composer's initial inspiration to create music--an audacious undertaking, given the romantic mythology about serious composers which still persists in the popular mind--is likely to proceed neither from a profound sympathy with the most current, cutting-edge ideas in art, nor from a well-balanced, mature historical perspective. To wait until one is receptive to the avant-garde would be to wait too long in the majority of cases: the avant-garde demands a rather adult psychological outlook, if not downright world-weariness, not often found in young teenagers. On the other hand, the best chance a youngster has of gaining a thorough historical perspective would be through private lessons covering the standard repertoire, supplemented with history exams at the local Royal Conservatory branch. This route, biased as it is toward certain periods, styles and modes of musical thought, is also not likely to provide the initial compositional desire, nor is it intended to.</p>
+<p>The initial desire to compose serious music is more likely to be the result of more or less isolated musical experiences which eventually lead the composer to discover in himself or herself an independent musical mind--one that needs to be exercised. In my own case, for example, a series of profound, sometimes epiphanic, musical experiences, stretching back to very early childhood, culminated in teenaged encounters with Bach, Beethoven, and later, Brahms. These encounters led me ever deeper into the music, and in turn led me to begin to develop my own musical mind in a systematic way. It was then that I began to compose, although I had been making music all of my life.</p>
+<p>The point is that a beginning composer is seldom equipped with a ready-made, usable aesthetic, or with the kind of broad-ranging background required to develop one. All a young composer has is a set of musical experiences to explore and understand, and a set of models to imitate. But these experiences and models are likely to be somewhat random and eclectic, and not necessarily the best starting point from which to launch a musical mission. Why? Because a composer who continues to work from such a starting point is liable to turn out naive, or worse, intolerant, or worse yet, ignorant. Naivete is, of course, to be expected of our young composer and is not, in the beginning, a major sin, provided the youngster maintain a serious intent. A little naivete can be charming in a young composer, but this charm has a relatively short shelf-life, and tends to sour after a time. That is, the precocious youngster becomes the annoying dilettante, despised by monsieur Croche and all other defenders of art.</p>
+<p>Intolerance may well accompany this early naivete, as our young composer who is meanwhile churning out neat little Bach imitations dismisses, along with his conservatory piano teacher, a piano piece by Bartok for its excessive dissonance. What the student does not realize is that his or her concept of dissonance will be changing from week to week and may well be beyond the piano teacher's in a year or two. Or at least one would hope so. This does not apply to the fortunate beginner who from the start works with a mature composer. It is not that instrumental teachers have immature ideas about music, only that they are unlikely to appreciate the pitfalls and perils of composing. Early intolerance, if all goes well, should fade away along with naivete.</p>
+<p>Ultimately our young composer must come to terms with current ideas and recent developments in music. This involves learning not only the earmarks of specific styles, but hopefully also gaining some understanding of the broader principles involved. The following section outlines some of the more important trends in post-war music, with an emphasis placed on the ideas of modernism, the avant-garde and post-modernism.</p>
+<h2 id="ii-the-demands-of-history">II The Demands of History</h2>
+<hr>
+<p>An early and important archetype for post-war modernism was set out at Darmstadt. By 1951 its chief mode of expression was an all-encompassing, rigorous brand of serialism. Rene Leibowitz, himself a former student of Webern, taught there in 1948, Messiaen in 1949. This was at the time of Messiaen's influential, highly organized serial exercise, &quot;Mode de valeurs et d'intensites.&quot; Among younger composers involved at the time were Boulez, Stockhausen, Maderna and Berio. The rigorous, orthodox serialism of the early 1950s gave way a few years later to more personalized, individual approaches. For example, in the case of Boulez, his &quot;Structures 1a&quot; from 1951-52 used procedures and materials quite similar to those in Messiaen's &quot;Mode de valuers.&quot; But by &quot;Le marteau sans maitre&quot; of 1954-57, Boulez had developed a unique, personal way of organizing serial material. But even though rigorous total serialism lost favour by the mid 1950s, the Darmstadt ideal still stressed serial-type compositional pre-planning and technique. Composers would develop various loosely serial strategies for each new piece, which would later be revealed to the world in Die Riehe. This last addition to the cycle of composition, analysis published in journals, came to rival performance itself as a means of disseminating musical ideas.</p>
+<p>An integral, if unfortunate, aspect of the Darmstadt view was a rather sneering polemicism practiced by some of the key figures. Boulez was among the most outspoken of this branch, his article &quot;Schoenberg est mort&quot; perhaps the most notorious example. What seems now to be a rather mean-spirited attack on the father of serialism shows the strength of Boulez's convictions about how music must progress historically, and also how important aesthetic correctness was. Differing aesthetic views were met with contempt and scorn, rather than mere indifference, let alone tolerance. If Boulez could not abide Schoenberg's formal classicisms, what chance did more conservative or traditionalist composers have? The open hostility to composers outside of the Darmstadt fold led, of course, to a feedback loop: outsiders grew more hostile to the Darmstadters, and so on. This dynamic of hostility was a defining characteristic of the 1950s and, to a lesser extent, the 1960s, and one of the chief differences between that period and more recent times.</p>
+<p>But the Darmstadters were not the only modernists on the block; various composers scattered throughout Europe and North America made their own more or less independent contributions to the modernist project. One of the major events of the early 1950s was Stravinsky's conversion to serialism. In light of what was said above regarding the Darmstadt school, it is no wonder that some saw Stravinsky's conversion as a betrayal, while others saw it as a vindication. Neither response was altogether correct. Even though the adoption of serial techniques was a radical formal departure for Stravinsky, somehow the aesthetic core of his music did not change. The inspiration was Webern, the technical armory was Krenek, but the result was still very much Stravinsky. The lesson to be learned is that a powerful voice will transcend technique, and that, conversely, technique will not necessarily make or break a voice. This is not to imply that Stravinsky had less than a thorough mastery of serial techniques. The point is that, remarkably, the composer of the Symphony in C still sounds like the composer of Requiem Canticles.</p>
+<p>On the other hand, for some composers the adoption of new radical techniques accompanied a complete re-working of their aesthetic stance. A good example of this was Elliott Carter's rebirth in the early 1950s. Carter's switch was not motivated by a positive, simple desire to expand his compositional arsenal, but by a negative--the disavowal of his previous populist, neo-classical aesthetics. His subsequent development of a coherent system of compositional technique is a paradigm of American individualism.</p>
+<p>Although there is no rough-and-ready distinction between modernism and the avant-garde, the two terms are useful for pointing out general differences in their respective domains. As should be clear by now, I hold modernism to be a generator of common techniques and shared languages.[1] Modernism is expressed in general features. The avant-garde, on the other hand is expressed in specific, unique features. That is, the avant-garde tends to change from piece to piece, and therefore not generate common techniques and shared languages. Indeed, part of the appeal of the avant-garde is simply not knowing what to expect. Ironically, this aspect of the avant-garde is a feature which led to eventual cynicism toward it: people began to know all too well what to expect, and grew weary of jokes whose punchlines they already knew. What should also be clear is that modernism and the avant-garde are not by this account mutually exclusive. Avant-garde pieces will often have to some extent, a base in modernist techniques; modernist pieces will often be sprinkled with avant-garde gestures. This mixture of modernism and the avant-garde became particularly thorough and common in the late 1960s, when most au courant music included elements of both.</p>
+<p>If Darmstadt was the early bastion of post-war modernism, the corresponding enclave of the avant-garde was the group of American composers centered around John Cage. Other members included Earle Brown, Morton Feldman, and Christian Wolff. Inspired by Zen philosophy and using the I Ching as a model, Cage began in the early 1950s to write music that increasingly incorporated chance, indeterminacy and mobility of form. Brown and the others were motivated by similar ideas, but developed them in their own individual ways. These composers, following a twentieth century tradition of experimentalism in America, were all especially interested in developing new notational devices to convey their ideas. The general notion of the composer relinquishing will over the outcome of the music was, of course, antithetical to the current Darmstadt ethos. But by 1958, Cage himself was lecturing at Darmstadt. The Darmstadt modernists began thereafter to incorporate certain elements of Cage's ideas into their own music, if for different purposes. Boulez, for example, was wary of giving up ultimate control over a piece, but realized that constrained indeterminacy and formal mobility could add interesting surface features to his music, as well as eliminating certain performance difficulties associated with overly detailed music. At the same time Boulez had also been growing weary of highly detailed compositional pre-planning. Limited indeterminacy offered a middle way. Stockhausen, ever disposed toward experimentalism, was more open to Cage's ideas.</p>
+<p>In the early 1960s a group of composers came to prominence whose motivations lay in exploring texture rather than in exploring philosophy and abstract theory. Penderecki and Lutoslawski used a combination of extended instrumental techniques and limited indeterminacy to create music with highly original soundscapes. Ligeti used precisely notated, highly detailed &quot;micro-polyphony&quot; to achieve similar ends. These composers and many others made steady progress toward developing standardized notation for their various instrumental effects and indeterminate situations. In effect, modernist composers had co-opted and codified ideas which had originated with Cage and the avant-gardists. As the 1960s progressed, the avant-garde in music tended to express itself in more or less theatrical guises. Events would occur on stage that were not normally associated with instrumental performance, for example choreography or interaction with the audience. Another avant-garde tendency that had persisted since the 1950s was the desire to produce scores that were themselves aesthetic objects. Crumb and Schafer were among the more successful followers of that practice.</p>
+<p>If it was fashionable during the 1950s and 1960s to assert the supremacy of one style or technique over another, it has lately been rather unfashionable to speak in such terms at all. Part of the reason for this may have to do with new notions of style which have emerged over the past twenty years. This treatment of style is one of the most useful identifying features of post-modernism. While there is much that is faddish and ill-defined about this recent addition to the critical lexicon, general characteristics of the post-modern are beginning to emerge. Whereas to modernists style is a platform upon which techniques are constructed, in post-modernism, style becomes merely another technique to be manipulated. A single work may contain many different styles, none of which is the sole &quot;true&quot; style.[2] Characteristically, post-modernism--while not duty-bound to reject styles associated with modernism--tends to feature prominently styles which were not compatible with modernism, especially in the form of archaisms and references to pop culture. An early, influential, example of this attitude was Rochberg's third string quartet. A recent example is Glass's symphony on material from David Bowie and Brian Eno.</p>
+<h2 id="iii-personal-perspectives">III Personal Perspectives</h2>
+<hr>
+<p>Along with choosing styles from among the myriad of available possibilities, a young composer may feel the need to grapple with more fundamental issues. The composer will feel this need to a lesser or greater extent, depending on personal constitution; there is, after all, no moral imperative to formalize one's ideas about art, to generate an explicit aesthetic. Indeed some find theorizing inimical to inspiration, or simply too dreary to bother with. But difficulties sometimes arise which can be ameliorated with a little theory. To take another example from my personal development, at one point I began to consider a problem that troubles many contemporary artists, namely the lack of broad public support, understanding and interest. Although there are social reasons--more specifically, economic and political reasons--that such a comparatively small segment of the population chooses to participate in the non-commercialized art world, it still seems disturbing that a field of endeavour whose supposed goal is to reach people simply fails to reach so many people. One may question the social causes of this situation, but one may also question the premise on which the problem is based.</p>
+<p>The emphasis on audience reaction to an art work is in some part due to a commonly-held, common-sense notion about the transmission of ideas from the artist to the audience. In the case of music, the idea is roughly that musical compositions serve as a medium for the communication of emotion from the composer to the listener. In the most extreme version of this notion, the music communicates the actual feelings of the composer directly to the listener. Thus the composer is judged not only on the efficiency of transmission, the skill of transforming feelings to music, but also on the quality of the composer's feelings, whether strong and noble as in the case of Beethoven, or sophisticated and sublime as in the case of Mozart. A bad composer would not only be one lacking the musical skills, but also one whose emotions themselves were not worth sharing. Adding to this the assertion that music is a universal language compounds the current problem tenfold. Since they have no broad popular support, modern composers must either be musically incompetent or have ugly, cynical, unappealing emotions, or probably both. Sadly, there are a few people who actually believe this. No wonder then, that many composers come to a crisis over the question of their own value.</p>
+<p>Putting aside the question of what music actually communicates, whether emotion or simply &quot;musical ideas&quot;, the above theory is summarized in Figure 1.[3] Ideas originate with the composer, and are transmitted through the performance to the listener, who &quot;receives&quot; them.</p>
+<p><picture><source type="image/avif" srcset="/writing/notes-toward-a-personal-aesthetic/FePp1WGGLv-388.avif 388w"><source type="image/webp" srcset="/writing/notes-toward-a-personal-aesthetic/FePp1WGGLv-388.webp 388w"><img loading="lazy" decoding="async" src="/writing/notes-toward-a-personal-aesthetic/FePp1WGGLv-388.gif" alt="" width="388" height="97"></picture></p>
+<p>Figure 2 expands the above to include a popular theory of performance: the performer interprets the score with a view to reconstructing the composer's exact ideas, which can then be properly transmitted to the listener. Under ideal conditions, the performance is so accurate that it becomes transparent, effectively creating a direct path from the composer to the listener.</p>
+<p><picture><source type="image/avif" srcset="/writing/notes-toward-a-personal-aesthetic/NV4Z2W7U2Y-480.avif 480w"><source type="image/webp" srcset="/writing/notes-toward-a-personal-aesthetic/NV4Z2W7U2Y-480.webp 480w"><img loading="lazy" decoding="async" src="/writing/notes-toward-a-personal-aesthetic/NV4Z2W7U2Y-480.gif" alt="" width="480" height="155"></picture></p>
+<p>The above common-sense notion is, of course, fraught with problems. But the single error which invalidates the whole is the role assigned to the listener in the process. The listener is assumed to be a passive receptor of musical ideas. Even allowing the proviso that the listener must be experienced in the appropriate style in order to make sense of the incoming message, the listener still makes a minimal personal contribution to the aesthetic event. But this scheme ignores the multiplicity of meaning, the endless number of valid interpretations that music is capable of generating. On a more mundane level, it fails to explain why we have continually different reactions to the same piece of music.</p>
+<p>Figure 3 shows a more plausible re-working of the musical process. Instead of communicating to the listener, the composer only creates a composition. The listener, rather than receiving ideas, instead goes to the composition and makes of it whatever he or she can. Clearly this view places much more importance on the role of the listener in the aesthetic event. One effect of this added responsibility is the removal of blame from the composer's shoulders should the music fail to produce satisfactory results. The listener may be at fault for failing to make a suitable musical reconstruction, much in the same way that performers can be at fault for a poor performance. .</p>
+<p><picture><source type="image/avif" srcset="/writing/notes-toward-a-personal-aesthetic/Cw-U-NvYU--456.avif 456w"><source type="image/webp" srcset="/writing/notes-toward-a-personal-aesthetic/Cw-U-NvYU--456.webp 456w"><img loading="lazy" decoding="async" src="/writing/notes-toward-a-personal-aesthetic/Cw-U-NvYU--456.gif" alt="" width="456" height="100"></picture></p>
+<p>In figure 4 the above theory is expanded to produce a more detailed view. The composer's role is limited to creating the score. The listener has a variety of resources to draw on to enable re-construction of the aesthetic event: performances; secondary sources including formal analyses and informal descriptions; the score itself. Significantly, no mention is made of the &quot;composition&quot;, which, rather than being an unchanging, fixed entity, emerges as a result of the dynamic process involving all the participants. .</p>
+<p><picture><source type="image/avif" srcset="/writing/notes-toward-a-personal-aesthetic/uD9nWgEQk4-416.avif 416w"><source type="image/webp" srcset="/writing/notes-toward-a-personal-aesthetic/uD9nWgEQk4-416.webp 416w"><img loading="lazy" decoding="async" src="/writing/notes-toward-a-personal-aesthetic/uD9nWgEQk4-416.gif" alt="" width="416" height="256"></picture></p>
+<p>All of the above has been admittedly abstract. No mention has been made of melodic styles, harmonic types or rhythmic gestures. Instead I've focused on grounding principles. Perhaps this is because it is so much easier to write meaningfully about ideas than it is to write meaningfully about music itself. Not that one need apologize for dwelling on the abstract: although a sound aesthetic will never guarantee successful music, one often comes across composers whose music suffers due to aesthetic muddle-headedness. But in the course of a young composer's development, musical understanding must always precede a mature understanding of the aesthetic involved. It is no good studying Schoenberg's serialism before one has met Schoenberg aurally on his own turf. To take a final personal example, I remember one afternoon while listening to one of the Schoenberg piano pieces when suddenly the music no longer sounded strange. Suddenly the music sounded perfectly normal. At that point, the phrase &quot;emancipation of the dissonance&quot; became an aspect of my musical hearing, rather than just a phrase in a textbook. Similarly, any aesthetic idea must be capable of making a direct impact on us through the practice of the arts. Any ideas which cannot make such an impact only distract us from our real task, to make music.</p>
+<hr>
+<p>1 Actually, the techniques and languages need only be potentially common and shared. Even though there is no school based on, for example, Carter's techniques, those techniques are explicit and coherent enough that there could have been one.</p>
+<p>2 The same is also sometimes true of the notion of authorial voice. The British novelist Jeanette Winterson seems to adopt a new voice with each successive book she writes.</p>
+<p>3 The problem with most talk about music and the emotions is not only that it oversimplifies music, but that it oversimplifies emotion, often to an absurd degree. Any theoretical discourse on the nature of emotion would involve complex psychology and physiology, the cognitive and the physical; such discourse is wisely avoided in strictly aesthetic matters.</p>
+
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<hr>
+			Web site for composer <a href="/">Chester Jankowski</a> • <a href="/feed/feed.xml">RSS</a><br>
+			Written by humans for humans. • No ads, no trackers, no affiliate links, no pop-ups, no AI.<br>	
+			Built with <a href="https://www.11ty.dev/">Eleventy v4.0.0</a> • “Keep building for the web!” -- Zach Leatherman<br>
+		</footer>
+
+		<!-- This page `/writing/notes-toward-a-personal-aesthetic/` was built on 2025-10-16T21:54:44.471Z -->
+		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
+	</body>
+</html>

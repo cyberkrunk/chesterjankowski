@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>So long, OneDrive!</title>
+		<meta name="description" content="The home page of Chester Jankowski, a composer, musician, and technologist based in nyc.">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Chester Jankowski">
+		<meta name="generator" content="Eleventy v4.0.0">
+		
+		
+		
+		<style>/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+	--quote-background: var(--color-gray-20);
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+		--quote-background: #333;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+	min-height: 100vh;
+	display: flex;
+    flex-direction: column;
+	font-family: "Times New Roman", serif;
+    font-size: 20px;
+}
+
+blockquote {
+	background-color: var(--quote-background);
+	padding: 10px 20px 10px 20px;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	width: 100%;
+	height: auto;
+}
+iframe {
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+footer{
+    margin-top: auto;
+    padding-top: 1em;
+    /* border-top: 1px solid gray; */
+    font-size: 14px;
+    padding-bottom: 0.5em;
+}
+footer ul{
+    list-style-type: none;
+}
+footer a:link{
+    color: #3345cc;
+}
+footer a:visited{
+    color: #3345cc;
+}
+
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	/* border-bottom: 1px dashed var(--color-gray-20); */
+}
+
+#skip-link {
+	text-decoration: none;
+	background: var(--background-color);
+	color: var(--text-color);
+	padding: 0.5rem 1rem;
+	border: 1px solid var(--color-gray-90);
+	border-radius: 2px;
+}
+
+/* Prevent visually-hidden skip link fom pushing content around when focused */
+#skip-link.visually-hidden:focus {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	/* Ensure it is positioned on top of everything else when it is shown */
+	z-index: 999;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	/* border-top: 1px dashed var(--color-gray-20); */
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	flex-grow: 1;
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	gap: .5em 1em;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+hr {
+	background-color: lightgray;
+	border: none;
+	height: 1px;
+}
+
+/* Posts list */
+.postlist {
+	counter-reset: start-from var(--postlist-index);
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+.byline{
+    font-size: smaller;
+	font-style: italic;
+
+.fa-solid {
+	color: var(--color-gray-50);
+}
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}</style>
+		
+		<script src="https://kit.fontawesome.com/12fe9f9908.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<a href="#main" id="skip-link" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">Chester Jankowski</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/music/">Music</a></li>
+					<li class="nav-item"><a href="/writing/">Writing</a></li>
+					<li class="nav-item"><a href="/photos/">Photos</a></li>
+					<li class="nav-item"><a href="/blog/">Blog</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="main">
+			<hr>
+			<heading-anchors>
+				
+
+
+<h1 id="so-long-onedrive">So long, OneDrive!</h1>
+
+
+
+
+<div class="byline">
+
+<i class="fa-solid fa-calendar"></i> April 18 2025 
+
+
+
+<i class="fa-solid fa-folder"></i>
+
+	<a href="/categories/technology"> technology</a>
+
+
+
+
+		
+		<i class="fa-solid fa-tags"></i>
+		
+		<a href="/tags/enshittification">enshittification</a>, 
+
+		
+		<a href="/tags/microsoft">microsoft</a>
+
+</div>
+
+<p>tl;dr MSFT made a change to 365 Classic, stranding users with over 1 TB of OneDrive space, and they did this without telling anyone.</p>
+<p>I've been using Microsoft Office 365 at home pretty much since it was first available, and always found it to be a good value. In particular, OneDrive has long been a key part of my workflow, allowing me to sync files between my workstation, laptop and mobile devices.</p>
+<p>Since I work with a lot of large media files, I eventually exceeded the 1TB of drive space that comes with a 365 subscription; no problem, for a monthly fee, you can add up to another TB. I was using an additional 600 GB. All good.</p>
+<p>Earlier this year, MS announced that it would be bundling Copilot with 365 subscriptions go forward, and also upping the subscription price by 30%. A bit of an uproar ensued, and MS wisely announced a new &quot;classic&quot; 365 subscription without Copilot, and with the same yearly price as before. I was one of the people that opted for &quot;classic,&quot; just like most of us did way back in the Cola Wars.</p>
+<p>When my subscription renewed, early in April, I was officially moved to the classic tier. I didn't notice anything different at first. But I did see that I was nearing capacity of my 1.6 TB OneDrive space. When I went to try to add more, the option was there, but it was greyed out, I couldn't click on anything.</p>
+<p>Hmm...</p>
+<p>After a few days, I opened a support ticket. A friendly person emailed me back, around midnight my time, and sent me a link to try. I emailed back, &quot;yes, that's where I'm trying to add it, but it won't let me.&quot;</p>
+<p>The next night, He emailed me again. Hmm, maybe try this link? It was another link leading back to the same page. I sent him some screenshots of what I was seeing. He emailed me back the next night, hey, maybe try this link? Another link to the same page.</p>
+<p>Thursday morning I see that now my OneDrive is out of space. I am using 1.6 TB out of 1 TB. I go to the OneDrive page where my 600 GB was listed, and now it's gone entirely. I email the support person, but I can't use my Outlook account. Because I am over my limit, it won't let me send email. It tells me that soon I won't be able to receive email either.</p>
+<p>I get on a support chat. 70 people ahead of me, wait time about an hour. I wait. The person at the other end of the chat seems competent and helpful. They try various things to add my storage back. An hour passes, they're still trying. I ask, &quot;<strong><em>Is it possible that MS removed the ability to add more storage to 365 classic?</em></strong>&quot; (This has been my suspicion all along.) The support person confidently replies, &quot;No, there were no changes to storage quotas with classic.&quot; Phew, I'm now hopeful this person can actually help me.</p>
+<p>After another hour or so, and no doubt with some internal chats on his end, my support person tells me in fact, I'm right, MS removed the ability to add more storage to classic. If I wanted more storage, I would need to upgrade to 365 Copilot. I just paid $100 for classic, would the $130 for Copilot be prorated? Nope! So now, my only option is to pay for Copilot, which I don't want, or just pull my data off. Support person asks how I feel. I'm not good with this, I tell him. This feels a bit like ransomware.</p>
+<p>I went out to BestBuy, picked up a 2 TB SSD, and now I'm in the process of pulling off my 1.6 TB of data and coming up with a new, MS-free, sync and backup solution. It's fine, I'm no stranger to data migration, although the timing is pretty bad, as I'm already busy with a number of projects.</p>
+<p>As a customer, though, I have to say this has been a pretty terrible experience. MS made this major change, and they didn't tell me, and they didn't even tell their support people. I'm not in the habit of cutting off my nose to spite my face, but I will take this as my cue to de-Microsoft my workflow where it makes sense.</p>
+
+
+<hr>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/announcing-my-new-web-site-resources-for-jazz-guitar/">Announcing my new web site: Resources for Jazz Guitar.</a></li>
+</ul>
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<hr>
+			Web site for composer <a href="/">Chester Jankowski</a> • <a href="/feed/feed.xml">RSS</a><br>
+			Written by humans for humans. • No ads, no trackers, no affiliate links, no pop-ups, no AI.<br>	
+			Built with <a href="https://www.11ty.dev/">Eleventy v4.0.0</a> • “Keep building for the web!” -- Zach Leatherman<br>
+		</footer>
+
+		<!-- This page `/blog/so-long-onedrive/` was built on 2025-10-16T21:54:44.496Z -->
+		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
+	</body>
+</html>

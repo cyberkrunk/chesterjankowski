@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Notes on the new Home Theatre</title>
+		<meta name="description" content="The home page of Chester Jankowski, a composer, musician, and technologist based in nyc.">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Chester Jankowski">
+		<meta name="generator" content="Eleventy v4.0.0">
+		
+		
+		
+		<style>/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+	--quote-background: var(--color-gray-20);
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+		--quote-background: #333;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+	min-height: 100vh;
+	display: flex;
+    flex-direction: column;
+	font-family: "Times New Roman", serif;
+    font-size: 20px;
+}
+
+blockquote {
+	background-color: var(--quote-background);
+	padding: 10px 20px 10px 20px;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	width: 100%;
+	height: auto;
+}
+iframe {
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+footer{
+    margin-top: auto;
+    padding-top: 1em;
+    /* border-top: 1px solid gray; */
+    font-size: 14px;
+    padding-bottom: 0.5em;
+}
+footer ul{
+    list-style-type: none;
+}
+footer a:link{
+    color: #3345cc;
+}
+footer a:visited{
+    color: #3345cc;
+}
+
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	/* border-bottom: 1px dashed var(--color-gray-20); */
+}
+
+#skip-link {
+	text-decoration: none;
+	background: var(--background-color);
+	color: var(--text-color);
+	padding: 0.5rem 1rem;
+	border: 1px solid var(--color-gray-90);
+	border-radius: 2px;
+}
+
+/* Prevent visually-hidden skip link fom pushing content around when focused */
+#skip-link.visually-hidden:focus {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	/* Ensure it is positioned on top of everything else when it is shown */
+	z-index: 999;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	/* border-top: 1px dashed var(--color-gray-20); */
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	flex-grow: 1;
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	gap: .5em 1em;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+hr {
+	background-color: lightgray;
+	border: none;
+	height: 1px;
+}
+
+/* Posts list */
+.postlist {
+	counter-reset: start-from var(--postlist-index);
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+.byline{
+    font-size: smaller;
+	font-style: italic;
+
+.fa-solid {
+	color: var(--color-gray-50);
+}
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}</style>
+		
+		<script src="https://kit.fontawesome.com/12fe9f9908.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<a href="#main" id="skip-link" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">Chester Jankowski</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/music/">Music</a></li>
+					<li class="nav-item"><a href="/writing/">Writing</a></li>
+					<li class="nav-item"><a href="/photos/">Photos</a></li>
+					<li class="nav-item"><a href="/blog/">Blog</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="main">
+			<hr>
+			<heading-anchors>
+				
+
+
+<h1 id="notes-on-the-new-home-theatre">Notes on the new Home Theatre</h1>
+
+
+
+
+<div class="byline">
+
+<i class="fa-solid fa-calendar"></i> November 11 2007 
+
+
+
+<i class="fa-solid fa-folder"></i>
+
+	<a href="/categories/technology"> technology</a>
+
+
+
+
+</div>
+
+<p>I spent spare moments this summer researching the state of the art in home theatre, reading endless forum posts, product reviews and spec sheets. The end result is that by early September, I had replaced every single element in the home theatre setup. Not a single cable from the old system remains. After two months with the whole system together, here are some thoughts (a bit technical at times).</p>
+<p><strong>Media Player: Sony Playstation 3.</strong> One of the first steps was to cast a vote in the latest format war: Blu-ray disc (BD) vs. HD DVD. My take is that Blu-ray will win. Blu-ray has the better technology with twice the native storage capacity as HD DVD. Plus, Blu-ray has more studio support. Having made that choice, the ps3 becomes the perfect option for a BD player. Prices all around have come down a bit since the summer, but at that time, the ps3 was one of the least expensive BD players around. It's essentially a media player with a gaming system thrown in. We're not big gamers, but I did spend a two-week break from work playing Oblivion IV almost non-stop.</p>
+<p><strong>AV Receiver: Sony STR-DA3300ES.</strong> I probably spent the most time researching AV receivers, which is maybe the most FUD-ridden part of the home theatre world at the moment. The selection criteria boil down to these points: sound quality, power, HDMI support, format support, useability.</p>
+<p>Sony is not generally thought of as a manufacturer of high-end audio equipment. Initially, I was leaning heavily towards Onkyo and Denon. In the end, I decided to audition the Sony ES-series at home, and was pleased enough with the sound to keep the unit. This receiver delivers 100W per channel, which seems like a lot, but, in practice, is about right for my relatively small viewing space.</p>
+<p>HDMI is the current single-cable digital interconnect of choice. Passing audio and video on a single cable is a great step towards reducing cable clutter. The key is that the AV receiver should have enough HDMI inputs to accommodate all of your input devices, and can then connect with your display device using a single HDMI interconnect. The 3300 has three HDMI inputs, which seems to be plenty for me, and can take a BD player, a DVR and still have an open slot. Where the FUD (fear, uncertainty &amp; doubt) starts to creep in is the HDMI version. Only the latest version of HDMI, 1.3a, will pass the latest audio codecs (Dolby TruHD, DTS HD Master Audio) in their native bitsream format, allowing the receiver, rather than the player to do the decoding. This fact has a lot of people confused, but for the moment, it is inconsequential, since there is currently no player available, nor any content that will allow this kind of setup. As it happens, the 3300 is HDMI 1.3a.</p>
+<p>Format support ties in with the HDMI issue. It's really not much of a matter of concern, since it is the role of the player to decode the formats. The decoded audio is then passed to the receiver in a multi-channel linear PCM format. Moreover, it seems that the emerging high-definition audio format of choice is straight multi-channel LPCM, which requires no decoding whatsoever. Being a sound guy, I have been absolutely thrilled with some of the sound environments that are coming out of this system now, thanks to non-compressed LPCM (usually 48/24).</p>
+<p>Useability is much more of an issue for a multi-channel AV receiver than for a simple two-channel stereo. In addition to all the various formats and processing available, the AV receiver acts as a digital hub, interconnecting all the input and output devices. For theses reasons, it's important to be able to quickly manoeuvre and make changes. Sony is actually a leader here, and has the same nicely-designed Xross-bar menu system in its current crop of players, receivers &amp; display devices. This is one advantage of having an all-Sony system.</p>
+<p><strong>Display Device: Sony KDL-46XBR4.</strong> Two big choices to make here: screen size and LCD vs. plasma. Until very recently, plasma was the clear choice for picture quality, but the latest LCD panels have mostly caught up, and offer a few advantages. LCD offers incredible sharpness, a bright picture in both daylight and darkened room settings, with almost the same level of deep, rich blacks as plasmas. One crucial factor for me was 24p support, which keeps the frame rate at a stable 24 frames per second throughout the entire chain from filming to authoring to playback. DVD and broadcast television must go through contortions to convert the frame rate from 24 fps to NTSC color televsion's native 29.97 fps. This is all obviated by 24p support. The end result when watching a BD, for example, is that you see the exact frame sequence that was put on film. This is huge. The XBR4 does another neat trick: in addition to supporting a 120 Hz refresh rate, it will actually interpolate extra frames to give a surreal smoothness to the picture. This is quite useless and distracting for filmed content, but looks phenomenal on some HD TV broadcasts, especially sports.</p>
+<p>As for screen size, nothing is too big when you are watching a film, but when the set is off, you don't want to dwarf the room. 46 inches is, for us, a good middle ground. The XBR4's attractive floating glass design also helps. Overall, this is an excellent, though not perfect set. The screen is not uniform and will not display a perfectly black background, there is some splotchiness. From time to time, there are picture artifacts, but these are minimal on well-authored content.</p>
+<p><strong>Speakers: KEF KHT-3005.</strong> These are <a href="http://www.kef.com/ht3000/index.htm">beautifully</a> designed, great sounding speakers. Not much else to say. The <a href="http://www.kef.com/ht3000/subwoofer.htm">subwoofer</a>, in particular, is a work of art, and has enough power to blast open a steel door, or at least really, really annoy your neighbors.</p>
+<p><strong>HT Furniture: BDI Cielo 9324.</strong> This piece does a nice job of holding everything in an attractive, not-quite-but-almost-furniture-quality design. But why is the back covered? This makes cabling more of a chore than it needs to be.</p>
+<p>Overall thoughts: when you put it all together, it works! BDs look and sound incredible. DVDs run the gamut from almost great quality to rather disappointing. It's surprising how much variation there is in the quality of DVD authoring. Newer DVD titles tend to be mastered in HD and this makes a big difference. So far, all of the Criterion edition DVDs I've viewed are quite good, which is a relief. But is the picture still has a way to go, the sound is about as good as I want to get in a noisy midtown apartment.</p>
+
+
+<hr>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/race-day/">Race Day!</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/in-case-you-need-some-cheering-up/">In case you need some cheering up...</a></li>
+</ul>
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<hr>
+			Web site for composer <a href="/">Chester Jankowski</a> • <a href="/feed/feed.xml">RSS</a><br>
+			Written by humans for humans. • No ads, no trackers, no affiliate links, no pop-ups, no AI.<br>	
+			Built with <a href="https://www.11ty.dev/">Eleventy v4.0.0</a> • “Keep building for the web!” -- Zach Leatherman<br>
+		</footer>
+
+		<!-- This page `/blog/notes-on-the-new-home-theatre/` was built on 2025-10-16T21:54:44.493Z -->
+		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
+	</body>
+</html>

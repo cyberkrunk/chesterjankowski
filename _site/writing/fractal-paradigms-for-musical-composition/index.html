@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Fractal Paradigms for Musical Composition</title>
+		<meta name="description" content="The home page of Chester Jankowski, a composer, musician, and technologist based in nyc.">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Chester Jankowski">
+		<meta name="generator" content="Eleventy v4.0.0">
+		
+		
+		
+		<style>/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+	--quote-background: var(--color-gray-20);
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+		--quote-background: #333;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+	min-height: 100vh;
+	display: flex;
+    flex-direction: column;
+	font-family: "Times New Roman", serif;
+    font-size: 20px;
+}
+
+blockquote {
+	background-color: var(--quote-background);
+	padding: 10px 20px 10px 20px;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	width: 100%;
+	height: auto;
+}
+iframe {
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+footer{
+    margin-top: auto;
+    padding-top: 1em;
+    /* border-top: 1px solid gray; */
+    font-size: 14px;
+    padding-bottom: 0.5em;
+}
+footer ul{
+    list-style-type: none;
+}
+footer a:link{
+    color: #3345cc;
+}
+footer a:visited{
+    color: #3345cc;
+}
+
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	/* border-bottom: 1px dashed var(--color-gray-20); */
+}
+
+#skip-link {
+	text-decoration: none;
+	background: var(--background-color);
+	color: var(--text-color);
+	padding: 0.5rem 1rem;
+	border: 1px solid var(--color-gray-90);
+	border-radius: 2px;
+}
+
+/* Prevent visually-hidden skip link fom pushing content around when focused */
+#skip-link.visually-hidden:focus {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	/* Ensure it is positioned on top of everything else when it is shown */
+	z-index: 999;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	/* border-top: 1px dashed var(--color-gray-20); */
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	flex-grow: 1;
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	gap: .5em 1em;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+hr {
+	background-color: lightgray;
+	border: none;
+	height: 1px;
+}
+
+/* Posts list */
+.postlist {
+	counter-reset: start-from var(--postlist-index);
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+.byline{
+    font-size: smaller;
+	font-style: italic;
+
+.fa-solid {
+	color: var(--color-gray-50);
+}</style>
+		
+		<script src="https://kit.fontawesome.com/12fe9f9908.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<a href="#main" id="skip-link" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">Chester Jankowski</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/music/">Music</a></li>
+					<li class="nav-item"><a href="/writing/">Writing</a></li>
+					<li class="nav-item"><a href="/photos/">Photos</a></li>
+					<li class="nav-item"><a href="/blog/">Blog</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="main">
+			<hr>
+			<heading-anchors>
+				
+<h1 id="fractal-paradigms-for-musical-composition">Fractal Paradigms for Musical Composition</h1>
+<h2 id="i-apologia">I Apologia</h2>
+<p>To begin with, I would like to anticipate some of the skepticism that some of us might be bringing to today's colloquium. My topic, which involves fractals and chaos theory, might invoke in some a fear that we are about to delve into the faddish--that we are here to discuss coffee-table-book science. It would be self-defeating for me to try to allay these fears at the outset by reassuring you that these fields presently occupy many advanced researchers in various branches of science and mathematics. Self-defeating because we are not here to discuss advanced mathematics, nor would we be equipped to do so. But even though the rigorous math behind fractal theory can be--for our purposes--exceedingly complex, the equations and algorithms used to generate them are often surprisingly simple, and accessible to those of us with only basic mathematical skills. In fact, this is part of the general appeal of fractals, that seemingly uninteresting equations can be prodded to produce a wealth of interesting results. In addition, through the use of graphical examples, it is possible to get a sense of the basic properties of fractals while avoiding math altogether. Because of these features, the field of fractals is in a sense more conducive to popularization than some of the other topics of recent popular science books. It is perhaps also less open to fanciful misrepresentation or plain hucksterism than some of the other topics. Quantum dynamics is probably a field which does require broad a broad understanding of the relevant math and physics, otherwise one is open to the kind of abuse that Diderot was subjected to, so the story goes, when faced with a proof for the existence of God, which was in fact just a piece of algebraic mumbo-jumbo meant to shame him into silence.</p>
+<p>The first skeptical question is whether we as non-specialists have any reason to discuss fractals. There is, of course, another skeptical question to be asked, one that cuts to the core of today's colloquium, namely whether we as musicians have any reason to discuss fractals. Internet discussions have been referred to in this colloquium series in the past, so I might briefly mention here that posts on fractal music have been appearing with increasing frequency. But many of these posts express grave doubts over the whole idea. This must be why I am beginning today with such a defensive stance. Generally, these doubts come from two types of skeptic: one that knows too much about fractals, another that knows too little, both of which get confused when musical composition is introduced. The first skeptic is aware of some of the mathematical rigors and niceties of fractals and tries, but fails to find them expressed in the relevant music. A related confusion comes from the mistaken assumption that musical fractals must be directly analogous to, or mapped from, graphical fractals. My own response to criticism of this kind is that in using fractals for musical composition I am not seeking to musically represent fractals, or for that matter any other kind of geometrical or abstract pattern. Instead I am employing fractals to aid in the creation of new and interesting Musical patterns. As for rigor, I am willing to accept only as much as I feel is necessary, and am quick to drop rigor when using any type of compositional method. In short, I take what I want and discard the rest. This is, of course, a completely subjective aesthetic stance, and it is best that I confess to it early on. The other type of skeptic is simply doubtful of the value of any algorithmic approach to music, fractal or otherwise. Dealing with such total skepticism is at best very difficult, and rarely enjoyable. Again it is best to assume a subjective aesthetic stance that at least allows for the possibility that algorithms can produce musically useful material, and move on. As musicians, we are lucky in that we have a very simple and effective way of judging compositional theories--we listen to the music they produce. This is inescapable, even though it is not always fair. Since I will be playing audio examples from finished pieces that use fractals, I won't be overly concerned with offering an a priori defense of the aesthetic validity of fractals. I will, however, suggest in examples which follow ways in which fractal thinking can be useful in musical composition. The musical examples will centre on my own compositions from the past year and a half, during which time fractals have figured largely in my compositional thinking . But before proceeding to musical applications, I'll explore the basic fractal ideas. In addition, I'll try to give you an idea of what others are doing in this field.</p>
+<h2 id="ii-overview">II Overview</h2>
+<p>We owe the term &quot;fractal&quot; and much of the early theoretical work on fractals to the French Mathematician Benoit Mandelbrot. A graduate of the Ecole Polytechnique in Paris, he has worked since 1960 at IBM's Watson Research Center. An inter-disciplinarian by nature, with a gift for geometrical visualization, Mandelbrot spent the early part of his career investigating a wide range of problems outside the realm of pure mathematics, including economics, engineering and physiology. Much of his early work dealt with properties of scaling, which are central to the notion of fractals. In 1960 Mandelbrot was invited to give a guest lecture in economics at Harvard. When he arrived he was surprised to find that one of his graphs had somehow already appeared on the blackboard. Mandelbrot's graph was of the distribution of large and small incomes in an economy. The one on the blackboard, it turned out, represented eight years of cotton prices. The data sources were completely different, but the patterns that emerged had important similarities. Similarities that Mandelbrot would later find in an incredibly diverse range of sources, including the flooding patterns of the Nile river, transmission noise in telephone lines, earthquake distributions, sunspots. Take the example of telephone noise. It was already known that periods of noise tend to cluster together. Mandelbrot found, however, that within periods of noise, there would also be periods of noise-free transmission. Separating the remaining noise bursts into smaller clusters, again there would be periods of noise-free transmission within the noisy periods. No matter how small the burst, there would be a noiseless period within it. The pattern of noise was independent of the scale at which it was measured. A graph of a second's duration of transmission time tends to have the same pattern as an hour of transmission time, and also as a millisecond's transmission time. This property is known as scaling, or self-similarity and is probably, for our purposes, the most important aspect of fractals.</p>
+<p>Some graphical examples would be of help at this point. First is an example based on a construct of the nineteenth-century mathematician Georg Cantor. To construct a Cantor set, you begin with a line. Remove the middle third of the line. Remove the middle third of each of the remaining lines. Continue this last step infinitely, and what you are left with is an infinite series of infinitely sparse points. Mandelbrot calls this type of set a &quot;dust&quot;, which is any set with a topological dimension of zero--more on this shortly. Example one shows a visual analog of this set, the Cantor Cake. Note that because the cake is completely self-similar, we really have no idea what scale we are looking at. We can easily imagine that the top layer was the starting point, but we can just as easily imagine that we have zoomed in on this portion of the set after millions of steps, it makes no difference. Mathematicians before Mandelbrot merely regarded the Cantor set as a curious, but essentially useless construction. It was highly counter-intuitive that such a construction could have anything to do with natural phenomena.</p>
+<p>Related to the Cantor set is another famous fractal, the Koch Curve or Snowflake. Again, its construction is conceptually simple. Begin with an equilateral triangle. Replace the middle third of each side of the triangle, with another equilateral triangle, one third the size of the original triangle. Again, repeat this last step an infinite number of times. The resulting pattern has one very interesting property, having to do with the length of the curve. If we draw a circle around the original triangle, the snowflake will continue to grow infinitely, even though it will never leave the boundary of the circle surrounding it. Again, this idea is very counter-intuitive at first, but it does actually correspond to many real-life situations. The classic example is the length of coastlines. Imagine that we are going to measure a section of a coastline with a yardstick. We walk along the coast flipping the yardstick end over end trying to follow the wiggly patterns of small baylets. When we are finished, we tabulate the number of flips, multiply this by the length of the stick and we have our measurement. But if we repeat the process, this time using a stick half the size of the original one, the stick now fits into baylets that were too small for the larger stick to fit into. This extra level of detail makes our new measurement bigger than the our previous measurement. We could continue to repeat this process any number of times and find that each time we use a smaller measuring stick, more detail is found, which adds to the length of the coastline. Even if our stick were the size of a grain of sand, we could continue the process: irregularities on the individual grains would add more detail, and more length to the total.</p>
+<p>In situations like these, which actually turn out to be quite common, Euclidean geometry has little to offer us. As Mandelbrot says, &quot;Clouds are not spheres, mountains are not cones, and lightning does not travel in a straight line.&quot; Mandelbrot's main work has been to develop a set of mathematical and geometric tools which do model these shapes and patterns. In his words, his key work, The Fractal Geometry of Nature &quot;brings together a number of new analyses in diverse sciences and it promotes a new mathematical and philosophical synthesis. Thus, it serves as both a casebook and a manifesto. Furthermore, it reveals a totally new world of plastic beauty.&quot;</p>
+<p>Before we leave the Fractal Geometry of Nature, there is one more important point to consider, one that leads to the formal definition of fractals. Besides scale, the key feature of fractals concerns dimension. Consider a line that traces the path of an object undergoing Brownian motion. Or, to use the more colourful adaptation of this, the so-called staggering drunk. The line that traces the drunk's path has, like all other lines, a dimension of one. Mandelbrot refers to this common-sense, Euclidean dimension as &quot;topological dimension.&quot; But because the drunk tends to stagger everywhere, eventually the line tends to fill up the plane. So in another important sense, the line has a dimension approaching two. This other dimension is referred to as its fractal dimension (or to be mathematically precise, it is called Hausdorff-Besicovitch dimension.) Note that in this case the fractal dimension is only approaching two. It is common for fractals to have a fractional dimension. The Koch Snowflake, for example has a fractal dimension of 1.2618. The rigorous definition for fractals is any set whose fractal dimension is greater than its topological dimension. As for the term fractal, Mandelbrot coined it from the Latin adjective fractus , meaning &quot;irregular&quot; and verb frangere meaning &quot;to break.&quot; In addition, there is an obvious resonance with &quot;fractional.&quot; Mandelbrot notes happily that since Algebra derives from the Arabic jabara, meaning &quot;to bind together,&quot; fractal and algebra are etymological opposites.</p>
+<h2 id="iii-self-similar-structures">III Self-Similar Structures</h2>
+<p>I had been reading about fractals for several years before I began to think about musical applications. It was the idea of scaling and self-similarity that first attracted my attention. In music from the Classical period onward, there has been a strong tendency toward hierarchical structures. Works are divided into movements, which are divided into formal sections, which often have their own formal subdivisions (theme groups and transitions, for example), which are further divided into periods, phrases and motives. In other words, these works have a well-defined notion of scale. One can think of a number of examples-- some rather trivial, others less so--where musical elements are represented on more than one scale and are therefore to some extent self-similar. In classical music, rhythmic groupings of four are common at most levels: subdivisions of the beat, metre-signatures, phrase-lengths and number of movements. Harmonic progressions are often similar on different scales: progressions within phrases, modulation schemes, keys of movements. In serial and other post-tonal music, there are numerous examples of intervallic structures which are displayed at different levels. Contrapuntal examples involving augmentation/diminution schemes are everywhere. Finally, there is an entire school of analysis of tonal music that is concerned with the relationship of scales in pitch-structure, and which also customarily finds examples of patterns replicated on different scales. That school is, of course, Shenkerian Analysis.</p>
+<p>But we knew all of this before Mandelbrot came along. And even the idea of an infinitely recursive, self-replicating structure is at least as old as Zeno's paradox. Mandelbrot's work did, however, start an avalanche of activity in a wide range of disciplines. So it was probably inevitable that some music scholars would begin thinking fractally. In the Computer Music Journal, for example, there have been five articles in the past ten years. Interestingly, almost all of the work on fractals in music has been in the field of composition rather than analysis. In fact, one of the few articles using fractal ideas for analysis was written by scientists rather than musicians, and is widely considered to be a complete failure. My own first exercise in self-similar music is a piece that I wrote in late 1992 and early 1993 called &quot;Building Networks...&quot;, scored for two accordions and percussion. The piece is roughly eight minutes long, divided into five short movements. The lengths of the individual movements form a durational series that also governs the proportions of the subdivisions of the movements. The durations of the movements are one minute, three minutes, one minute, two minutes, one minute. The series [1, 3, 1, 2, 1] generates durational values, phrase lengths, and also suggests internal repetition patterns. The first, middle and last elements of the set are identical. The ideas in these sections are often variations of each other. The series also generates pitch material that allows for both typical atonal gestures and tongue-in-cheek tonal references, since it can be thought of as two major triads a semitone apart.</p>
+<p>For an example, we can look at the opening movement. The first section is a unit of five measures, whose metre signatures follow the [1, 3, 1, 2, 1] pattern. Measures one, three and five--the 1/4 measures--are simple variations of each other. The chord in these measures is a five-note chord based on an intervallic interpretation of the series. The left hand of accordion two in measure two sets out the series as two major triads a semitone apart. The next section--which is the lower two systems of page one--is exactly three times the duration of the first section. Its internal structure is also similar to the structure of the section one. The three measures corresponding to the 1 members of the series are simple variations. The other idea of this section, in the 3 and 2 members of the series, has each instrument entering with a figure based on the series interpreted at different durational levels. Each successive entry uses smaller durations, creating an accelerando effect. First accordion one enters with a slightly distorted version of the series, where the basic durational unit is just less than two quarter notes. Next comes accordion two with a basic durational unit of exactly three sixteenth notes. Next is the vibraphone with a basic unit of one eighth-note triplet, and finally, two cymbals with a basic unit of one sixteenth note. In the following section corresponding to the 2 member of the series, the same process occurs, this time with each instrument starting with the next smaller durational unit. This means that the cymbals cram their five notes into sixteenth-note quintuplets. This quintuplet figure appears many times throughout the work and represents the smallest scale that the series is projected onto. The remaining sections corresponding to the 1 members--systems one and three on page two of the excerpt--are simple variations of the opening section. The remaining section, corresponding to the 2 member of the series, is actually truncated. The material in this section contains a musical joke. Similarities between a well-known early atonal piece and a recurring motive in the present piece lead to a full-scale quotation of the atonal piece. This in turn leads to a dismissive response in the form of a condensed quotation from a much better-known, earlier work.</p>
+<p>Audio Example 1: Building Networks: 1st movement.</p>
+<p>The devices in &quot;Building Networks...&quot; were employed on a larger scale in my next work, TimEscape No. 1 for orchestra. The same proportional series, coupled with its retrograde, formed a master source set [1, 3, 1, 2, 1, 2, 1, 3, 1]. Again, the set was used to generate pitch material, rhythms, section lengths and internal repetition patterns. During one climactic passage, a portion of the set is continuously overlapped at various levels. At the surface level, the set is translated into groups of one, two, three and four sixteenth-notes. This occurs over a very slow moving bass that uses the set at eight quarter notes. Here the set also generates pitch material. Another composer who has shown interest in self-similar music is the American Charles Wuorinen. In his book Simple Composition, which is a handbook of serial techniques for beginning composers, Wuorinen outlines a rather rigid method for developing serially self-similar music. The basic idea is much the same as the two pieces of mine that I have just described. The total length of the piece is divided into sections whose durations correspond to members of the series. Each of the section are likewise recursively subdivided. Wuorinen's approach differs from mine in that he uses Babbit's time-point system to determine individual durations, as well as his more strictly serial approach to pitch structure.</p>
+<h2 id="iv-chaotic-orbits">IV Chaotic Orbits</h2>
+<p>My next topic takes us briefly into the field of Chaos theory. Mathematical chaos is a feature characteristic of nonlinear dynamics. To get a feel for the workings of nonlinear systems, we'll look at one equation in particular, the &quot;logistic equation.&quot;</p>
+<p>blackboard example 1</p>
+<p><code>Xn+1 = L * Xn * (1 - xn)   0 &lt; L &lt; 4   0 &lt; X &lt; 1</code></p>
+<p>We begin with a seed value for X, between 0 and 1, and a value for Lambda between 0 and 4. Substituting the numbers, we solve the equation. Our result becomes the new X value, which is fed back into the equation to produce another new X value. This process, known as &quot;iteration&quot; can be continued for as long as we like. The stream of results produced by the initial X and Lambda values is termed an &quot;orbit.&quot; Since there are an infinite number of real numbers that can be used as initial values, there are an infinite number of possible orbits. There are a few typical outcomes for orbits: they can be simple, periodic, or chaotic. A simple output will eventually settle on a single output value, known as a &quot;fixed point attractor&quot; and once that value is reached, return it for as long as iteration is continued. A periodic orbit will settle on two or more output values. Chaotic output is an infinite stream of aperiodic, unpredictable values. Although the values are seemingly random, the orbits are deterministic, since using exactly the same initial values will produce exactly the same orbit.</p>
+<p>One remarkable aspect of this determinism is known as &quot;sensitive dependence to initial conditions.&quot; This feature is a defining characteristic of chaos. What it means is that any arbitrarily small perturbation in the system will be exponentially amplified over time. For example if we start two orbits with Lambda values differing by, say, 1 * 10 -6 the two orbits will start off similarly but will soon diverge and lack any resemblence to each other. This feature was discovered in 1961 by the meteorologist and mathematician, Edward Lorenz. Lorenz happened on it by accident. He was running a computer program at MIT that used a set of nonlinear equations to simulate weather. One day he tried to duplicate a previous run of the equations but found that his new results unexpectedly diverged from his previous results. He had started the run midway through and had used values from his computer printout to provide the new starting values. Lorenz soon realized that although the printout gave a three digit number, .506, the actual number that the computer used at that point was .506127. This small difference, instead of creating a small difference in the new output, soon made the new output completely dissimilar to the old one. This made Lorenz realize that long-range weather forecasting will forever be impossible, since any errors of measurements of initial conditions will over time lead to completely wrong predictions. Because of this connection with weather, this feature has come to be known as &quot;the butterfly effect,&quot; meaning that a butterfly flapping its wings in China can cause a hurricane a month later in Mexico.</p>
+<p>The orbits of the logistic equation follow a pattern based on the initial Lambda value. For values between 0 and 1, the output is simple and fixes on zero. For values between 1 and 3, the orbit is also simple, and fixes on some non-zero value. Between 3 and 3.57, the orbits become periodic with periods of 2, then 4, then 8, then 16. Finally, above 3.57, the orbit is chaotic. This is the so called &quot;period-doubling route to chaos.&quot;</p>
+<p>The obvious musical application is to map orbits to various musical parameters. To this end, I wrote a program for the Atari ST that maps orbits to pitch numbers in Midi sequences. At this point, I'll play examples of all the different orbit types mapped to pitches.</p>
+<p>For the first set of examples, Lambda is less than one, so the orbit eventually settles to zero.</p>
+<p>Audio Example 2 Lambda = .1<br>
+Audio Example 3 Lambda = .1<br>
+Audio Example 4 Lambda = .5<br>
+Audio Example 5 Lambda = .6<br>
+Audio Example 6 Lambda = .989</p>
+<p>For the next three examples, Lambda is between one and three. The orbit eventually settles on some non-zero value.</p>
+<p>Audio Example 7 Lambda = 2<br>
+Audio Example 8 Lambda = 2.5<br>
+Audio Example 9 Lambda = 2.8</p>
+<p>For the next examples, Lambda is between 3 and 3. 57. The orbits become periodic, first with periods of two.</p>
+<p>Audio Example 10 Lambda = 3.1<br>
+Audio Example 11 Lambda = 3.2<br>
+Audio Example 12 Lambda = 3.3</p>
+<p>As lambda is increased, the periods begin to double, four, then eight then sixteen.</p>
+<p>Audio Example 13 Lambda = 3.45 period 4<br>
+Audio Example 14 Lambda = 3.555 period 8<br>
+Audio Example 15 Lambda = 3.569 period 16</p>
+<p>Finally, for Lambda values above 3.57, chaos ensues.</p>
+<p>Audio Example 16 Lambda = 3.58<br>
+Audio Example 17 Lambda = 3.59<br>
+Audio Example 18 Lambda = 3.8</p>
+
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<hr>
+			Web site for composer <a href="/">Chester Jankowski</a> • <a href="/feed/feed.xml">RSS</a><br>
+			Written by humans for humans. • No ads, no trackers, no affiliate links, no pop-ups, no AI.<br>	
+			Built with <a href="https://www.11ty.dev/">Eleventy v4.0.0</a> • “Keep building for the web!” -- Zach Leatherman<br>
+		</footer>
+
+		<!-- This page `/writing/fractal-paradigms-for-musical-composition/` was built on 2025-10-16T21:54:44.471Z -->
+		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
+	</body>
+</html>
