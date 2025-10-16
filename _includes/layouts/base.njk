@@ -36,6 +36,7 @@
 
 		{#- Add the heading-anchors web component to the JavaScript bundle #}
 		<script type="module">{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}</script>
+		<script src="https://kit.fontawesome.com/12fe9f9908.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<a href="#main" id="skip-link" class="visually-hidden">Skip to main content</a>
@@ -55,6 +56,7 @@
 		</header>
 
 		<main id="main">
+			<hr>
 			<heading-anchors>
 				{{ content | safe }}
 			</heading-anchors>
@@ -62,11 +64,9 @@
 
 		<footer>
 			<hr>
-			<ul>
-			<li><a href="/">Chester Jankowski</a> • <a href="/feed/feed.xml">RSS</a></li>
-			<li>Written by humans for humans. • No ads, no trackers, no affiliate links, no pop-ups, no AI.</li>	
-			<li>Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a>
-			</ul>
+			Web site for composer <a href="/">Chester Jankowski</a> • <a href="/feed/feed.xml">RSS</a><br>
+			Written by humans for humans. • No ads, no trackers, no affiliate links, no pop-ups, no AI.<br>	
+			Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a> • “Keep building for the web!” -- Zach Leatherman<br>
 		</footer>
 
 		<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->

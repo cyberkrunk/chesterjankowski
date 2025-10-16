@@ -8,7 +8,7 @@ bangbang was composed for pianist Stephen Clarke, who performed the premiere in 
 
 Duration = 14 minutes
 
-Technical Overview
+## Technical Overview
 
 The synthesizer is connected to a Macintosh computer running bangbang software, which consists of a series of MAX patches and a main interface patch. The Macintosh routes the MAX generated MIDI data back to the synthesizer for playback. The synth's left pedal is used to choose the individual patches, which are indicated in the score drawn in ovals. The synth's right pedal is used for control within two of the patches. The patches are:
 
@@ -18,7 +18,7 @@ CHORDER: adds three notes to a single line, creating four-note chords. After the
 FUGA: creates 4 delayed, transposed notes for every note played in (1 for each speaker).  
 CONVERGENCE: creates two streams of constantly cycling, converging lines. A certain percentage of the notes are deflected to the rear speakers and repeated. This percentage starts at 5% and ends at 55%.
 
-Requirements:
+### Requirements:
 
 Acoustic piano  
 76-note (or larger) keyboard controller  
@@ -26,7 +26,7 @@ Multitimbral synth with acoustic piano emulation, at least 2 separate stereo out
 4 channels of amplification (stereo front, stereo rear)  
 Appropriate signal processing (i.e., reverb)
 
-Channel Map:
+### Channel Map:
 
 1 front left/right (repeater)  
 2 front left/right (chorder)  

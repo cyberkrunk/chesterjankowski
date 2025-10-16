@@ -1,0 +1,8 @@
+---
+title: "Seen this weekend"
+date: 2007-02-11
+categories: 
+  - "etc"
+---
+
+[monkey bar](http://www.elyseehotel.com/monkey.asp) - [pam's real thai](http://www.pamrealthaiencore.com/) - [russian vodka room](http://www.russianvodkaroom.com/) - the [whispering gallery](http://www.igougo.com/travelcontent/journalEntryActivity.aspx?journalID=42687&entryID=45747&Mode=2) in grand central - the [campbell apartment](http://www.grandcentralterminal.com/pages/getpage.aspx?id=37FBE0FE-9D55-4103-B002-79B615E06CAF) (closed, but we snuck a peek) - [lombardi's](http://www.lombardispizza.com/) - bucket of live frogs in chinatown - a [nice decanter](http://www.crateandbarrel.com/family.aspx?c=190&f=2220) at crate and barrel (we bought it) - some [old port](http://portlover.com/1945_Taylor_Fladgate_Vintage/Wines/show/262) in the [best wine store in the us](http://www.sherry-lehmann.com/index.asp) (we didn't buy it) - [sushi seki](http://www.chowhound.com/topics/364818) - [brick](http://www.imdb.com/title/tt0393109/) - a demo of [m2k](http://www.music-ir.org/evaluation/m2k/) - [cosmic collisions](http://www.amnh.org/rose/spaceshow/cosmic/) - [uma thurman](http://en.wikipedia.org/wiki/Uma_Thurman) and her kids - [a room full of live butterflies](http://www.amnh.org/exhibitions/butterflies/cams.php) - [uma thurman](http://www.cinemas-online.co.uk/website/interview.phtml?uid=61) and her kids - lots o' [gold](http://www.amnh.org/exhibitions/gold/) - [grand sichuan](http://www.thegrandsichuan.com/) - [slaves of new york](http://en.wikipedia.org/wiki/Slaves_of_New_York) - [living in oblivion](http://en.wikipedia.org/wiki/Living_in_Oblivion)

@@ -1,0 +1,23 @@
+---
+categories:
+ - arts
+ - etc
+ - film
+ - music
+ - news
+ - technology
+ - travel
+title: "Blog categories"
+description: "List of blog categories."
+eleventyExcludeFromCollections: "true"
+---
+
+<h1>{{ title }}</h1>
+
+<ul>
+{% for category in categories %}
+
+<li><i class="fa-solid fa-folder"></i> <a href="/categories/{{ category }}/">{{ category }}</a></li>
+
+{% endfor %}
+</ul>

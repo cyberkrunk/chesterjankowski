@@ -1,0 +1,23 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - '!file.inFolder("/images")'
+    order:
+      - file.name
+      - title
+      - date
+      - categories
+      - tags
+    sort:
+      - property: categories
+        direction: ASC
+      - property: date
+        direction: ASC
+    columnSize:
+      file.name: 112
+      note.title: 252
+      note.date: 203
+      note.categories: 169
+      note.tags: 245

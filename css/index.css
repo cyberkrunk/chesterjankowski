@@ -11,6 +11,7 @@
 	--color-gray-90: #333;
 
 	--background-color: #fff;
+	--quote-background: var(--color-gray-20);
 
 	--text-color: var(--color-gray-90);
 	--text-color-link: #082840;
@@ -32,6 +33,7 @@
 		--text-color-link-visited: #a6a6f8;
 
 		--background-color: #15202b;
+		--quote-background: #333;
 	}
 }
 
@@ -58,6 +60,16 @@ html {
 }
 body {
 	max-width: 40em;
+	min-height: 100vh;
+	display: flex;
+    flex-direction: column;
+	font-family: "Times New Roman", serif;
+    font-size: 20px;
+}
+
+blockquote {
+	background-color: var(--quote-background);
+	padding: 10px 20px 10px 20px;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -74,6 +86,8 @@ body {
 /* Fluid images via https://www.zachleat.com/web/fluid-images/ */
 img{
   max-width: 100%;
+  display: block;
+  margin: auto;
 }
 img[width][height] {
   height: auto;
@@ -114,16 +128,29 @@ a[href]:active {
 	color: var(--text-color-link-active);
 }
 
-main,
-footer {
-	padding: 1rem;
+footer{
+    margin-top: auto;
+    padding-top: 1em;
+    /* border-top: 1px solid gray; */
+    font-size: 14px;
+    padding-bottom: 0.5em;
 }
+footer ul{
+    list-style-type: none;
+}
+footer a:link{
+    color: #3345cc;
+}
+footer a:visited{
+    color: #3345cc;
+}
+
 main :first-child {
 	margin-top: 0;
 }
 
 header {
-	border-bottom: 1px dashed var(--color-gray-20);
+	/* border-bottom: 1px dashed var(--color-gray-20); */
 }
 
 #skip-link {
@@ -149,7 +176,7 @@ header {
 	justify-content: space-between;
 	gap: .5em 1em;
 	list-style: "";
-	border-top: 1px dashed var(--color-gray-20);
+	/* border-top: 1px dashed var(--color-gray-20); */
 	padding: 1em 0;
 }
 .links-nextprev > * {
@@ -227,6 +254,12 @@ header {
 	text-decoration: underline;
 }
 
+hr {
+	background-color: lightgray;
+	border: none;
+	height: 1px;
+}
+
 /* Posts list */
 .postlist {
 	counter-reset: start-from var(--postlist-index);
@@ -296,3 +329,10 @@ header {
 	margin-right: 1em;
 }
 
+.byline{
+    font-size: smaller;
+	font-style: italic;
+
+.fa-solid {
+	color: var(--color-gray-50);
+}

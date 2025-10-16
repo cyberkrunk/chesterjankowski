@@ -2,7 +2,24 @@
 {%- for post in postslist | reverse %}
 	<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
 		<a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-		<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
+		
+		<div class="byline">
+		<i class="fa-solid fa-calendar"></i>{{ post.data.date | readableDate("LLLL d yyyy") }}
+
+		<i class="fa-solid fa-folder"></i>
+		{% for category in post.data.categories %}
+			<a href="/categories/{{ category | slugify }}"> {{ category }}</a>
+			{%- if not loop.last %}, {% endif %}
+		{% endfor %}
+
+		{% for tag in post.data.tags | filterTagList %}
+		{% if loop.first %}
+		<i class="fa-solid fa-tags"></i>
+		{% endif %}
+		<a href="/tags/{{ tag | slugify }}">{{ tag }}</a>
+		{%- if not loop.last %}, {% endif %}
+		{% endfor %}
+		</div>
 	</li>
 {%- endfor %}
 </ol>

@@ -1,0 +1,22 @@
+---
+title: "Joni said it right"
+date: 2005-10-23
+categories: 
+  - "music"
+---
+
+Watching a fascinating [DVD](http://www.amazon.com/gp/product/B0009MAPX6/103-5399353-3202212?v=glance&n=130&s=dvd&v=glance) set of Dick Cavett music shows from the '70s. Joni just came on and sang this, _a cappella_. She prefaced it by saying, "This is how I feel as a Canadian living in America."
+
+The Fiddle and the Drum
+
+And so once again My dear Johnny my dear friend And so once again you are fightin' us all And when I ask you why You raise your sticks and cry, and I fall Oh, my friend How did you come To trade the fiddle for the drum
+
+You say I have turned Like the enemies you've earned But I can remember All the good things you are And so I ask you please Can I help you find the peace and the star Oh, my friend What time is this To trade the handshake for the fist
+
+And so once again Oh, America my friend And so once again You are fighting us all And when we ask you why You raise your sticks and cry and we fall Oh, my friend How did you come To trade the fiddle for the drum
+
+You say we have turned Like the enemies you've earned But we can remember All the good things you are And so we ask you please Can we help you find the peace and the star Oh my friend We have all come To fear the beating of your drum
+
+\--Joni Mitchell
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u6z79WMOPtk" frameborder="0" allowfullscreen></iframe>

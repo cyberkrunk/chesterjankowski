@@ -6,15 +6,40 @@ layout: layouts/base.njk
 <style>{% include "css/prism-diff.css" %}</style>
 <h1>{{ title }}</h1>
 
-<ul class="post-metadata">
+{# <ul class="post-metadata">
 	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
 	{%- for tag in tags | filterTagList %}
 	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
 	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
 	{%- endfor %}
-</ul>
+</ul> #}
+
+
+<div class="byline">
+{# This sets the post date in the byline #}
+<i class="fa-solid fa-calendar"></i> {{ date | readableDate("LLLL d yyyy") }} 
+
+
+{# This sets the categories; every post should have at least one #}
+<i class="fa-solid fa-folder"></i>
+{% for category in categories %}
+	<a href="/categories/{{ category | slugify }}"> {{ category }}</a>
+	{%- if not loop.last %}, {% endif %}
+{% endfor %}
+
+{# This sets the tags; the first line checks if they exist bc not all posts need them #}
+{% for tag in tags | filterTagList %}
+		{% if loop.first %}
+		<i class="fa-solid fa-tags"></i>
+		{% endif %}
+		<a href="/tags/{{ tag | slugify }}">{{ tag }}</a>
+		{%- if not loop.last %}, {% endif %}
+{% endfor %}
+</div>
 
 {{ content | safe }}
+
+<hr>
 
 {%- if collections.posts %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}

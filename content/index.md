@@ -2,7 +2,7 @@
 layout: layouts/home.njk
 ---
 
-![Chester Jankowski playing guitar on the dock at Fair Harbor, Fire Island, NY](/img/chester-jankowski-guitar-dock.jpg)
+<img eleventy:ignore src="/img/chester-jankowski-guitar-dock.jpg" />
 
 # About
 
