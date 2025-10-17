@@ -11,13 +11,14 @@
             "id": "7d21d4bddedbab2f",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "Untitled.base",
-                "viewName": "Table"
+                "file": "2006-06-25-new-york-hsh.md",
+                "mode": "preview",
+                "source": true
               },
-              "icon": "lucide-table",
-              "title": "Untitled"
+              "icon": "lucide-file",
+              "title": "2006-06-25-new-york-hsh"
             }
           }
         ]
@@ -78,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "503c9963e62a230f",
@@ -170,10 +170,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "7d21d4bddedbab2f",
+  "active": "692527fec3b23a13",
   "lastOpenFiles": [
-    "2005-02-24-les-paul-at-iridium.md",
     "Untitled.base",
+    "2005-02-24-les-paul-at-iridium.md",
     "2005-02-22-10-great-movies.md",
     "2005-02-19-gates-of-heck.md",
     "2004-12-02-composer-john-sherlock-declared-leader-andor-dreamer.md",
