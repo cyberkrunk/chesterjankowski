@@ -7,7 +7,7 @@ tags:
   - nyc
 ---
 
-NYC: Guinness, Jameson's, fish 'n chips, malt vinegar... _Before:_
+NYC: Guinness, Jameson’s, fish ’n chips, malt vinegar... _Before:_
 
 ![](images/tspb-17032005-2.jpg)
 

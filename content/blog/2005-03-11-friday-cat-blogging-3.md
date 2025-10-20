@@ -6,7 +6,6 @@ categories:
 tags: 
   - "cats"
 ---
-
 action-cat edition!
 
 Part the second... _Billie:_

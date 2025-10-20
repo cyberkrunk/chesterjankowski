@@ -38,13 +38,6 @@
 	
 		
 		<url>
-			<loc>https://www.chesterjankowski.com/blog/les-paul-at-iridium/</loc>
-			<lastmod>2005-02-24</lastmod>
-		</url>
-	
-	
-		
-		<url>
 			<loc>https://www.chesterjankowski.com/blog/ex-sedrick-fan-1/</loc>
 			<lastmod>2005-03-01</lastmod>
 		</url>
@@ -152,6 +145,13 @@
 		<url>
 			<loc>https://www.chesterjankowski.com/blog/another-sad-day-for-nyc/</loc>
 			<lastmod>2005-03-21</lastmod>
+		</url>
+	
+	
+		
+		<url>
+			<loc>https://www.chesterjankowski.com/blog/les-paul-at-iridium/</loc>
+			<lastmod>2005-03-22</lastmod>
 		</url>
 	
 	
@@ -1627,8 +1627,15 @@
 	
 		
 		<url>
-			<loc>https://www.chesterjankowski.com/feed/feed.xml</loc>
+			<loc>https://www.chesterjankowski.com/blog/null/</loc>
 			<lastmod>2025-10-17</lastmod>
+		</url>
+	
+	
+		
+		<url>
+			<loc>https://www.chesterjankowski.com/feed/feed.xml</loc>
+			<lastmod>2025-10-20</lastmod>
 		</url>
 	
 </urlset>

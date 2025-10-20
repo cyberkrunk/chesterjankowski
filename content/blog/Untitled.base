@@ -10,11 +10,7 @@ views:
       - date
       - categories
       - tags
-    sort:
-      - property: categories
-        direction: ASC
-      - property: date
-        direction: ASC
+    sort: []
     columnSize:
       file.name: 112
       note.title: 252

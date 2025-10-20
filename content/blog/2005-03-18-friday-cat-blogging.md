@@ -7,7 +7,7 @@ tags:
   - "cats"
 ---
 
-From the "brght,-bright-sunshiny-day" department:
+From the “brght,-bright-sunshiny-day” department:
 
 _Da thoid week._
 

@@ -1,10 +1,12 @@
 ---
 title: "Paris Blogging: Mardi"
 date: 2006-06-14
-categories: 
-  - "travel"
-tags: 
-  - "paris"
+categories:
+  - travel
+tags:
+  - paris
+  - food-blogging
+  - nyc
 ---
 
 Been on a fine dining jag for the past few weeks that has taken me to such New York gems as [The Firebird](http://www.firebirdrestaurant.com/), [Gotham Bar & Grill](http://www.gothambarandgrill.com/), and most notably, [Aureole](http://www.charliepalmer.com/aureole_ny/home.html) (not to mention [Shun Lee Palace](http://www.shunleepalace.com/newyork/), [Josephina](http://www.josephinanyc.com/samples/josephina/index.html) and ['Cesca](http://cescanyc.com/) -- overrated and overshadowed by our fine company that night, Mr & Ms [S.Fo](http://blog.cyberkrunk.com/article.pl?sid=05/08/12/0714245&mode=flat)). Aureole was, of course, the standout. The scallops with unagi were wonderful, with the sweetness of each playing off the other, contrasted with, I kid you not, slices of cooked pickle in between. The room is befitting the former residence of Orson Welles, one of the main reasons I always wanted to visit this lovely brownstone just a few blocks away from the Hacienda.

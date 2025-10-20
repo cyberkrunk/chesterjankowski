@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6144a35da62b7c22",
+        "id": "a64da48bcc6cfc7a",
         "type": "tabs",
         "children": [
           {
-            "id": "7d21d4bddedbab2f",
+            "id": "de4dc79f1ba50e5c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2006-06-25-new-york-hsh.md",
+                "file": "2006-06-15-paris-blogging-jeudi.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "2006-06-25-new-york-hsh"
+              "title": "2006-06-15-paris-blogging-jeudi"
             }
           }
         ]
@@ -74,12 +74,11 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 213.50152206420898
   },
   "right": {
     "id": "503c9963e62a230f",
@@ -170,19 +169,34 @@
       "bases:Create new base": false
     }
   },
-  "active": "692527fec3b23a13",
+  "active": "de4dc79f1ba50e5c",
   "lastOpenFiles": [
-    "Untitled.base",
-    "2005-02-24-les-paul-at-iridium.md",
-    "2005-02-22-10-great-movies.md",
-    "2005-02-19-gates-of-heck.md",
-    "2004-12-02-composer-john-sherlock-declared-leader-andor-dreamer.md",
-    "2004-12-01-george-tsontakis-wins-grawemeyer.md",
-    "2004-11-29-hello-world-2.md",
+    "2006-06-14-paris-blogging-mardi.md",
+    "2006-06-11-new-york-double-happiness.md",
+    "2006-06-25-new-york-hsh.md",
+    "2006-06-23-paris-blogging-victoire-a-vendredi.md",
+    "2006-06-22-roma-blogging-mercoledi-cena-or-trampin-in-trastavere.md",
+    "2006-06-22-roma-blogging-martedi-cena.md",
+    "2006-06-21-roma-blogging-mercoledi-pranzo.md",
+    "2005-04-06-firewire-audio-interfaces-such.md",
+    "2005-04-01-in-their-own-words.md",
+    "2005-03-25-friday-cat-blogging-4.md",
+    "2005-03-22-les-paul-at-iridium.md",
+    "2005-03-21-another-sad-day-for-nyc.md",
+    "2005-03-20-sunday-bobble-head-blogging.md",
+    "2005-03-18-new-york-thursday-st-paddys-blogging.md",
+    "2005-03-18-friday-cat-blogging.md",
+    "2005-03-18-cascading-style-sheets-some-web-design-evangelism.md",
+    "2005-03-14-last-call-at-the-oak-bar.md",
+    "2005-03-13-the-rice-filibuster.md",
+    "2005-03-13-covert-propaganda.md",
+    "2005-03-11-friday-cat-blogging-3.md",
+    "2005-03-08-remember-googlezon.md",
+    "2005-03-08-cbgb-mbgbb.md",
     "2005-03-06-new-york-the-plaza-closing-its-doors.md",
     "2005-03-04-friday-cat-blogging-2.md",
     "2005-03-02-there-and-back-again.md",
     "2005-03-02-sweety-das-kuken-and-other-weird-imemes.md",
-    "2005-03-01-ex-sedrick-fan-1.md"
+    "Untitled.base"
   ]
 }
