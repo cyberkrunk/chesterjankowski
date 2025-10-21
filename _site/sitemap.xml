@@ -668,28 +668,7 @@
 	
 		
 		<url>
-			<loc>https://www.chesterjankowski.com/blog/intermezzo/</loc>
-			<lastmod>2006-06-06</lastmod>
-		</url>
-	
-	
-		
-		<url>
-			<loc>https://www.chesterjankowski.com/blog/paris-blogging-vendredi-encore/</loc>
-			<lastmod>2006-06-06</lastmod>
-		</url>
-	
-	
-		
-		<url>
-			<loc>https://www.chesterjankowski.com/blog/roma-blogging-giovedi-ciao-roma/</loc>
-			<lastmod>2006-06-06</lastmod>
-		</url>
-	
-	
-		
-		<url>
-			<loc>https://www.chesterjankowski.com/blog/roma-blogging-martedi-pranza/</loc>
+			<loc>https://www.chesterjankowski.com/blog/roma-blogging-martedi-pranzo/</loc>
 			<lastmod>2006-06-06</lastmod>
 		</url>
 	
@@ -718,7 +697,21 @@
 		
 		<url>
 			<loc>https://www.chesterjankowski.com/blog/paris-blogging-mardi/</loc>
+			<lastmod>2006-06-13</lastmod>
+		</url>
+	
+	
+		
+		<url>
+			<loc>https://www.chesterjankowski.com/blog/paris-blogging-mercredi/</loc>
 			<lastmod>2006-06-14</lastmod>
+		</url>
+	
+	
+		
+		<url>
+			<loc>https://www.chesterjankowski.com/blog/paris-blogging-jeudi-part-deux/</loc>
+			<lastmod>2006-06-15</lastmod>
 		</url>
 	
 	
@@ -731,8 +724,8 @@
 	
 		
 		<url>
-			<loc>https://www.chesterjankowski.com/blog/paris-blogging-mercredi/</loc>
-			<lastmod>2006-06-15</lastmod>
+			<loc>https://www.chesterjankowski.com/blog/paris-blogging-vendredi/</loc>
+			<lastmod>2006-06-16</lastmod>
 		</url>
 	
 	
@@ -745,43 +738,43 @@
 	
 		
 		<url>
-			<loc>https://www.chesterjankowski.com/blog/paris-blogging-jeudi-part-deux/</loc>
-			<lastmod>2006-06-17</lastmod>
-		</url>
-	
-	
-		
-		<url>
-			<loc>https://www.chesterjankowski.com/blog/paris-blogging-vendredi/</loc>
-			<lastmod>2006-06-17</lastmod>
-		</url>
-	
-	
-		
-		<url>
 			<loc>https://www.chesterjankowski.com/blog/paris-blogging-samedi-marchons/</loc>
-			<lastmod>2006-06-18</lastmod>
-		</url>
-	
-	
-		
-		<url>
-			<loc>https://www.chesterjankowski.com/blog/roma-blogging-mercoledi-pranzo/</loc>
-			<lastmod>2006-06-21</lastmod>
+			<lastmod>2006-06-17</lastmod>
 		</url>
 	
 	
 		
 		<url>
 			<loc>https://www.chesterjankowski.com/blog/roma-blogging-martedi-cena/</loc>
+			<lastmod>2006-06-20</lastmod>
+		</url>
+	
+	
+		
+		<url>
+			<loc>https://www.chesterjankowski.com/blog/roma-blogging-mercoledi-1-pranzo/</loc>
+			<lastmod>2006-06-21</lastmod>
+		</url>
+	
+	
+		
+		<url>
+			<loc>https://www.chesterjankowski.com/blog/roma-blogging-mercoledi-2-cena-or-trampin-in-trastavere/</loc>
+			<lastmod>2006-06-21</lastmod>
+		</url>
+	
+	
+		
+		<url>
+			<loc>https://www.chesterjankowski.com/blog/roma-blogging-giovedi-ciao-roma/</loc>
 			<lastmod>2006-06-22</lastmod>
 		</url>
 	
 	
 		
 		<url>
-			<loc>https://www.chesterjankowski.com/blog/roma-blogging-mercoledi-cena-or-trampin-in-trastavere/</loc>
-			<lastmod>2006-06-22</lastmod>
+			<loc>https://www.chesterjankowski.com/blog/paris-blogging-vendredi-encore/</loc>
+			<lastmod>2006-06-23</lastmod>
 		</url>
 	
 	
@@ -789,6 +782,13 @@
 		<url>
 			<loc>https://www.chesterjankowski.com/blog/paris-blogging-victoire-a-vendredi/</loc>
 			<lastmod>2006-06-23</lastmod>
+		</url>
+	
+	
+		
+		<url>
+			<loc>https://www.chesterjankowski.com/blog/intermezzo/</loc>
+			<lastmod>2006-06-24</lastmod>
 		</url>
 	
 	
@@ -1628,7 +1628,7 @@
 		
 		<url>
 			<loc>https://www.chesterjankowski.com/feed/feed.xml</loc>
-			<lastmod>2025-10-20</lastmod>
+			<lastmod>2025-10-21</lastmod>
 		</url>
 	
 </urlset>

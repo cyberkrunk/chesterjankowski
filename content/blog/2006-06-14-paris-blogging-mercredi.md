@@ -1,10 +1,12 @@
 ---
 title: "Paris Blogging: Mercredi"
-date: 2006-06-15
-categories: 
-  - "travel"
-tags: 
-  - "paris"
+date: 2006-06-14
+categories:
+  - travel
+tags:
+  - paris
+  - food-blogging
+  - wine
 ---
 
 Drizzly day tramping around Montmartre, and the drizzle only adds to the effect. Were headed towards [Les Deux Moulins](http://travel2.nytimes.com/top/features/travel/destinations/europe/france/paris/restaurant_details.html?vid=1095238556070) for a Celluloid Pantry photo shoot (you'll just have to wait until next Tuesday to see what the movie is), but, as we still needed some lunch, postponed that. I might as well just come out and say that I sometimes struggle with the concept of lunch in Paris. In a French restaurant, you go from haute cuisine to "Croque Monsiuer sans jambon" (and get a "wtf?" look from the server) with little in between. Not being meat-eaters, 90% of bistrot food is off limits. So, Italian is always a good choice. Pizza Napoletana two days in a row? Well, like the Ramones, I can eat pizza every day. Especially when it's good, like at La Rughetta:

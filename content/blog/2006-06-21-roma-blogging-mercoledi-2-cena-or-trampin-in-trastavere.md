@@ -1,6 +1,6 @@
 ---
-title: 'Roma blogging: mercoledì—cena, or "Trampin-in-Trastavere"'
-date: 2006-06-22
+title: 'Roma blogging: mercoledì 2 cena, or "Trampin-in-Trastavere"'
+date: 2006-06-21
 categories:
   - travel
 tags:

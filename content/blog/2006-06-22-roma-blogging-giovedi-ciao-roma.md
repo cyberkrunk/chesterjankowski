@@ -1,11 +1,11 @@
 ---
-title: "Roma blogging: giovedi.	Ciao, Roma!"
-date: 2006-06-06
-categories: 
-  - "travel"
-tags: 
-  - "rome"
-  - "wine"
+title: "Roma blogging: giovedi.\tCiao, Roma!"
+date: 2006-06-22
+categories:
+  - travel
+tags:
+  - rome
+  - wine
 ---
 
 Again craving something simple and hearty, a pizza perhaps, we acted on a tip from the distinguished Romaphiles, PL & PM, and headed back to Piazza Navona to [Da Francesco](http://www.escapeartist.com/efam/66/Restaurants_In_Rome.html). No pizza at lunch (a conspiracy to not fire up the ovens during the day?), so spaghetti for both of us. Cacio e pepe for me, with tomatoes for her. The self-serve antipasti is plentiful and excellent. How's this: baked potato slices each topped with an anchovy and a dollop of marinara sauce? As I write, I'm thinking that I will never eat again. Except for those potatoes. The plonk we had along side was a gentle reminder that not every bottle can be a '97 Brunello.

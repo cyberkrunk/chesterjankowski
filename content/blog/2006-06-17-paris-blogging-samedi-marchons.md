@@ -1,10 +1,10 @@
 ---
-title: "Paris Blogging: Samedi -- Marchons!"
-date: 2006-06-18
-categories: 
-  - "travel"
-tags: 
-  - "paris"
+title: "Paris Blogging: Samedi Marchons!"
+date: 2006-06-17
+categories:
+  - travel
+tags:
+  - paris
 ---
 
 ![](images/beckett.jpg)Breakfast included the normal stuff, but also a couple of _fougasses_, something I'd never tried before. Fougasse is like a French version of focaccia, these two were folded over and stuffed, one with chevre and one with tuna and tomato sauce. R&K get theirs from their favourite boulangerie, which makes baguettes (see below, not the magic ones) throughout the day. They put even the Pain Quotidien baguettes to shame. Then we all headed out for a long trek, which began along the Rue de la Gaité, on which sex shops alternate with good Japanese restaurants. The sexy Parisiens don't seem to mind their sex shops at all. Most are in sleazier quartiers, but the Gaité is in the middle of a respectable, if fun, neighborhood. The death march continued appropriately with a diversion in the [Cimetière du Montparnasse](http://en.wikipedia.org/wiki/Cimeti%C3%A8re_du_Montparnasse). We stopped to visit a few of the more famous inhabitants, including [Serge Gainsbourg](http://en.wikipedia.org/wiki/Serge_Gainsbourg), and of course [Samuel Beckett](http://en.wikipedia.org/wiki/Samuel_Beckett). [MW](http://www.resolve40.com/) asked us to bring back two things from our trip, a stone from Paris and a stone from Rome. The Paris stone we decided on was sitting on Beckett's tomb. Hope he likes it.
