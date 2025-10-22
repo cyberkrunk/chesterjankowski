@@ -1,5 +1,5 @@
 ---
-title: Sweety Das Küken and other weird iMemes
+title: Sweety Das Kuken and other weird iMemes
 date: 2005-03-02
 categories:
   - etc
