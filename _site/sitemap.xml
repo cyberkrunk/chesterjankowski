@@ -1627,8 +1627,15 @@
 	
 		
 		<url>
-			<loc>https://www.chesterjankowski.com/feed/feed.xml</loc>
+			<loc>https://www.chesterjankowski.com/welcome-to-the-new-site/</loc>
 			<lastmod>2025-10-21</lastmod>
+		</url>
+	
+	
+		
+		<url>
+			<loc>https://www.chesterjankowski.com/feed/feed.xml</loc>
+			<lastmod>2025-10-22</lastmod>
 		</url>
 	
 </urlset>
