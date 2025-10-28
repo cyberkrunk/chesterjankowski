@@ -6,6 +6,14 @@ eleventyNavigation:
 ---
 # Music
 
+## New & Upcoming
+
+Violin Sonata, 2026
+For violin and piano, to be premiered at the [Blairsville Chamber Music Festival](https://www.blairsvillecmf.com/), summer 2026. (13 minutes.)
+
+pod-ette, 2023-25
+Theme and interstitial music for [*pod-ette*](https://ettereview.com/podette/), the podcast companion to literary magazine [-ette review](https://ettereview.com/). Six episodes to date.
+
 ## Orchestra
 
 ---
