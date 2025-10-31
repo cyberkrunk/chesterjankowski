@@ -8,7 +8,7 @@ tags:
   - "schiavo"
 ---
 
-Anyone tracking the Schiavo story for the past few weeks is doubtless aware of the now infamous "GOP Schiavo Talking Points memo" which was circulated by GOP leaders on the senate floor around March 18th, and subsequently leaked to and reported by the press in the next few days. Something of a footnote in the whole affair, the memo included rather crass language about the Schiavo case being "a great political issue, \[...\] a tough issue for the democrats." The memo also stated that "the pro-life base will be excited that the Senate is debating this important issue." >
+Anyone tracking the Schiavo story for the past few weeks is doubtless aware of the now infamous “GOP Schiavo Talking Points memo” which was circulated by GOP leaders on the senate floor around March 18th, and subsequently leaked to and reported by the press in the next few days. Something of a footnote in the whole affair, the memo included rather crass language about the Schiavo case being “a great political issue, \[...\] a tough issue for the democrats.” The memo also stated that “the pro-life base will be excited that the Senate is debating this important issue.” 
 
 The story took on a new life, however, when many right-wing pundits declared that the memo was a fake, that this was Rathergate part II, a dirty trick by the Democrats. The blogs, especially, were pounding this story with daily updates. The Powerline blog was a leader in this tirade, which is understandable since the blog's writers were very uncomfortable with what Bush & Co. were doing with the Schiavo case, and would rather focus everyone's attention elsewhere.
 
@@ -26,11 +26,11 @@ Yesterday, it was announced that the memo was authored by the senior counsel to 
 > 
 > This is a great political issue, because Senator Nelson of Florida has already refused to become a cosponsor and this is a tough issue for Democrats.
 > 
-> The bill is very limited and defines custody as "those parties authorized or directed by a court order to withdraw or withhold food, fluids, or medical treatment."
+> The bill is very limited and defines custody as “those parties authorized or directed by a court order to withdraw or withhold food, fluids, or medical treatment.”
 > 
-> There is an exemption for a proceeding "which no party disputes, and the court finds, that the incapacitated person while having capacity, had executed a written advance directive valid under applicably law that clearly authorized the withholding or or (sic) withdrawl (sic) of food and fluids or medical treatment in the applicable circumstances."
+> There is an exemption for a proceeding “which no party disputes, and the court finds, that the incapacitated person while having capacity, had executed a written advance directive valid under applicably law that clearly authorized the withholding or or (sic) withdrawl (sic) of food and fluids or medical treatment in the applicable circumstances.”
 > 
-> Incapacitated persons are defined as those "presently incapable of making relevant decisions concerning the provision, withholding or withdrawl (sic) of food fluids or medical treatment under applicable state law."
+> Incapacitated persons are defined as those “presently incapable of making relevant decisions concerning the provision, withholding or withdrawl (sic) of food fluids or medical treatment under applicable state law.”
 > 
 > This legislation ensures that individuals like Terri Schiavo are guaranteed the same legal protections as convicted murderers like Ted Bundy. S. 529, The Incapacitated Person's Legal Protection Act
 

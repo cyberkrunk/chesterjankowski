@@ -8,30 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "de4dc79f1ba50e5c",
+            "id": "dbe4f0a629aa5018",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2006-06-13-paris-blogging-mardi.md",
-                "mode": "source",
-                "source": false
+                "file": "2005-08-03-yo-brutha-hey-micky.md",
+                "mode": "preview",
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "2006-06-13-paris-blogging-mardi"
-            }
-          },
-          {
-            "id": "dbe4f0a629aa5018",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "Untitled.base",
-                "viewName": "Table"
-              },
-              "icon": "lucide-table",
-              "title": "Untitled"
+              "title": "2005-08-03-yo-brutha-hey-micky"
             }
           },
           {
@@ -44,8 +31,7 @@
               "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -195,31 +181,32 @@
   },
   "active": "dbe4f0a629aa5018",
   "lastOpenFiles": [
-    "2006-06-13-paris-blogging-mardi.md",
-    "Untitled.base",
-    "2006-06-21-roma-blogging-mercoledi-1-pranzo.md",
-    "2006-06-21-roma-blogging-mercoledi-2-cena-or-trampin-in-trastavere.md",
-    "2006-06-20-roma-blogging-martedi-cena.md",
-    "2006-06-06-roma-blogging-martedi-pranza.md",
-    "2006-06-22-roma-blogging-giovedi-ciao-roma.md",
-    "2006-06-17-paris-blogging-samedi-marchons.md",
-    "2006-06-24-intermezzo.md",
-    "2006-06-23-paris-blogging-vendredi-encore.md",
-    "2006-06-15-paris-blogging-jeudi-part-deux.md",
-    "2006-06-17-paris-blogging-bagatelle.md",
-    "2006-06-16-paris-blogging-vendredi.md",
-    "2006-06-15-paris-blogging-jeudi.md",
-    "2006-06-14-paris-blogging-mercredi.md",
-    "2025-04-18-so-long-onedrive.md",
-    "2005-02-22-10-great-movies.md",
-    "2005-02-19-gates-of-heck.md",
-    "2004-12-02-composer-john-sherlock-declared-leader-andor-dreamer.md",
-    "2004-12-01-george-tsontakis-wins-grawemeyer.md",
-    "2004-11-29-hello-world-2.md",
-    "2006-06-11-new-york-double-happiness.md",
-    "2006-06-25-new-york-hsh.md",
-    "2006-06-23-paris-blogging-victoire-a-vendredi.md",
+    "2005-08-03-our-first-poetry-submission.md",
+    "2005-07-31-lawrence-tierney-old-school-tough-guy.md",
+    "2005-07-29-the-long-awaited-return-of-friday-cat-blogging.md",
+    "2005-07-29-command-blogging.md",
+    "2005-06-19-whole-lotta-jankowskis.md",
+    "2005-05-21-proof-that-advertising-works.md",
+    "2005-05-19-movie-review-star-wars-episode-iii-revenge-of-the-sith.md",
+    "2005-05-05-things-that-go-boom-chuppa-chup-chup-chup-in-the-night.md",
+    "2005-05-05-breaking-news.md",
+    "2005-04-29-enron.md",
+    "2005-04-27-steve-martin-tax-attorney.md",
+    "2005-04-07-politcs-and-the-schiavo-story.md",
+    "2005-04-06-off-to-the-races.md",
     "2005-04-06-firewire-audio-interfaces-such.md",
-    "2005-04-01-in-their-own-words.md"
+    "2005-04-01-in-their-own-words.md",
+    "2005-03-25-friday-cat-blogging-4.md",
+    "2005-03-22-les-paul-at-iridium.md",
+    "2005-03-21-another-sad-day-for-nyc.md",
+    "2005-03-20-sunday-bobble-head-blogging.md",
+    "2005-03-18-new-york-thursday-st-paddys-blogging.md",
+    "2005-03-18-friday-cat-blogging.md",
+    "2005-03-18-cascading-style-sheets-some-web-design-evangelism.md",
+    "2005-03-14-last-call-at-the-oak-bar.md",
+    "2005-03-13-the-rice-filibuster.md",
+    "2005-03-13-covert-propaganda.md",
+    "2005-03-11-friday-cat-blogging-3.md",
+    "Untitled.base"
   ]
 }
