@@ -345,9 +345,49 @@ hr {
 .byline{
     font-size: smaller;
 	font-style: italic;
-
+}
 .fa-solid {
 	color: var(--color-gray-50);
+}
+
+/* Audio playlist */
+#audio-playlist {
+  width: 400px; 
+  border: lightgray 1px solid;
+  border-radius: 10px;
+ 
+}  
+#playlist-ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 20px;
+  color: gray;
+}
+.playlist-name{
+  margin-left: 10px;
+  font-size: larger;
+  font-style: italic;
+  font-weight: bold;
+}  
+#playlist-ul li:hover {
+  color: blue;
+}
+
+.now-playing {
+  font-weight: bold;
+  color: black;
+}
+#playlist-buttons {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+#audio-player {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 380px;  
+  border-radius: 10px;
 }
 /**
  * okaidia theme for JavaScript, CSS and HTML
@@ -569,11 +609,11 @@ pre[class*="language-diff-"] {
 
 <p>action-cat edition!</p>
 <p>Part the second... <em>Billie:</em></p>
-<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03112005-1.jpg&width=540&format=avif&via=transform 540w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03112005-1.jpg&width=540&format=webp&via=transform 540w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03112005-1.jpg&width=540&format=jpeg&via=transform" alt="" width="540" height="332"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/friday-cat-blogging-2/QCTOkcOQZ9-540.avif 540w"><source type="image/webp" srcset="/blog/friday-cat-blogging-2/QCTOkcOQZ9-540.webp 540w"><img loading="lazy" decoding="async" src="/blog/friday-cat-blogging-2/QCTOkcOQZ9-540.jpeg" alt="" width="540" height="332"></picture></p>
 <p><em>Zachary:</em></p>
-<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03112005-2.jpg&width=401&format=avif&via=transform 401w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03112005-2.jpg&width=401&format=webp&via=transform 401w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03112005-2.jpg&width=401&format=jpeg&via=transform" alt="" width="401" height="540"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/friday-cat-blogging-2/RJRZZ_PsH0-401.avif 401w"><source type="image/webp" srcset="/blog/friday-cat-blogging-2/RJRZZ_PsH0-401.webp 401w"><img loading="lazy" decoding="async" src="/blog/friday-cat-blogging-2/RJRZZ_PsH0-401.jpeg" alt="" width="401" height="540"></picture></p>
 <p><em>And now for the bonus round, Friday antique Noguchi Akari lamp blogging:</em></p>
-<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03112005-3.jpg&width=360&format=avif&via=transform 360w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03112005-3.jpg&width=360&format=webp&via=transform 360w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03112005-3.jpg&width=360&format=jpeg&via=transform" alt="" width="360" height="540"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/friday-cat-blogging-2/rskFNPCt55-360.avif 360w"><source type="image/webp" srcset="/blog/friday-cat-blogging-2/rskFNPCt55-360.webp 360w"><img loading="lazy" decoding="async" src="/blog/friday-cat-blogging-2/rskFNPCt55-360.jpeg" alt="" width="360" height="540"></picture></p>
 
 
 <hr>
@@ -590,7 +630,7 @@ pre[class*="language-diff-"] {
 			Built with <a href="https://www.11ty.dev/">Eleventy v4.0.0</a> • “Keep building for the web!” -- Zach Leatherman<br>
 		</footer>
 
-		<!-- This page `/blog/friday-cat-blogging-2/` was built on 2025-10-28T16:19:06.989Z -->
+		<!-- This page `/blog/friday-cat-blogging-2/` was built on 2025-10-31T19:16:23.210Z -->
 		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 	</body>
 </html>

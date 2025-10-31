@@ -345,9 +345,49 @@ hr {
 .byline{
     font-size: smaller;
 	font-style: italic;
-
+}
 .fa-solid {
 	color: var(--color-gray-50);
+}
+
+/* Audio playlist */
+#audio-playlist {
+  width: 400px; 
+  border: lightgray 1px solid;
+  border-radius: 10px;
+ 
+}  
+#playlist-ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 20px;
+  color: gray;
+}
+.playlist-name{
+  margin-left: 10px;
+  font-size: larger;
+  font-style: italic;
+  font-weight: bold;
+}  
+#playlist-ul li:hover {
+  color: blue;
+}
+
+.now-playing {
+  font-weight: bold;
+  color: black;
+}
+#playlist-buttons {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+#audio-player {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 380px;  
+  border-radius: 10px;
 }
 /**
  * okaidia theme for JavaScript, CSS and HTML
@@ -568,13 +608,13 @@ pre[class*="language-diff-"] {
 </div>
 
 <p>Here are the cat-stars on their latest shoot... <em>Billie is pretending not to notice that bud of catnip before her:</em></p>
-<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03252005-1.jpg&width=600&format=avif&via=transform 600w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03252005-1.jpg&width=600&format=webp&via=transform 600w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03252005-1.jpg&width=600&format=jpeg&via=transform" alt="" width="600" height="900"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/friday-cat-blogging-4/R6AZnq872G-600.avif 600w"><source type="image/webp" srcset="/blog/friday-cat-blogging-4/R6AZnq872G-600.webp 600w"><img loading="lazy" decoding="async" src="/blog/friday-cat-blogging-4/R6AZnq872G-600.jpeg" alt="" width="600" height="900"></picture></p>
 <p><em>Billie is not allowed on the dinner table, especially not when we're eating. So, what she does is very clever, she hides behind this vase. See if you can spot her!</em></p>
-<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03252005-2.jpg&width=900&format=avif&via=transform 900w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03252005-2.jpg&width=900&format=webp&via=transform 900w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03252005-2.jpg&width=900&format=jpeg&via=transform" alt="" width="900" height="600"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/friday-cat-blogging-4/JCkYdC1SH7-900.avif 900w"><source type="image/webp" srcset="/blog/friday-cat-blogging-4/JCkYdC1SH7-900.webp 900w"><img loading="lazy" decoding="async" src="/blog/friday-cat-blogging-4/JCkYdC1SH7-900.jpeg" alt="" width="900" height="600"></picture></p>
 <p><em>Zachary doing some hunting!</em></p>
-<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03252005-3.jpg&width=785&format=avif&via=transform 785w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03252005-3.jpg&width=785&format=webp&via=transform 785w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03252005-3.jpg&width=785&format=jpeg&via=transform" alt="" width="785" height="600"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/friday-cat-blogging-4/YSiIkLOYGI-785.avif 785w"><source type="image/webp" srcset="/blog/friday-cat-blogging-4/YSiIkLOYGI-785.webp 785w"><img loading="lazy" decoding="async" src="/blog/friday-cat-blogging-4/YSiIkLOYGI-785.jpeg" alt="" width="785" height="600"></picture></p>
 <p><em>&quot;Hey bub! Where's my release form?&quot; Zachary was a rescue from a house with 50 cats. Many of them are one-eyed pirate kitties like Zachary.</em></p>
-<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03252005-4.jpg&width=900&format=avif&via=transform 900w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03252005-4.jpg&width=900&format=webp&via=transform 900w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03252005-4.jpg&width=900&format=jpeg&via=transform" alt="" width="900" height="600"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/friday-cat-blogging-4/1oFbHqn-Ax-900.avif 900w"><source type="image/webp" srcset="/blog/friday-cat-blogging-4/1oFbHqn-Ax-900.webp 900w"><img loading="lazy" decoding="async" src="/blog/friday-cat-blogging-4/1oFbHqn-Ax-900.jpeg" alt="" width="900" height="600"></picture></p>
 
 
 <hr>
@@ -591,7 +631,7 @@ pre[class*="language-diff-"] {
 			Built with <a href="https://www.11ty.dev/">Eleventy v4.0.0</a> • “Keep building for the web!” -- Zach Leatherman<br>
 		</footer>
 
-		<!-- This page `/blog/friday-cat-blogging-4/` was built on 2025-10-28T16:19:06.990Z -->
+		<!-- This page `/blog/friday-cat-blogging-4/` was built on 2025-10-31T19:16:23.211Z -->
 		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 	</body>
 </html>

@@ -345,9 +345,49 @@ hr {
 .byline{
     font-size: smaller;
 	font-style: italic;
-
+}
 .fa-solid {
 	color: var(--color-gray-50);
+}
+
+/* Audio playlist */
+#audio-playlist {
+  width: 400px; 
+  border: lightgray 1px solid;
+  border-radius: 10px;
+ 
+}  
+#playlist-ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 20px;
+  color: gray;
+}
+.playlist-name{
+  margin-left: 10px;
+  font-size: larger;
+  font-style: italic;
+  font-weight: bold;
+}  
+#playlist-ul li:hover {
+  color: blue;
+}
+
+.now-playing {
+  font-weight: bold;
+  color: black;
+}
+#playlist-buttons {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+#audio-player {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 380px;  
+  border-radius: 10px;
 }
 /**
  * okaidia theme for JavaScript, CSS and HTML
@@ -588,13 +628,13 @@ pre[class*="language-diff-"] {
 <p>When looking across the four harmonizations, we see an interesting detail on the both the supertonic and dominant degrees: they each share the same tetrachord across the harmonizations. In all cases, the supertonic is a PPP, and the dominant is a PPA. In other words, the II-V quartal tetrachords are the same for Major, Melodic Minor, Harmonic Minor, and Harmonic Major.</p>
 <p>We mentioned the <a href="https://en.wikipedia.org/wiki/Viennese_trichord">Viennese trichord</a> in our last post. Any tetrachord that contains either PA or AP is a superset of the Viennese trichord. Our next most common tetrachord is PAP, which occurs three times in the harmonizations. Once can see PAP as an interlocked PA and AP, or an interlocked Viennese trichord. A Viennese tetrachord perhaps? This voicing also functions well as Maj7 11 chord.</p>
 <figure>
-<p><a href="https://www.chesterjankowski.com/quartal-tetrachords-harmonizations/"><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cquartal-tetrachords-harmonizations.png&width=755&format=avif&via=transform 755w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cquartal-tetrachords-harmonizations.png&width=755&format=webp&via=transform 755w"><source type="image/png" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cquartal-tetrachords-harmonizations.png&width=755&format=png&via=transform 755w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Cquartal-tetrachords-harmonizations.png&width=755&format=jpeg&via=transform" alt="Quartal tetrachords harmonized with the major, melodic minor, harmonic minor, harmonic major scales." width="755" height="438"></picture></a></p>
+<p><a href="https://www.chesterjankowski.com/quartal-tetrachords-harmonizations/"><picture><source type="image/avif" srcset="/blog/quartal-harmony-tetrachords/G716vOd6gU-755.avif 755w"><source type="image/webp" srcset="/blog/quartal-harmony-tetrachords/G716vOd6gU-755.webp 755w"><source type="image/png" srcset="/blog/quartal-harmony-tetrachords/G716vOd6gU-755.png 755w"><img loading="lazy" decoding="async" src="/blog/quartal-harmony-tetrachords/G716vOd6gU-755.jpeg" alt="Quartal tetrachords harmonized with the major, melodic minor, harmonic minor, harmonic major scales." width="755" height="438"></picture></a></p>
 <figcaption>
 <p>Figure 1. Major, Melodic Minor, Harmonic Minor, Harmonic Major scales harmonized with Quartal Tetrachords.</p>
 </figcaption>
 </figure>
 <figure>
-<p><a href="https://www.chesterjankowski.com/quartal-tetrachords-harmonization-statistics/"><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cquartal-tetrachords-harmonization-statistics.png&width=1890&format=avif&via=transform 1890w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cquartal-tetrachords-harmonization-statistics.png&width=1890&format=webp&via=transform 1890w"><source type="image/png" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cquartal-tetrachords-harmonization-statistics.png&width=1890&format=png&via=transform 1890w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Cquartal-tetrachords-harmonization-statistics.png&width=1890&format=jpeg&via=transform" alt="Quartal Trichords in scale harmonizations." width="1890" height="1150"></picture></a></p>
+<p><a href="https://www.chesterjankowski.com/quartal-tetrachords-harmonization-statistics/"><picture><source type="image/avif" srcset="/blog/quartal-harmony-tetrachords/HIOYj-vS7t-1890.avif 1890w"><source type="image/webp" srcset="/blog/quartal-harmony-tetrachords/HIOYj-vS7t-1890.webp 1890w"><img loading="lazy" decoding="async" src="/blog/quartal-harmony-tetrachords/HIOYj-vS7t-1890.png" alt="Quartal Trichords in scale harmonizations." width="1890" height="1150"></picture></a></p>
 <figcaption>
 <p>Firgure 2. How many times does each tetrachord appear in the four scale harmonizations?</p>
 </figcaption>
@@ -621,7 +661,7 @@ pre[class*="language-diff-"] {
 			Built with <a href="https://www.11ty.dev/">Eleventy v4.0.0</a> • “Keep building for the web!” -- Zach Leatherman<br>
 		</footer>
 
-		<!-- This page `/blog/quartal-harmony-tetrachords/` was built on 2025-10-28T16:19:07.000Z -->
+		<!-- This page `/blog/quartal-harmony-tetrachords/` was built on 2025-10-31T19:16:23.225Z -->
 		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 	</body>
 </html>

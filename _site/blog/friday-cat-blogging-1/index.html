@@ -345,9 +345,49 @@ hr {
 .byline{
     font-size: smaller;
 	font-style: italic;
-
+}
 .fa-solid {
 	color: var(--color-gray-50);
+}
+
+/* Audio playlist */
+#audio-playlist {
+  width: 400px; 
+  border: lightgray 1px solid;
+  border-radius: 10px;
+ 
+}  
+#playlist-ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 20px;
+  color: gray;
+}
+.playlist-name{
+  margin-left: 10px;
+  font-size: larger;
+  font-style: italic;
+  font-weight: bold;
+}  
+#playlist-ul li:hover {
+  color: blue;
+}
+
+.now-playing {
+  font-weight: bold;
+  color: black;
+}
+#playlist-buttons {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+#audio-player {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 380px;  
+  border-radius: 10px;
 }
 /**
  * okaidia theme for JavaScript, CSS and HTML
@@ -568,11 +608,11 @@ pre[class*="language-diff-"] {
 </div>
 
 <p><em>Here’s the first installment...</em> <em>Billie:</em></p>
-<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03042005-1.jpg&width=900&format=avif&via=transform 900w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03042005-1.jpg&width=900&format=webp&via=transform 900w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03042005-1.jpg&width=900&format=jpeg&via=transform" alt="" width="900" height="600"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/friday-cat-blogging-1/tGCxFPCNwc-900.avif 900w"><source type="image/webp" srcset="/blog/friday-cat-blogging-1/tGCxFPCNwc-900.webp 900w"><img loading="lazy" decoding="async" src="/blog/friday-cat-blogging-1/tGCxFPCNwc-900.jpeg" alt="" width="900" height="600"></picture></p>
 <p><em>Zachary:</em></p>
-<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03042005-2.jpg&width=870&format=avif&via=transform 870w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03042005-2.jpg&width=870&format=webp&via=transform 870w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03042005-2.jpg&width=870&format=jpeg&via=transform" alt="" width="870" height="900"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/friday-cat-blogging-1/W5hKe0UJ3r-870.avif 870w"><source type="image/webp" srcset="/blog/friday-cat-blogging-1/W5hKe0UJ3r-870.webp 870w"><img loading="lazy" decoding="async" src="/blog/friday-cat-blogging-1/W5hKe0UJ3r-870.jpeg" alt="" width="870" height="900"></picture></p>
 <p><em>And now for the bonus round, Friday Vancouver Sea Otter Blogging! (Props to Prof M. for this shot.)</em></p>
-<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03042005-3.jpg&width=750&format=avif&via=transform 750w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03042005-3.jpg&width=750&format=webp&via=transform 750w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-03042005-3.jpg&width=750&format=jpeg&via=transform" alt="" width="750" height="611"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/friday-cat-blogging-1/qQ9W7OLXbi-750.avif 750w"><source type="image/webp" srcset="/blog/friday-cat-blogging-1/qQ9W7OLXbi-750.webp 750w"><img loading="lazy" decoding="async" src="/blog/friday-cat-blogging-1/qQ9W7OLXbi-750.jpeg" alt="" width="750" height="611"></picture></p>
 
 
 <hr>
@@ -589,7 +629,7 @@ pre[class*="language-diff-"] {
 			Built with <a href="https://www.11ty.dev/">Eleventy v4.0.0</a> • “Keep building for the web!” -- Zach Leatherman<br>
 		</footer>
 
-		<!-- This page `/blog/friday-cat-blogging-1/` was built on 2025-10-28T16:19:06.989Z -->
+		<!-- This page `/blog/friday-cat-blogging-1/` was built on 2025-10-31T19:16:23.210Z -->
 		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 	</body>
 </html>

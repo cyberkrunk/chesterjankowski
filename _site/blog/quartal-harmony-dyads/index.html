@@ -345,9 +345,49 @@ hr {
 .byline{
     font-size: smaller;
 	font-style: italic;
-
+}
 .fa-solid {
 	color: var(--color-gray-50);
+}
+
+/* Audio playlist */
+#audio-playlist {
+  width: 400px; 
+  border: lightgray 1px solid;
+  border-radius: 10px;
+ 
+}  
+#playlist-ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 20px;
+  color: gray;
+}
+.playlist-name{
+  margin-left: 10px;
+  font-size: larger;
+  font-style: italic;
+  font-weight: bold;
+}  
+#playlist-ul li:hover {
+  color: blue;
+}
+
+.now-playing {
+  font-weight: bold;
+  color: black;
+}
+#playlist-buttons {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+#audio-player {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 380px;  
+  border-radius: 10px;
 }
 /**
  * okaidia theme for JavaScript, CSS and HTML
@@ -583,14 +623,14 @@ pre[class*="language-diff-"] {
 <p>My ultimate goal will be to incorporate this material into my jazz comping and soloing. But I am going to start out with a high-level survey of the territory. To do this, I'll look at quartal chords of various size, dyads, trichords, tetrachords, pentachords. For each size of chord, I'll look at all of the different quartal chord types, that is, all of the different combinations of the interval of a fourth. I'll also look at where these different types of chord appear in harmonizations of four different scale types: Major, Melodic Minor, Harmonic Minor, and Harmonic Major. (These four scales correspond to the twenty-eight different modes I made reference to in my previous post.)</p>
 <p>Let's start with dyads. There are three different qualities of fourth that I will look at: Perfect Fourth, Augmented Fourth, and Diminished Fourth. Since we are only dealing with fourths, I'll use a simple label and just call them P, A, and D. The first figure below shows where each of these three different dyads occur in harmonizations of our four different scale types.</p>
 <figure>
-<p><a href="https://www.chesterjankowski.com/quartal-dyads-harmonization/"><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cquartal-dyads-harmonization.png&width=770&format=avif&via=transform 770w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cquartal-dyads-harmonization.png&width=770&format=webp&via=transform 770w"><source type="image/png" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cquartal-dyads-harmonization.png&width=770&format=png&via=transform 770w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Cquartal-dyads-harmonization.png&width=770&format=jpeg&via=transform" alt="Quartal dyads harmonized with the major, melodic minor, harmonic minor, harmonic major scales." width="770" height="433"></picture></a></p>
+<p><a href="https://www.chesterjankowski.com/quartal-dyads-harmonization/"><picture><source type="image/avif" srcset="/blog/quartal-harmony-dyads/sbTP46on6B-770.avif 770w"><source type="image/webp" srcset="/blog/quartal-harmony-dyads/sbTP46on6B-770.webp 770w"><source type="image/png" srcset="/blog/quartal-harmony-dyads/sbTP46on6B-770.png 770w"><img loading="lazy" decoding="async" src="/blog/quartal-harmony-dyads/sbTP46on6B-770.jpeg" alt="Quartal dyads harmonized with the major, melodic minor, harmonic minor, harmonic major scales." width="770" height="433"></picture></a></p>
 <figcaption>
 <p>Figure 1. Major, Melodic Minor, Harmonic Minor, Harmonic Major scales harmonized with Quartal Dyads.</p>
 </figcaption>
 </figure>
 <p>The next figure contains some statistics about how often each dyad type occurs in the different harmonizations.</p>
 <figure>
-<p><a href="https://www.chesterjankowski.com/quartal-dyads-harmonization-statistics/"><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cquartal-dyads-harmonization-statistics.png&width=1277&format=avif&via=transform 1277w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cquartal-dyads-harmonization-statistics.png&width=1277&format=webp&via=transform 1277w"><source type="image/png" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cquartal-dyads-harmonization-statistics.png&width=1277&format=png&via=transform 1277w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Cquartal-dyads-harmonization-statistics.png&width=1277&format=jpeg&via=transform" alt="Quartal Dyads in scale harmonizations." width="1277" height="232"></picture></a></p>
+<p><a href="https://www.chesterjankowski.com/quartal-dyads-harmonization-statistics/"><picture><source type="image/avif" srcset="/blog/quartal-harmony-dyads/PDlBToEfqM-1277.avif 1277w"><source type="image/webp" srcset="/blog/quartal-harmony-dyads/PDlBToEfqM-1277.webp 1277w"><img loading="lazy" decoding="async" src="/blog/quartal-harmony-dyads/PDlBToEfqM-1277.png" alt="Quartal Dyads in scale harmonizations." width="1277" height="232"></picture></a></p>
 <figcaption>
 <p>Firgure 2. How many times does each dyad appear in the four scale harmonizations?</p>
 </figcaption>
@@ -613,7 +653,7 @@ pre[class*="language-diff-"] {
 			Built with <a href="https://www.11ty.dev/">Eleventy v4.0.0</a> • “Keep building for the web!” -- Zach Leatherman<br>
 		</footer>
 
-		<!-- This page `/blog/quartal-harmony-dyads/` was built on 2025-10-28T16:19:06.999Z -->
+		<!-- This page `/blog/quartal-harmony-dyads/` was built on 2025-10-31T19:16:23.224Z -->
 		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 	</body>
 </html>

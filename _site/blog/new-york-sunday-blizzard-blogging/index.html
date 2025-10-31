@@ -345,9 +345,49 @@ hr {
 .byline{
     font-size: smaller;
 	font-style: italic;
-
+}
 .fa-solid {
 	color: var(--color-gray-50);
+}
+
+/* Audio playlist */
+#audio-playlist {
+  width: 400px; 
+  border: lightgray 1px solid;
+  border-radius: 10px;
+ 
+}  
+#playlist-ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 20px;
+  color: gray;
+}
+.playlist-name{
+  margin-left: 10px;
+  font-size: larger;
+  font-style: italic;
+  font-weight: bold;
+}  
+#playlist-ul li:hover {
+  color: blue;
+}
+
+.now-playing {
+  font-weight: bold;
+  color: black;
+}
+#playlist-buttons {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+#audio-player {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 380px;  
+  border-radius: 10px;
 }
 /**
  * okaidia theme for JavaScript, CSS and HTML
@@ -577,13 +617,13 @@ pre[class*="language-diff-"] {
 <p>Thou still unshovelled street of sloshiness, Thou icey-slide of violence and snow crime...</p>
 </blockquote>
 <p><em>The view from the front yard.</em></p>
-<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-02122006-1.jpg&width=500&format=avif&via=transform 500w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-02122006-1.jpg&width=500&format=webp&via=transform 500w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-02122006-1.jpg&width=500&format=jpeg&via=transform" alt="" width="500" height="333"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/new-york-sunday-blizzard-blogging/YTpALahcSb-500.avif 500w"><source type="image/webp" srcset="/blog/new-york-sunday-blizzard-blogging/YTpALahcSb-500.webp 500w"><img loading="lazy" decoding="async" src="/blog/new-york-sunday-blizzard-blogging/YTpALahcSb-500.jpeg" alt="" width="500" height="333"></picture></p>
 <p><em>There's a car in there somewhere...</em></p>
-<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-02122006-2.jpg&width=500&format=avif&via=transform 500w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-02122006-2.jpg&width=500&format=webp&via=transform 500w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-02122006-2.jpg&width=500&format=jpeg&via=transform" alt="" width="500" height="333"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/new-york-sunday-blizzard-blogging/OLQopk95sr-500.avif 500w"><source type="image/webp" srcset="/blog/new-york-sunday-blizzard-blogging/OLQopk95sr-500.webp 500w"><img loading="lazy" decoding="async" src="/blog/new-york-sunday-blizzard-blogging/OLQopk95sr-500.jpeg" alt="" width="500" height="333"></picture></p>
 <p><em>Union Square classic snow globe scene (just missing the Statue of Liberty).</em></p>
-<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-02122006-3.jpg&width=500&format=avif&via=transform 500w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-02122006-3.jpg&width=500&format=webp&via=transform 500w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-02122006-3.jpg&width=500&format=jpeg&via=transform" alt="" width="500" height="333"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/new-york-sunday-blizzard-blogging/JoS8ySG08_-500.avif 500w"><source type="image/webp" srcset="/blog/new-york-sunday-blizzard-blogging/JoS8ySG08_-500.webp 500w"><img loading="lazy" decoding="async" src="/blog/new-york-sunday-blizzard-blogging/JoS8ySG08_-500.jpeg" alt="" width="500" height="333"></picture></p>
 <p><em>Back on the East side and the sidewalks have been plowed.</em></p>
-<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-02122006-4.jpg&width=500&format=avif&via=transform 500w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-02122006-4.jpg&width=500&format=webp&via=transform 500w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Cfcb-02122006-4.jpg&width=500&format=jpeg&via=transform" alt="" width="500" height="333"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/new-york-sunday-blizzard-blogging/ASSv8ueN-H-500.avif 500w"><source type="image/webp" srcset="/blog/new-york-sunday-blizzard-blogging/ASSv8ueN-H-500.webp 500w"><img loading="lazy" decoding="async" src="/blog/new-york-sunday-blizzard-blogging/ASSv8ueN-H-500.jpeg" alt="" width="500" height="333"></picture></p>
 
 
 <hr>
@@ -600,7 +640,7 @@ pre[class*="language-diff-"] {
 			Built with <a href="https://www.11ty.dev/">Eleventy v4.0.0</a> • “Keep building for the web!” -- Zach Leatherman<br>
 		</footer>
 
-		<!-- This page `/blog/new-york-sunday-blizzard-blogging/` was built on 2025-10-28T16:19:06.992Z -->
+		<!-- This page `/blog/new-york-sunday-blizzard-blogging/` was built on 2025-10-31T19:16:23.216Z -->
 		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 	</body>
 </html>

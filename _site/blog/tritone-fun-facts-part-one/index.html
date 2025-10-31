@@ -345,9 +345,49 @@ hr {
 .byline{
     font-size: smaller;
 	font-style: italic;
-
+}
 .fa-solid {
 	color: var(--color-gray-50);
+}
+
+/* Audio playlist */
+#audio-playlist {
+  width: 400px; 
+  border: lightgray 1px solid;
+  border-radius: 10px;
+ 
+}  
+#playlist-ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 20px;
+  color: gray;
+}
+.playlist-name{
+  margin-left: 10px;
+  font-size: larger;
+  font-style: italic;
+  font-weight: bold;
+}  
+#playlist-ul li:hover {
+  color: blue;
+}
+
+.now-playing {
+  font-weight: bold;
+  color: black;
+}
+#playlist-buttons {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+#audio-player {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 380px;  
+  border-radius: 10px;
 }
 /**
  * okaidia theme for JavaScript, CSS and HTML
@@ -569,7 +609,7 @@ pre[class*="language-diff-"] {
 
 <p>This post kicks off a miniseries on tritones. I’ll use the terms tritone and diminished 5th somewhat interchangeably. This post covers some basics, the next one will explore an idea about key signatures, then I’ll look at diminished 7th chords.</p>
 <figure>
-<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cnat-fifth.png&width=988&format=avif&via=transform 988w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cnat-fifth.png&width=988&format=webp&via=transform 988w"><source type="image/png" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cnat-fifth.png&width=988&format=png&via=transform 988w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Cnat-fifth.png&width=988&format=jpeg&via=transform" alt="Natural Fifths" width="988" height="112"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/tritone-fun-facts-part-one/WKkeMBF0xL-988.avif 988w"><source type="image/webp" srcset="/blog/tritone-fun-facts-part-one/WKkeMBF0xL-988.webp 988w"><img loading="lazy" decoding="async" src="/blog/tritone-fun-facts-part-one/WKkeMBF0xL-988.png" alt="Natural Fifths" width="988" height="112"></picture></p>
 <figcaption>
 <p>The seven natural 5ths</p>
 </figcaption>
@@ -582,13 +622,13 @@ pre[class*="language-diff-"] {
 </ul>
 <p>OK, let’s look at each of these natural perfect 5ths. There are two ways we can turn a perfect 5th into a diminished 5th. We can raise the bottom note with a sharp. Or we can lower the top note with a flat.</p>
 <figure>
-<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Csharp-tritones.png&width=900&format=avif&via=transform 900w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Csharp-tritones.png&width=900&format=webp&via=transform 900w"><source type="image/png" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Csharp-tritones.png&width=900&format=png&via=transform 900w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Csharp-tritones.png&width=900&format=jpeg&via=transform" alt="Sharp Tritones" width="900" height="115"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/tritone-fun-facts-part-one/wphYK4JUQY-900.avif 900w"><source type="image/webp" srcset="/blog/tritone-fun-facts-part-one/wphYK4JUQY-900.webp 900w"><img loading="lazy" decoding="async" src="/blog/tritone-fun-facts-part-one/wphYK4JUQY-900.png" alt="Sharp Tritones" width="900" height="115"></picture></p>
 <figcaption>
 <p>The six &quot;sharp&quot; tritones</p>
 </figcaption>
 </figure>
 <figure>
-<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cflat-tritones.png&width=905&format=avif&via=transform 905w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cflat-tritones.png&width=905&format=webp&via=transform 905w"><source type="image/png" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cflat-tritones.png&width=905&format=png&via=transform 905w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Cflat-tritones.png&width=905&format=jpeg&via=transform" alt="Flat Tritones" width="905" height="106"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/tritone-fun-facts-part-one/oQMmwI0Jpe-905.avif 905w"><source type="image/webp" srcset="/blog/tritone-fun-facts-part-one/oQMmwI0Jpe-905.webp 905w"><img loading="lazy" decoding="async" src="/blog/tritone-fun-facts-part-one/oQMmwI0Jpe-905.png" alt="Flat Tritones" width="905" height="106"></picture></p>
 <figcaption>
 <p>The six &quot;flat&quot; tritones</p>
 </figcaption>
@@ -608,7 +648,7 @@ pre[class*="language-diff-"] {
 <li>FF9 The tritone with no sharps or flats, B-F, has an enharmonic equivalent with one sharp, and another equivalent with one flat</li>
 </ul>
 <figure>
-<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cenharmonics-boxes.png&width=1227&format=avif&via=transform 1227w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cenharmonics-boxes.png&width=1227&format=webp&via=transform 1227w"><source type="image/png" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cenharmonics-boxes.png&width=1227&format=png&via=transform 1227w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Cenharmonics-boxes.png&width=1227&format=jpeg&via=transform" alt="Enharmonically-related Tritones" width="1227" height="364"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/tritone-fun-facts-part-one/UzAH69hShd-1227.avif 1227w"><source type="image/webp" srcset="/blog/tritone-fun-facts-part-one/UzAH69hShd-1227.webp 1227w"><img loading="lazy" decoding="async" src="/blog/tritone-fun-facts-part-one/UzAH69hShd-1227.png" alt="Enharmonically-related Tritones" width="1227" height="364"></picture></p>
 <figcaption>
 <p>All six <em>enharmonically-related tritones</em></p>
 </figcaption>
@@ -643,7 +683,7 @@ pre[class*="language-diff-"] {
 			Built with <a href="https://www.11ty.dev/">Eleventy v4.0.0</a> • “Keep building for the web!” -- Zach Leatherman<br>
 		</footer>
 
-		<!-- This page `/blog/tritone-fun-facts-part-one/` was built on 2025-10-28T16:19:07.000Z -->
+		<!-- This page `/blog/tritone-fun-facts-part-one/` was built on 2025-10-31T19:16:23.225Z -->
 		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 	</body>
 </html>

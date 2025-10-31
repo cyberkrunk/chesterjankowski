@@ -345,9 +345,49 @@ hr {
 .byline{
     font-size: smaller;
 	font-style: italic;
-
+}
 .fa-solid {
 	color: var(--color-gray-50);
+}
+
+/* Audio playlist */
+#audio-playlist {
+  width: 400px; 
+  border: lightgray 1px solid;
+  border-radius: 10px;
+ 
+}  
+#playlist-ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 20px;
+  color: gray;
+}
+.playlist-name{
+  margin-left: 10px;
+  font-size: larger;
+  font-style: italic;
+  font-weight: bold;
+}  
+#playlist-ul li:hover {
+  color: blue;
+}
+
+.now-playing {
+  font-weight: bold;
+  color: black;
+}
+#playlist-buttons {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+#audio-player {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 380px;  
+  border-radius: 10px;
 }
 /**
  * okaidia theme for JavaScript, CSS and HTML
@@ -562,7 +602,7 @@ pre[class*="language-diff-"] {
 
 </div>
 
-<p><a href="https://s3.amazonaws.com/cyberkrunk.com/images/articles/graph-large.JPG"><picture><source type="image/avif" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cgraph-small.JPG&width=454&format=avif&via=transform 454w"><source type="image/webp" srcset="/.11ty/image/?src=content%5Cblog%5Cimages%5Cgraph-small.JPG&width=454&format=webp&via=transform 454w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%5Cblog%5Cimages%5Cgraph-small.JPG&width=454&format=jpeg&via=transform" alt="" width="454" height="311"></picture></a> The graph above (click to embiggen) charts the varying popularity levels of three names chosen at random, since 1880. There's also a popular 4th name thrown in as a control. Care to guess what it is?</p>
+<p><a href="https://s3.amazonaws.com/cyberkrunk.com/images/articles/graph-large.JPG"><picture><source type="image/avif" srcset="/blog/its-all-a-popularity-contest/KT_U-gV4lH-454.avif 454w"><source type="image/webp" srcset="/blog/its-all-a-popularity-contest/KT_U-gV4lH-454.webp 454w"><img loading="lazy" decoding="async" src="/blog/its-all-a-popularity-contest/KT_U-gV4lH-454.jpeg" alt="" width="454" height="311"></picture></a> The graph above (click to embiggen) charts the varying popularity levels of three names chosen at random, since 1880. There's also a popular 4th name thrown in as a control. Care to guess what it is?</p>
 <p>You can have more fun <a href="http://www.ssa.gov/OACT/babynames/">here</a>.</p>
 <p>And, if you want to be completely freaked out, go <a href="http://www.ssa.gov/OACT/babynames/decades/names1970s.html">here</a> and look at #388. Spooky!</p>
 
@@ -581,7 +621,7 @@ pre[class*="language-diff-"] {
 			Built with <a href="https://www.11ty.dev/">Eleventy v4.0.0</a> • “Keep building for the web!” -- Zach Leatherman<br>
 		</footer>
 
-		<!-- This page `/blog/its-all-a-popularity-contest/` was built on 2025-10-28T16:19:06.994Z -->
+		<!-- This page `/blog/its-all-a-popularity-contest/` was built on 2025-10-31T19:16:23.218Z -->
 		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 	</body>
 </html>
