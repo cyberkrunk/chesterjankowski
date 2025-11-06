@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2005-08-03-yo-brutha-hey-micky.md",
-                "mode": "preview",
-                "source": true
+                "file": "2025-11-06-nobuyuki-tsujii-at-carnegie-hall.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "2005-08-03-yo-brutha-hey-micky"
+              "title": "2025-11-06-nobuyuki-tsujii-at-carnegie-hall"
             }
           },
           {
@@ -88,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 213.50152206420898
+    "width": 489.501522064209,
+    "collapsed": true
   },
   "right": {
     "id": "503c9963e62a230f",
@@ -181,6 +182,11 @@
   },
   "active": "dbe4f0a629aa5018",
   "lastOpenFiles": [
+    "images/nobuyuki-tsujii-program.jpg",
+    "2025-11-06-nobuyuki-tsujii-at-carnegie-hall.md",
+    "2004-11-29-hello-world-2.md",
+    "2025-04-18-so-long-onedrive.md",
+    "2005-08-03-yo-brutha-hey-micky.md",
     "2005-08-03-our-first-poetry-submission.md",
     "2005-07-31-lawrence-tierney-old-school-tough-guy.md",
     "2005-07-29-the-long-awaited-return-of-friday-cat-blogging.md",
@@ -202,11 +208,6 @@
     "2005-03-20-sunday-bobble-head-blogging.md",
     "2005-03-18-new-york-thursday-st-paddys-blogging.md",
     "2005-03-18-friday-cat-blogging.md",
-    "2005-03-18-cascading-style-sheets-some-web-design-evangelism.md",
-    "2005-03-14-last-call-at-the-oak-bar.md",
-    "2005-03-13-the-rice-filibuster.md",
-    "2005-03-13-covert-propaganda.md",
-    "2005-03-11-friday-cat-blogging-3.md",
     "Untitled.base"
   ]
 }
