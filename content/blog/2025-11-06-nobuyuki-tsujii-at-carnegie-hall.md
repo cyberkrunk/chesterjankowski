@@ -7,6 +7,7 @@ tags:
   - reviews
   - beethoven
   - piano
+description: A review of pianist Nobuyuki Tsujii at Carnegie Hall.
 ---
 A friend who was under the weather gifted us a pair of tickets to see [Nobuyuki Tsujii](https://en.wikipedia.org/wiki/Nobuyuki_Tsujii) at Carnegie Hall last night. We were unfamiliar with the Japanese pianist, although he had played a sold-out show at Carnegie Hall last March. He was the winner of the Van Cliburn Competition in 2009, and has been blind since birth. Tonight’s show was not sold out, but it was evident that there were many ‘Nobu’ superfans in the audience.
 
