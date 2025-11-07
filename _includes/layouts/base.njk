@@ -7,6 +7,10 @@
 		<meta name="description" content="{{ description or metadata.description }}">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 		<meta name="generator" content="{{ eleventy.generator }}">
+		<meta property="og:title" content="{{ title }}">
+    	<meta property="og:type" content="{{ ogType or 'website' }}">
+    	<meta property="og:url" content="https://chesterjankowski.com{{ page.url }}">
+    	<meta property="og:image" content="https://chesterjankowski.com/img/og-chester-dock.jpg">
 
 		{#-
 		Plain-text bundles are provided via the `eleventy-plugin-bundle` plugin:
