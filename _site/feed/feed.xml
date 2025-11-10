@@ -5,9 +5,350 @@
   <subtitle>This is a longer description about your blog.</subtitle>
   <link href="https://example.com/feed/feed.xml" rel="self" />
   <link href="https://example.com/" />
-  <updated>2025-11-10T17:05:23Z</updated>
+  <updated>2025-11-06T00:00:00Z</updated>
   <id>https://example.com/</id>
   <author>
     <name>Your Name</name>
   </author>
+  <entry>
+    <title>Nobuyuki Tsujii at Carnegie Hall</title>
+    <link href="https://example.com/blog/nobuyuki-tsujii-at-carnegie-hall/" />
+    <updated>2025-11-06T00:00:00Z</updated>
+    <id>https://example.com/blog/nobuyuki-tsujii-at-carnegie-hall/</id>
+    <content type="html">&lt;p&gt;A friend who was under the weather gifted us a pair of tickets to see &lt;a href=&quot;https://en.wikipedia.org/wiki/Nobuyuki_Tsujii&quot;&gt;Nobuyuki Tsujii&lt;/a&gt; at Carnegie Hall last night. We were unfamiliar with the Japanese pianist, although he had played a sold-out show at Carnegie Hall last March. He was the winner of the Van Cliburn Competition in 2009, and has been blind since birth. Tonight’s show was not sold out, but it was evident that there were many ‘Nobu’ superfans in the audience.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/nobuyuki-tsujii-at-carnegie-hall/BFWrGfciyK-1000.avif 1000w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/nobuyuki-tsujii-at-carnegie-hall/BFWrGfciyK-1000.webp 1000w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/nobuyuki-tsujii-at-carnegie-hall/BFWrGfciyK-1000.jpeg&quot; alt=&quot;&quot; width=&quot;1000&quot; height=&quot;750&quot;&gt;&lt;/picture&gt;
+Tsujii opened with Franz Liszt’s transcription for piano solo of Beethoven’s only song cycle, &lt;em&gt;An die ferne Geliebte&lt;/em&gt;, op. 98. Liszt wrote over 400 piano transcriptions, some of which expound upon, and take liberties with the original music, and some of which are more ‘strict’—this one falls under the latter category. And because of this, we have and interesting combination: late period Beethoven, but (for the period) comparatively simple, tender, and nostalgic music. A pleasant way to open the evening.&lt;/p&gt;
+&lt;p&gt;The centerpiece of the first half was Beethoven’s Appassionata, which Tsujii played forcefully. I was a little taken aback in the first movement, when the pianist let the left hand overpower the right hand melody in the second theme group, in ab minor (the parallel minor of the relative major!), which is otherwise a favorite little tune in this work. I think that was maybe my only quibble in the entire concert. (I did have a quibble with the guy sitting across the aisle from me letting his phone go off right at the end of the first movement of the Appassionata, but that’s another story.)&lt;/p&gt;
+&lt;p&gt;Whenever Tsujii sits down to play a piece, the first thing he does is reach out with both hands to feel the keys and calibrate his position. After that, his playing is not much different from any other player at his level. Nora and I both note at the time that there is something beautiful and moving about a blind musician playing the work of a deaf composer.&lt;/p&gt;
+&lt;p&gt;After the intermission, another transcription, this time &lt;a href=&quot;https://en.wikipedia.org/wiki/Mikhail_Pletnev&quot;&gt;Mikhail Pletnev&lt;/a&gt;’s take on &lt;em&gt;The Nutcracker Suite&lt;/em&gt;. A delightful crowd pleaser, moving some in the audience to take surreptitious videos.&lt;/p&gt;
+&lt;p&gt;I was unfamiliar with Prokofiev’s 7th piano sonata, and I’m not generally a huge fan of Soviet-era music, but I was quite struck with the third movement of this piece. It’s a toccata in a relentless 7/8 metre, with an insistent minor 3rd motive in the left hand. Tsujii played the hell out of this piece, and the audience was very much caught up in all the excitement.&lt;/p&gt;
+&lt;p&gt;First encore: a beaming Tsujii takes his first bows, and then sits down and starts to play the first movement of the &lt;em&gt;Moonlight Sonata&lt;/em&gt;. An apt choice, as we are at that moment experiencing an impressive “beaver” supermoon.&lt;/p&gt;
+&lt;p&gt;Second encore: Tsujii comes back and plays a jazzy, exciting piece that I’m unfamiliar with. Today I learned that it is the first of the 8 Concert Etudes by &lt;a href=&quot;https://en.wikipedia.org/wiki/Nikolai_Kapustin&quot;&gt;Nikolai Kapustin&lt;/a&gt;, another Soviet composer, although this work is from 1984, close to the end of that era. I was quite taken with this piece, and today listened to the rest of the etudes, as performed by the great Canadian pianist &lt;a href=&quot;https://en.wikipedia.org/wiki/Marc-Andr%C3%A9_Hamelin&quot;&gt;Marc-André Hamelin&lt;/a&gt;, who has been a champion of Kapustin’s work.&lt;/p&gt;
+&lt;p&gt;Third encore: Tsujii is still taking bows, and the crowd is not letting him go, so now he plays another Liszt piece, “La Campanella” from his &lt;em&gt;Grandes Études de Paganini&lt;/em&gt;. A virtuoso piece; a few people have now left Carnegie Hall, but the mood is electric for everyone who is sticking it out.&lt;/p&gt;
+&lt;p&gt;Fourth encore: More bows, and Tsujii is beaming at the response from the crowd. He sits down again and now plays a lovely rendition of Stephen Foster’s &lt;em&gt;Jeanie with the Light Brown Hair&lt;/em&gt;, in what I assume is the pianist’s own arrangement. As Tsujii takes more bows, he grins and leans back to close the lid on the piano. We all take the hint. Tsujii waves back at us all graciously as he leaves the stage.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>So long, OneDrive!</title>
+    <link href="https://example.com/blog/so-long-onedrive/" />
+    <updated>2025-04-18T00:00:00Z</updated>
+    <id>https://example.com/blog/so-long-onedrive/</id>
+    <content type="html">&lt;p&gt;tl;dr MSFT made a change to 365 Classic, stranding users with over 1 TB of OneDrive space, and they did this without telling anyone.&lt;/p&gt;
+&lt;p&gt;I&#39;ve been using Microsoft Office 365 at home pretty much since it was first available, and always found it to be a good value. In particular, OneDrive has long been a key part of my workflow, allowing me to sync files between my workstation, laptop and mobile devices.&lt;/p&gt;
+&lt;p&gt;Since I work with a lot of large media files, I eventually exceeded the 1TB of drive space that comes with a 365 subscription; no problem, for a monthly fee, you can add up to another TB. I was using an additional 600 GB. All good.&lt;/p&gt;
+&lt;p&gt;Earlier this year, MS announced that it would be bundling Copilot with 365 subscriptions go forward, and also upping the subscription price by 30%. A bit of an uproar ensued, and MS wisely announced a new &amp;quot;classic&amp;quot; 365 subscription without Copilot, and with the same yearly price as before. I was one of the people that opted for &amp;quot;classic,&amp;quot; just like most of us did way back in the Cola Wars.&lt;/p&gt;
+&lt;p&gt;When my subscription renewed, early in April, I was officially moved to the classic tier. I didn&#39;t notice anything different at first. But I did see that I was nearing capacity of my 1.6 TB OneDrive space. When I went to try to add more, the option was there, but it was greyed out, I couldn&#39;t click on anything.&lt;/p&gt;
+&lt;p&gt;Hmm...&lt;/p&gt;
+&lt;p&gt;After a few days, I opened a support ticket. A friendly person emailed me back, around midnight my time, and sent me a link to try. I emailed back, &amp;quot;yes, that&#39;s where I&#39;m trying to add it, but it won&#39;t let me.&amp;quot;&lt;/p&gt;
+&lt;p&gt;The next night, He emailed me again. Hmm, maybe try this link? It was another link leading back to the same page. I sent him some screenshots of what I was seeing. He emailed me back the next night, hey, maybe try this link? Another link to the same page.&lt;/p&gt;
+&lt;p&gt;Thursday morning I see that now my OneDrive is out of space. I am using 1.6 TB out of 1 TB. I go to the OneDrive page where my 600 GB was listed, and now it&#39;s gone entirely. I email the support person, but I can&#39;t use my Outlook account. Because I am over my limit, it won&#39;t let me send email. It tells me that soon I won&#39;t be able to receive email either.&lt;/p&gt;
+&lt;p&gt;I get on a support chat. 70 people ahead of me, wait time about an hour. I wait. The person at the other end of the chat seems competent and helpful. They try various things to add my storage back. An hour passes, they&#39;re still trying. I ask, &amp;quot;&lt;strong&gt;&lt;em&gt;Is it possible that MS removed the ability to add more storage to 365 classic?&lt;/em&gt;&lt;/strong&gt;&amp;quot; (This has been my suspicion all along.) The support person confidently replies, &amp;quot;No, there were no changes to storage quotas with classic.&amp;quot; Phew, I&#39;m now hopeful this person can actually help me.&lt;/p&gt;
+&lt;p&gt;After another hour or so, and no doubt with some internal chats on his end, my support person tells me in fact, I&#39;m right, MS removed the ability to add more storage to classic. If I wanted more storage, I would need to upgrade to 365 Copilot. I just paid $100 for classic, would the $130 for Copilot be prorated? Nope! So now, my only option is to pay for Copilot, which I don&#39;t want, or just pull my data off. Support person asks how I feel. I&#39;m not good with this, I tell him. This feels a bit like ransomware.&lt;/p&gt;
+&lt;p&gt;I went out to BestBuy, picked up a 2 TB SSD, and now I&#39;m in the process of pulling off my 1.6 TB of data and coming up with a new, MS-free, sync and backup solution. It&#39;s fine, I&#39;m no stranger to data migration, although the timing is pretty bad, as I&#39;m already busy with a number of projects.&lt;/p&gt;
+&lt;p&gt;As a customer, though, I have to say this has been a pretty terrible experience. MS made this major change, and they didn&#39;t tell me, and they didn&#39;t even tell their support people. I&#39;m not in the habit of cutting off my nose to spite my face, but I will take this as my cue to de-Microsoft my workflow where it makes sense.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Announcing my new web site: Resources for Jazz Guitar.</title>
+    <link href="https://example.com/blog/announcing-my-new-web-site-resources-for-jazz-guitar/" />
+    <updated>2024-10-18T00:00:00Z</updated>
+    <id>https://example.com/blog/announcing-my-new-web-site-resources-for-jazz-guitar/</id>
+    <content type="html">&lt;p&gt;I&#39;m now ready to start sharing a new web project that I&#39;ve been working on for some time: &lt;a href=&quot;https://resourcesforjazzguitar.com&quot;&gt;https://resourcesforjazzguitar.com&lt;/a&gt;. This is my jazz guitar pedagogy site, and will feature a good mix of serious music theory related to jazz guitar, as well as practice materials. I hope anyone doing serious study at the intermediate to advance level finds it useful.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Resources for Jazz Guitar: three octave runs</title>
+    <link href="https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/" />
+    <updated>2023-02-01T00:00:00Z</updated>
+    <id>https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/</id>
+    <content type="html">&lt;p&gt;Most of the exercises that I do on a daily basis have been suggested to me by one of my many teachers over the years, but here is one that I came up with on my own four or five years ago. I think it might be a good one for intermediate jazz guitarists who feel uncomfortable with the following scales: diminished, altered, lydian dominant, whole-tone. In the course of the lesson, we will come up with a good fingering for a three-octave run of all the scales mentioned, and also gain some insight on how the scales are connected.&lt;/p&gt;
+&lt;p&gt;The key to the lesson is the arpeggio in example 1. You can think of it as a Dominant 7 b5 arpeggio (b5 or #4, but let&#39;s not get wrapped around the axle on that, please). Before we go any further, please pick up your guitar and play through the arpeggio. In itself, it is a nice warmup, with a gentle stretch between the 1st and 4th fingers. As you play the arpeggio, think about the intervals it outlines; a major third, up a major second and cross strings, then repeat. Or alternatively, a major third, then up a tritone from where you started, then repeat.&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/5a-ixFl246-1024.avif 1024w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/5a-ixFl246-1024.webp 1024w&quot;&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/5a-ixFl246-1024.png 1024w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/5a-ixFl246-1024.jpeg&quot; alt=&quot;A dominant7b5 arpeggio, 3 octaves up to 7th and down again.&quot; width=&quot;1024&quot; height=&quot;201&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;Ex. 1&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;As you continue to play the arpeggio, you will notice that the major third on each string creates a gap of three semitones between the 1st and 4th fingers. &amp;quot;How can we fill in that gap? Ah!&amp;quot; Let&#39;s start by filling in the gap with the note in the middle. That note is one whole tone above the 1st finger and one whole tone under the 4th finger. Playing it through, it looks like this.&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/WEefrgP74--1024.avif 1024w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/WEefrgP74--1024.webp 1024w&quot;&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/WEefrgP74--1024.png 1024w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/WEefrgP74--1024.jpeg&quot; alt=&quot;A whole-tone scale, 3 octaves up to the 7th and back down.&quot; width=&quot;1024&quot; height=&quot;258&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;Ex. 2&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;OK, so now we have a nice fingering for a three octave whole tone scale. With this fingering, it is easy to see the symmetry of the scale--the fingering does not contradict the symmetry.&lt;/p&gt;
+&lt;p&gt;By adding one note in the middle of the gap, we maintain the symmetry. What if we want to add two notes into the gap? If we add a semitone above the 1st finger, and another semitone below the 4th finger, we end up with the three octave diminished scale in example 3.&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/YJgcdUK2GK-1024.avif 1024w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/YJgcdUK2GK-1024.webp 1024w&quot;&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/YJgcdUK2GK-1024.png 1024w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/YJgcdUK2GK-1024.jpeg&quot; alt=&quot;A diminished scale, 3 octaves up to the 7th and down again.&quot; width=&quot;1024&quot; height=&quot;249&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;Ex. 3&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;This is a very important fingering for the diminished scale. Once again, the fingering illuminates the scale&#39;s underlying symmetry, it does not contradict it. And because of the repeated fingering pattern, it should be possible to get this run very fast with some practice.&lt;/p&gt;
+&lt;p&gt;OK, now we have seen two ways to fill in the gap in our original arpeggio, with one note in the middle, and with two notes a semitone above and below the 1st and 4th fingers. What else can we try? Well, as the meme goes, &amp;quot;why not both?&amp;quot;&lt;/p&gt;
+&lt;p&gt;For our next run, we will follow the pattern &#39;add two notes&#39;, then &#39;add one note&#39;, and repeat that up the strings. What we end up with is the altered scale in example 4.&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/wnpBH54mwm-1024.avif 1024w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/wnpBH54mwm-1024.webp 1024w&quot;&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/wnpBH54mwm-1024.png 1024w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/wnpBH54mwm-1024.jpeg&quot; alt=&quot;An altered scale, 3 octaves up to the 7th and down again.&quot; width=&quot;1024&quot; height=&quot;254&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;Ex. 4&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The altered scale is sometimes called the &amp;quot;diminished, whole tone&amp;quot; scale, and this fingering makes that label very clear. It is literally four notes of diminished followed by three notes of whole tone.&lt;/p&gt;
+&lt;p&gt;OK, so we tried &#39;add two notes&#39;, followed by &#39;add one note&#39;. What if we reverse the order, and try &#39;add one note&#39; followed by &#39;add two notes&#39;? Now we end up with example 5, which is the lydian dominant scale.&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/I5OVbegxGU-1024.avif 1024w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/I5OVbegxGU-1024.webp 1024w&quot;&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/I5OVbegxGU-1024.png 1024w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/I5OVbegxGU-1024.jpeg&quot; alt=&quot;A lydian dominant scale, 3 octaves up to the 7th and down again.&quot; width=&quot;1024&quot; height=&quot;268&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;Ex. 5&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;What I love about these fingerings for altered and lydian dominant, is, once again, they make plain the relationship of the two scales, most importantly, how they pair with each other at the tritone. G altered is C# lydian dominant; G lydian dominant is C# altered.&lt;/p&gt;
+&lt;h2 id=&quot;coffee-break&quot;&gt;Coffee Break!&lt;/h2&gt;
+&lt;p&gt;We have already covered a lot of material. So maybe now is a good time to pause and just think about the one arpeggio and three scales we just covered. As a matter of fact, you could just stop now and get about 80% of this lesson. If you practice the above material every day for a month, you&#39;ll find that you have a new facility with these scales.&lt;/p&gt;
+&lt;p&gt;Where to next? Well, while it&#39;s good to practice mixing 8ths, 16ths and triplets, it&#39;s also a good idea to practice these scales with a constant rhythm. Triplets are always good with three octave scales. Examples 6 and 7 take our altered and lydian dominant scales into a constant triplet rhythm. Note that, while our fingering patterns were perfectly aligned with the meter in the previous examples, and now they&#39;re not. That&#39;s fine. You should obviously also practice these fingerings with other rhythmic patterns too.&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/3kZQLhQHC2-1024.avif 1024w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/3kZQLhQHC2-1024.webp 1024w&quot;&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/3kZQLhQHC2-1024.png 1024w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/3kZQLhQHC2-1024.jpeg&quot; alt=&quot;An altered scale in triplets, 3 octaves up to the 7th and down again.&quot; width=&quot;1024&quot; height=&quot;271&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;Ex. 6&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/pV9XA5TzZq-1024.avif 1024w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/pV9XA5TzZq-1024.webp 1024w&quot;&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/pV9XA5TzZq-1024.png 1024w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/pV9XA5TzZq-1024.jpeg&quot; alt=&quot;A lydian dominant scale in triplets, 3 octaves up to the 7th and down again.&quot; width=&quot;1024&quot; height=&quot;274&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;Ex. 7&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;All of the previous examples have been three octaves up to the 7th only. That has been on purpose, so that the fingerings are symmetrical up and down (at least in examples 1 - 5). But it&#39;s also desirable to practice these scales and arpeggios all the way up to the tonic. Example 8 shows our original arpeggio, all the way up to the high G.&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/59v-D3jArQ-1024.avif 1024w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/59v-D3jArQ-1024.webp 1024w&quot;&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/59v-D3jArQ-1024.png 1024w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/59v-D3jArQ-1024.jpeg&quot; alt=&quot;A dominant7thb5 arpeggio, 3 octaves up to 7th and down again.&quot; width=&quot;1024&quot; height=&quot;207&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;Ex. 8&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Examples 9, 10, and 11 take our diminished, altered, and lydian dominant scales up a full three octaves to the tonic. You should practice these, along with the full three octave whole tone scale, which should be easy to figure out at this point.&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/FBEVhmaVK--1024.avif 1024w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/FBEVhmaVK--1024.webp 1024w&quot;&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/FBEVhmaVK--1024.png 1024w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/FBEVhmaVK--1024.jpeg&quot; alt=&quot;A diminished scale, 3 octaves up to the tonic and down again.&quot; width=&quot;1024&quot; height=&quot;278&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;Ex. 9&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/_b9rXvfppr-1024.avif 1024w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/_b9rXvfppr-1024.webp 1024w&quot;&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/_b9rXvfppr-1024.png 1024w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/_b9rXvfppr-1024.jpeg&quot; alt=&quot;An altered scale in triplets, 3 octaves up to the tonic and down again.&quot; width=&quot;1024&quot; height=&quot;268&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;Ex. 10&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/jD_ulRz3bE-1024.avif 1024w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/jD_ulRz3bE-1024.webp 1024w&quot;&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/jD_ulRz3bE-1024.png 1024w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/jD_ulRz3bE-1024.jpeg&quot; alt=&quot;A lydian dominant scale in triplets, 3 octaves up to the tonic and down again.&quot; width=&quot;1024&quot; height=&quot;319&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;Ex. 11&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;I hope that if you have followed along this far, you have gained some insight into how the dominant 7 b5 arpeggio is the common link between the whole tone, diminished, altered, and lydian dominant scales. I hope you find the fingerings useful. This concludes the &#39;conventional&#39; part of this lesson.&lt;/p&gt;
+&lt;h2 id=&quot;further-afield&quot;&gt;Further afield&lt;/h2&gt;
+&lt;p&gt;What if we want to continue exploring the above ideas? Well, since we have looked at elements of two-, three-, and four-note groupings, what if we began to combine them in other ways as well?&lt;/p&gt;
+&lt;p&gt;In example 4, the altered scale up and down forms a perfect palindrome, in pitch as well as in rhythm. One interesting way to break the palindrome in shown in example 12. Now our groupings are 4-3-4-3-4-3... This creates an ascending altered scale followed by a descending lydian dominant scale. It&#39;s an interesting color.&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/YUOiF4KDsF-1024.avif 1024w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/YUOiF4KDsF-1024.webp 1024w&quot;&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/YUOiF4KDsF-1024.png 1024w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/YUOiF4KDsF-1024.jpeg&quot; alt=&quot;A hybrid scale with altered scale going up and a lydian dominant going down.&quot; width=&quot;1024&quot; height=&quot;278&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;Ex. 12&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Example 13 does a similar treatment with groupings of 3-4-3-4... This creates an ascending lydian dominant followed by a descending altered scale.&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/fNQODpDIpd-1024.avif 1024w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/fNQODpDIpd-1024.webp 1024w&quot;&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/fNQODpDIpd-1024.png 1024w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/fNQODpDIpd-1024.jpeg&quot; alt=&quot;A hybrid scale with a lydian dominant going up and a altered scale going down.&quot; width=&quot;1024&quot; height=&quot;291&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;Ex. 13&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Finally in example 14, we are mixing and matching all the elements: fragments of the arpeggio, and all four scales. Once all the elements in this lesson are fluent, you can combine them in endless way.&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/zX9LMZzHjT-1024.avif 1024w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/zX9LMZzHjT-1024.webp 1024w&quot;&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/zX9LMZzHjT-1024.png 1024w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/resources-for-jazz-guitar-three-octave-runs/zX9LMZzHjT-1024.jpeg&quot; alt=&quot;A hybrid scale with mixed elements from the previous examples.&quot; width=&quot;1024&quot; height=&quot;288&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;Ex. 14&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;That&#39;s all for this lesson, and there is enough material here to keep one busy for quite a while. I would love to hear any feedback or questions. I would also be happy to make a PDF of the exercises available to anyone who asks.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Resources For Composers: Violin Pedagogy</title>
+    <link href="https://example.com/blog/resources-for-composers-violin-pedagogy/" />
+    <updated>2022-07-30T00:00:00Z</updated>
+    <id>https://example.com/blog/resources-for-composers-violin-pedagogy/</id>
+    <content type="html">&lt;p&gt;I&#39;m writing a string quartet and have been reviewing violin technique. I though it would be helpful to compile a list of the classics of violin pedagogy: method books, treatises, exercises and so forth. Here&#39;s the list, which I will continue to update. I&#39;ll link to &lt;a href=&quot;https://imslp.org&quot;&gt;IMSLP&lt;/a&gt; files when they&#39;re available. Please let me know if I&#39;ve missed anything you consider essential.&lt;/p&gt;
+&lt;h4 id=&quot;auer-leopold-1845-1930&quot;&gt;&lt;strong&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Leopold_Auer&quot;&gt;Auer, Leopold&lt;/a&gt; (1845-1930)&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://imslp.org/wiki/Violin_Playing_as_I_Teach_It_(Auer%2C_Leopold)&quot;&gt;Violin Playing As I Teach It&lt;/a&gt; (1920)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://openlibrary.org/books/OL13549320M/My_long_life_in_music&quot;&gt;My Long Life In Music&lt;/a&gt; (1923)&lt;/li&gt;
+&lt;li&gt;Violin Master Works And Their Interpretation (1925)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;bang-maia-1877-1940&quot;&gt;&lt;strong&gt;Bang, Maia (1877-1940)&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://imslp.org/wiki/Violin_Method_(Bang%2C_Maia)&quot;&gt;Violin Method&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;casorti-august-1830-1867&quot;&gt;&lt;strong&gt;Casorti, August (1830-1867)&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://imslp.org/wiki/The_Techniques_of_Bowing%2C_Op.50_(Casorti%2C_August)&quot;&gt;Techniques of Bowing, Op. 50&lt;/a&gt; (1880)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://imslp.org/wiki/Etude_du_sautill%C3%A9_No.2%2C_Op.60_(Casorti%2C_August)&quot;&gt;Étude du Sautillé No. 2, Op. 60&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://imslp.org/wiki/%C3%9Cbungen_in_Doppelgriffen_f%C3%BCr_Violine%2C_Op.61_(Casorti%2C_August)&quot;&gt;Exercises in Double-Stops, Op. 61&lt;/a&gt; (1896)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;flesch-carl-1873-1944&quot;&gt;&lt;strong&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Carl_Flesch&quot;&gt;Flesch, Carl&lt;/a&gt; (1873-1944)&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://imslp.org/wiki/Urstudien_f%C3%BCr_Violine_(Flesch%2C_Carl)&quot;&gt;Urstudien&lt;/a&gt; (1911)&lt;/li&gt;
+&lt;li&gt;The Art of Violin Playing (1923)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://imslp.org/wiki/Das_Skalensystem_(Flesch%2C_Carl)&quot;&gt;The Scale System&lt;/a&gt; (1926)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;galamian-ivan-1903-1981&quot;&gt;&lt;strong&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Ivan_Galamian&quot;&gt;Galamian, Ivan&lt;/a&gt; (1903-1981)&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Principles of Violin Playing and Teaching (1962)&lt;/li&gt;
+&lt;li&gt;Contemporary Violin Technique (1962)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;hrimaly-jan-1844-1915&quot;&gt;&lt;strong&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Jan_H%C5%99%C3%ADmal%C3%BD&quot;&gt;Hřímalý, Jan&lt;/a&gt; (1844-1915)&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://imslp.org/wiki/Scale-Studies_for_Violin_(H%C5%99%C3%ADmal%C3%BD,_Jan)&quot;&gt;Scale-Studies for Violin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;kreutzer-rodolphe-1766-1831&quot;&gt;&lt;strong&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Rodolphe_Kreutzer&quot;&gt;Kreutzer, Rodolphe&lt;/a&gt; (1766-1831)&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://imslp.org/wiki/%C3%89tudes_ou_caprices_(Kreutzer%2C_Rodolphe)&quot;&gt;Études ou Caprices&lt;/a&gt; (1805)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;paganini-niccolo-1782-1840&quot;&gt;&lt;strong&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Niccol%C3%B2_Paganini&quot;&gt;Paganini, Niccolò&lt;/a&gt; (1782-1840)&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://imslp.org/wiki/24_Caprices_for_Solo_Violin%2C_Op.1_(Paganini%2C_Niccol%C3%B2)&quot;&gt;24 Caprices for Solo Violin, Op. 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;schradieck-henry-1846-1918&quot;&gt;&lt;strong&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Henry_Schradieck&quot;&gt;Schradieck, Henry&lt;/a&gt; (1846-1918)&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://imslp.org/wiki/Scale_Studies_for_the_Violin_(Schradieck%2C_Henry)&quot;&gt;Scale-Studies for the Violin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://imslp.org/wiki/School_of_Violin_Technics_(Schradieck%2C_Henry)&quot;&gt;School of Violin Technics&lt;/a&gt; (1899)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://imslp.org/wiki/Guide_to_the_Study_of_Chords_for_Violin_(Schradieck%2C_Henry)&quot;&gt;Guide to the Study of Chords&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;sevcik-otakar-1852-1934&quot;&gt;&lt;strong&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Otakar_%C5%A0ev%C4%8D%C3%ADk&quot;&gt;Ševčík, Otakar&lt;/a&gt; (1852-1934)&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://imslp.org/wiki/School_of_Violin_Technique%2C_Op.1_(%C5%A0ev%C4%8D%C3%ADk%2C_Otakar)&quot;&gt;School of Violin Technique, Op. 1&lt;/a&gt; (1881)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://imslp.org/wiki/School_of_Bowing_Technique%2C_Op.2_(%C5%A0ev%C4%8D%C3%ADk%2C_Otakar)&quot;&gt;School of Bowing Technique, Op. 2&lt;/a&gt; (1894)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://imslp.org/wiki/Violin_School_for_Beginners%2C_Op.6_(%C5%A0ev%C4%8D%C3%ADk%2C_Otakar)&quot;&gt;Violin School for Beginners, Op. 6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://imslp.org/wiki/Changes_of_Position_and_Preparatory_Scale_Studies%2C_Op.8_(%C5%A0ev%C4%8D%C3%ADk%2C_Otakar)&quot;&gt;Changes of Position and Preparatory Scale Studies, Op. 8&lt;/a&gt; (1895)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://imslp.org/wiki/Preparatory_Exercises_in_Double-Stopping%2C_Op.9_(%C5%A0ev%C4%8D%C3%ADk%2C_Otakar)&quot;&gt;Preparatory Exercises in Double-Stopping, Op. 9&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://imslp.org/wiki/School_of_Intonation_on_an_Harmonic_Basis_for_Violin%2C_Op.11_(%C5%A0ev%C4%8D%C3%ADk%2C_Otakar)&quot;&gt;School of Intonation on a Harmonic Basis for Violin, Op. 11&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://imslp.org/wiki/School_of_Interpretation_for_the_Violin%2C_Op.16_(%C5%A0ev%C4%8D%C3%ADk%2C_Otakar)&quot;&gt;School of Interpretation for the Violin, Op. 16&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;spohr-louis-1784-1859&quot;&gt;&lt;strong&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Louis_Spohr&quot;&gt;Spohr, Louis (1784-1859)&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://imslp.org/wiki/Violinschule_(Spohr%2C_Louis)&quot;&gt;Violin School (1832)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  <entry>
+    <title>New Fiction From Writer Nora Maynard</title>
+    <link href="https://example.com/blog/new-fiction-from-writer-nora-maynard/" />
+    <updated>2022-01-11T00:00:00Z</updated>
+    <id>https://example.com/blog/new-fiction-from-writer-nora-maynard/</id>
+    <content type="html">&lt;p&gt;I really love this short story, &amp;quot;&lt;a href=&quot;https://www.pangyrus.com/fiction/back-in-the-tudor-house/&quot;&gt;Back In The Tudor House&lt;/a&gt;&amp;quot; by &lt;a href=&quot;http://www.noramaynard.com/&quot;&gt;Nora Maynard&lt;/a&gt;. It takes off in an unexpected direction. You can read it at &lt;a href=&quot;http://www.pangyrus.com&quot;&gt;Pangyrus&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;By the time I reached my late parents’ house, the truck was gone. The nicotine-streaked walls were white now and all you could smell was paint. Every four-poster bed, buffet hutch, and bric-a-brac stand had been hauled away, along with all the autobiographies of 70s actors and all the books about wars. The rings and bracelets too tiny for my fingers and wrists had been boxed up and shipped out with the china figurines I spent my childhood trying not to break. Maybe I should have kept something? I don’t know. There was just the lone camelback sofa standing in the middle of the living room floor.&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Fun With Triad Cycles</title>
+    <link href="https://example.com/blog/fun-with-triad-cycles/" />
+    <updated>2021-05-27T00:00:00Z</updated>
+    <id>https://example.com/blog/fun-with-triad-cycles/</id>
+    <content type="html">&lt;p&gt;My teacher, Mark Sherman, gave me a simple assignment at our last lesson: practice cycling through 12 keys using only major triads, mostly as 4-note chords, all while restricting yourself to a narrow range. I think this one is worth dedicating some serious time.&lt;/p&gt;
+&lt;p&gt;OK, so let’s think about this algorithmically. The basic rules are simple:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The only notes allowed are from the major triad&lt;/li&gt;
+&lt;li&gt;Play 4 notes from each triad&lt;/li&gt;
+&lt;li&gt;Keep going in the same direction until you hit an upper or lower boundary, at which point, change direction&lt;/li&gt;
+&lt;li&gt;No repeated notes&lt;/li&gt;
+&lt;li&gt;After 4 notes, cycle to the next triad in the descending cycle of 5ths&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;First question: what is the most narrow range into which you can fit the entire cycle? Answer: ok, maybe a bit of a trick question? Obviously, you need all 12 notes, so the smallest range would be 12 semitones, or a major 7th. Another obvious observation (obvservation?): there are no octaves anywhere, so every triad will have one note played twice in the 4-note grouping.&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/fun-with-triad-cycles/yTYkhIaYUe-2152.avif 2152w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/fun-with-triad-cycles/yTYkhIaYUe-2152.webp 2152w&quot;&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/blog/fun-with-triad-cycles/yTYkhIaYUe-2152.png 2152w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/fun-with-triad-cycles/yTYkhIaYUe-2152.jpeg&quot; alt=&quot;Ex. 1 Triads Within a Major 7th&quot; width=&quot;2152&quot; height=&quot;472&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;Ex. 1 Triads Within a Major 7th&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Well, that’s a good exercise, but it is rather limited! What if we expand the range by one semitone? Now we have a full octave, C to C. That one note actually opens thing up quite a bit! Now we have an octave on the root of C major, on the 3rd of Ab major, and on the 5th of F major. Cool!&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/fun-with-triad-cycles/KVQsKGXgAi-2160.avif 2160w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/fun-with-triad-cycles/KVQsKGXgAi-2160.webp 2160w&quot;&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/blog/fun-with-triad-cycles/KVQsKGXgAi-2160.png 2160w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/fun-with-triad-cycles/KVQsKGXgAi-2160.jpeg&quot; alt=&quot;Ex. 2 Triads Within an Octave&quot; width=&quot;2160&quot; height=&quot;504&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;Ex. 2 Triads Within an Octave&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;What if we wanted to find the minimum range that would allow each of the 12 triads to have at least one octave? Well, on the one hand, every note is part of 3 different triads, it’s either the root, the 3rd, or the 5th. So every note we add will add 3 more triads, right? Well, not quite, because notes that are a 3rd apart will have a triad in common.&lt;/p&gt;
+&lt;p&gt;So let’s see how this plays out. Let’s add a B below middle C. That gives us three more triads: B major, G major, and E major. That’s a total of six triads, we are half-way there! Let’s keep going down, adding Bb gives us Bb major, Gb major, and Eb major. Wow, 9 out of 12 covered!&lt;/p&gt;
+&lt;p&gt;This time, let’s add a higher note; we’ll add C#. That gives us C# major, A major, F# major. Oops! Not quite 3 more, because F# and Gb are the same. It makes sense, because we said that notes a 3rd apart will share one triad, and Bb and C# (or Db) are a 3rd apart.&lt;/p&gt;
+&lt;p&gt;OK, we are at 11 out of 12. Let’s add one more higher note, D. That gives us D major, Bb major (which we already had) and G major (which we already had). Woohoo, 12 out of 12. Why did D add only one new triad? Well, it is a 3rd away from Bb, so shares a triad there, and it is a 3rd away from B, so shares a triad there too!&lt;/p&gt;
+&lt;p&gt;Now we have all 12 triads with at least one octave. By the way, you know those triads we said we ‘already had?’ F#/Gb major, Bb major, and G major? Well, those ones have two different notes with an octave.&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/fun-with-triad-cycles/izf9uLrB5j-2144.avif 2144w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/fun-with-triad-cycles/izf9uLrB5j-2144.webp 2144w&quot;&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/blog/fun-with-triad-cycles/izf9uLrB5j-2144.png 2144w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/fun-with-triad-cycles/izf9uLrB5j-2144.jpeg&quot; alt=&quot;Ex. 3 Triads Within a Major 10th&quot; width=&quot;2144&quot; height=&quot;496&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;Ex. 3 Triads Within a Major 10th&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;So, to summarize, the smallest interval that will allow you to cycle all 12 triads with at least one octave per triad is a major 10th.&lt;/p&gt;
+&lt;p&gt;OK, this is all good so far, but the motion rule is a little bit dull. Let’s try throwing in what Barry Harris calls pivoting. Pivoting breaks up the motion of an arpeggio, or broken chord, by adding an octave displacement, either up or down, and then continuing. In this example, we will play a note, pivot down to the next chord note, and continue upward for 3 notes. We’ll then chose the closest note in the next chord and repeat the process. This way all of the 4-note groups will have a similar countour.&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/fun-with-triad-cycles/sX-kZhJSCo-2152.avif 2152w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/fun-with-triad-cycles/sX-kZhJSCo-2152.webp 2152w&quot;&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/blog/fun-with-triad-cycles/sX-kZhJSCo-2152.png 2152w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/fun-with-triad-cycles/sX-kZhJSCo-2152.jpeg&quot; alt=&quot;Ex. 4 Triads Pivoting Within a Major 10th&quot; width=&quot;2152&quot; height=&quot;488&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;Ex. 4 Triads Pivoting Within a Major 10th&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;That’s all for now!&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>The next note is never more than a whole-tone away</title>
+    <link href="https://example.com/blog/the-next-note-is-never-more-than-a-whole-tone-away/" />
+    <updated>2021-05-11T00:00:00Z</updated>
+    <id>https://example.com/blog/the-next-note-is-never-more-than-a-whole-tone-away/</id>
+    <content type="html">&lt;p&gt;I first learned of the exercise of running different scales into each other from Barry Harris. You start near the top of your instrument, and as the chords change, you change your scale but keep going in the same direction. Relatively easy on a tune like Autumn Leaves, pretty difficult on a tune like Giant Steps. My teacher Mark Sherman also emphasizes this drill, and has in fact taken it to a whole new level.&lt;/p&gt;
+&lt;p&gt;In discussing this drill a few weeks ago, Mark told me, the next note is always either a semitone or a whole-tone away. I thought of a simple way to prove this.&lt;/p&gt;
+&lt;p&gt;First off, we need to review the concept of locally diatonic scales. In short, they are scale in which all groups of three consecutive notes can be mapped onto three consecutive notes of the diatonic scale. There are only four scales that qualify: diatonic, melodic minor, whole-tone, and diminished. None of these scales contains an interval greater than a whole-tone. Both the harmonic minor, and its inversion, the harmonic major, contain an augmented second, that’s why they are not included.&lt;/p&gt;
+&lt;p&gt;Ok, so moving between any of our four scales, at any transposition, the next note will always be a semitone of a whole-tone away, and here’s the proof.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The current note will either be a member of the next scale or not&lt;/li&gt;
+&lt;li&gt;If the current note is a member of the next scale, the next note will either be a semitone or a whole-tone away&lt;/li&gt;
+&lt;li&gt;If the current note is not a member of the next scale, then the next note has to be a semitone away, by definition&lt;/li&gt;
+&lt;li&gt;Therefore, the next note is always a semitone or a whole-tone away&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;By the way, when running locally diatonic scales into each other, the aggregate result is definitely not guaranteed to be locally diatonic. It should be easy to think of examples where running two scales together results in two consecutive semitones, which would break the rules for locally diatonic.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>A fun way to derive the melodic minor scale</title>
+    <link href="https://example.com/blog/a-fun-way-to-derive-the-melodic-minor-scale/" />
+    <updated>2021-04-12T00:00:00Z</updated>
+    <id>https://example.com/blog/a-fun-way-to-derive-the-melodic-minor-scale/</id>
+    <content type="html">&lt;p&gt;This thought just occurred to me as I was listening to the audiobook of &lt;a href=&quot;https://en.wikipedia.org/wiki/Frank_Wilczek&quot;&gt;Frank Wilczek&lt;/a&gt;&#39;s excellent &lt;em&gt;&lt;a href=&quot;https://news.mit.edu/2021/ten-keys-reality-wilczek-0112&quot;&gt;Fundamentals: Ten Keys to Reality&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The melodic minor is a 7 note scale consisting of only semitones or whole tones, but with no 2 consecutive semitones (put another way, it is &amp;quot;&lt;a href=&quot;https://www.chesterjankowski.com/tidbit-locally-diatonic-scales/&quot;&gt;locally diatonic&lt;/a&gt;&amp;quot;)&lt;/li&gt;
+&lt;li&gt;The whole tone scale is a 6 note scale consisting only of consecutive whole tones&lt;/li&gt;
+&lt;li&gt;The melodic minor contains 5 continuous notes of the whole tone scale&lt;/li&gt;
+&lt;li&gt;To create a 7 note scale from the 5 continuous notes we need to add 2 more notes&lt;/li&gt;
+&lt;li&gt;These 2 notes can be either whole tones or semitones&lt;/li&gt;
+&lt;li&gt;Neither of them can be a whole tone, because that would result in a full whole tone scale&lt;/li&gt;
+&lt;li&gt;Therefore, both added notes must be semitones&lt;/li&gt;
+&lt;li&gt;Therefore, the melodic minor consists of 5 notes from the whole tone scale, bounded at both ends by a semitone&lt;/li&gt;
+&lt;li&gt;Corollary: since the whole tone scale is symmetrical, the melodic minor scale is also symmetrical&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  <entry>
+    <title>The “Minor 6/9 Shape” Harmonized</title>
+    <link href="https://example.com/blog/the-minor-6-9-shape-harmonized/" />
+    <updated>2021-04-09T00:00:00Z</updated>
+    <id>https://example.com/blog/the-minor-6-9-shape-harmonized/</id>
+    <content type="html">&lt;p&gt;During our weekly jam session this week, my friend Tony and I got into a discussion about a harmonic topic we’ve both been looking at. It’s an intervallic shape that’s pretty useful harmonically and melodically, and has a good ‘modern jazz’ feel to it. You can see the shape in example [A] below. You might call this a “minor 6/9” shape, since it has the 3rd, 5th, 6th, and 9th of a minor chord.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/the-minor-6-9-shape-harmonized/dyxRnb40NE-2208.avif 2208w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/the-minor-6-9-shape-harmonized/dyxRnb40NE-2208.webp 2208w&quot;&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/blog/the-minor-6-9-shape-harmonized/dyxRnb40NE-2208.png 2208w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/the-minor-6-9-shape-harmonized/dyxRnb40NE-2208.jpeg&quot; alt=&quot;&quot; width=&quot;2208&quot; height=&quot;1508&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;But what makes this shape so useful is its ability to outline different chords. Example [B] lists five of these. If we think of the Eb as the root of a chord, we have an EbMaj7#4. If we think of it as a minor 3rd, we have a Cm6/9. If we think of the Eb as a D# serving as a major 3rd, we have a B7#9b13, which is an ‘altered dominant’ sound. If we think of the Eb as the b5th of a chord, we have an Am11b5. And if we think of the Eb as the 7th of a chord, we have an F13 chord.&lt;/p&gt;
+&lt;p&gt;As I’ve been exploring this sound, it dawned on me that since the shape is a subset of the melodic minor, then it can be harmonized with all of the notes of the harmonic minor, expanding the number of chords from five to seven. These are all listed in example [C].&lt;/p&gt;
+&lt;p&gt;The shape also lends itself to quartal voicing, which is great since quartal harmony is another key component of modern jazz, and, as a guitarist, quartal voicings fit on the neck beautifully. Looking at example [D], we can see that the shape contains the “&lt;a href=&quot;https://en.wikipedia.org/wiki/Viennese_trichord&quot;&gt;Viennese trichord&lt;/a&gt;” with a perfect 4th on top. If we label the chord according to its constituent 4ths, we can call it an APP.&lt;/p&gt;
+&lt;p&gt;I did a post on &lt;a href=&quot;https://www.chesterjankowski.com/quartal-harmony-tetrachords/&quot;&gt;quartal tetrachord harmonizations&lt;/a&gt; a couple of years ago, and if we refer to that, we see that the quartal tetrachord APP appears (get it, APPears?) in not only the melodic minor, but also in the major, the harmonic minor, and the harmonic major. That means we can also harmonize the shape with all the notes of each of those scales.&lt;/p&gt;
+&lt;p&gt;If we look at the major scale, we see that the APP is on the 4th degree of the scale. Keeping Eb as the bass note, that would mean our new scale is Bb major. Bb major has only one note different from C melodic minor: the Bb itself. That means the chord with Bb as the root is a new one, the other six notes are the same as chords we have already discovered. This new chord is shown in example [E]. I didn’t label this chord, but you could think of it as EbMaj7#4/Bb or Bb13sus. We are now up to eight chords.&lt;/p&gt;
+&lt;p&gt;Looking at harmonic minor and harmonic major, the APP appears on the 6th degree of the scale. Eliminating chords we have already discovered, this gives us one new chord, with an F# as the root. I will leave it to you to label that one.&lt;/p&gt;
+&lt;p&gt;So now we have a total of nine discrete chords across these four scales. A good next step would be to see how we could use parallelisms across these chords in different progressions, but I will leave that topic for another day.&lt;/p&gt;
+</content>
+  </entry>
 </feed>
