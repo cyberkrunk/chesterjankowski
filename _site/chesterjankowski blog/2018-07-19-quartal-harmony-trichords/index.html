@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Quartal Harmony: Trichords</title>
+		<meta name="description" content="The home page of Chester Jankowski, a composer, musician, and technologist based in nyc.">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Chester Jankowski">
+		<meta name="generator" content="Eleventy v4.0.0">
+		<meta property="og:title" content="Quartal Harmony: Trichords">
+    	<meta property="og:type" content="website">
+    	<meta property="og:url" content="https://chesterjankowski.com/chesterjankowski blog/2018-07-19-quartal-harmony-trichords/">
+    	<meta property="og:image" content="https://chesterjankowski.com/img/og-chester-dock.jpg">
+		
+		
+		
+		<style>/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+	--quote-background: var(--color-gray-20);
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+		--quote-background: #333;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+	min-height: 100vh;
+	display: flex;
+    flex-direction: column;
+	font-family: "Times New Roman", serif;
+    font-size: 20px;
+}
+
+blockquote {
+	background-color: var(--quote-background);
+	padding: 10px 20px 10px 20px;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	width: 100%;
+	height: auto;
+}
+iframe {
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+footer{
+    margin-top: auto;
+    padding-top: 1em;
+    /* border-top: 1px solid gray; */
+    font-size: 14px;
+    padding-bottom: 0.5em;
+}
+footer ul{
+    list-style-type: none;
+}
+footer a:link{
+    color: #3345cc;
+}
+footer a:visited{
+    color: #3345cc;
+}
+
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	/* border-bottom: 1px dashed var(--color-gray-20); */
+}
+
+#skip-link {
+	text-decoration: none;
+	background: var(--background-color);
+	color: var(--text-color);
+	padding: 0.5rem 1rem;
+	border: 1px solid var(--color-gray-90);
+	border-radius: 2px;
+}
+
+/* Prevent visually-hidden skip link fom pushing content around when focused */
+#skip-link.visually-hidden:focus {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	/* Ensure it is positioned on top of everything else when it is shown */
+	z-index: 999;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	/* border-top: 1px dashed var(--color-gray-20); */
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	flex-grow: 1;
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	gap: .5em 1em;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+hr {
+	background-color: lightgray;
+	border: none;
+	height: 1px;
+}
+
+/* Posts list */
+.postlist {
+	counter-reset: start-from var(--postlist-index);
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+.byline{
+    font-size: smaller;
+	font-style: italic;
+}
+.fa-solid {
+	color: var(--color-gray-50);
+}
+
+/* Audio playlist */
+#audio-playlist {
+  width: 400px; 
+  border: lightgray 1px solid;
+  border-radius: 10px;
+ 
+}  
+#playlist-ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 20px;
+  color: gray;
+}
+.playlist-name{
+  margin-left: 10px;
+  font-size: larger;
+  font-style: italic;
+  font-weight: bold;
+}  
+#playlist-ul li:hover {
+  color: blue;
+}
+
+.now-playing {
+  font-weight: bold;
+  color: black;
+}
+#playlist-buttons {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+#audio-player {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 380px;  
+  border-radius: 10px;
+}</style>
+		
+		<script src="https://kit.fontawesome.com/12fe9f9908.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<a href="#main" id="skip-link" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">Chester Jankowski</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/music/">Music</a></li>
+					<li class="nav-item"><a href="/writing/">Writing</a></li>
+					<li class="nav-item"><a href="/photos/">Photos</a></li>
+					<li class="nav-item"><a href="/blog/">Blog</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="main">
+			<hr>
+			<heading-anchors>
+				
+<p>Today we continue the discussion on quartal harmony with trichords. Yesterday's topic on quartal dyads was a bit of a warm-up. Things are getting more interesting now. There are three varieties of fourth: perfect, augmented, and diminished, or using our labels, P, A, and D. In order to construct a trichord, we need two intervals. That gives us a total of nine different types of quartal trichord. These are shown in the Fig. 2 chart below. When looking at the harmonizations of our four scale types, Major, Melodic Minor, Harmonic Minor, and Harmonic Major, we can make some observations about how often the trichords appear.</p>
+<p>Two of the trichords, AA and DD, do not appear in any of the harmonizations. In AA, the outer voices form an augmented seventh, which is enharmonically equivalent to an octave. In DD, the trichord is enharmonically equivalent to an augmented triad.</p>
+<p>We saw yesterday that P was the most common dyad, and see now that PP is the most common trichord. It occurs five times in the Major harmonization, three times in the Melodic Minor, and two times in each of the Harmonic Minor and Harmonic Major. So then, just like the P dyad, the PP trichord is the most harmonically ambiguous of the quartal trichords.</p>
+<p>The next most common trichords are two of my favorites. They combine an outer major seventh, and inner perfect and augmented fourths, or PA and AP. I love both of these sonorities and used them often in my early composing. (Berg and Webern loved them too, so much so that they are sometimes referred to as the <a href="https://en.wikipedia.org/wiki/Viennese_trichord">Viennese trichord</a>.)</p>
+<p>Two of the trichords occur in only one harmonization. PD occurs in only the Harmonic Major harmonization, and DP occurs in only the Harmonic Minor. As a result, these two trichords are the most harmonically specific.</p>
+<p>I find it interesting to look at the similarities and differences among the four harmonizations. One thing that leaps out is that all four harmonizations share the same trichords on modes 1, 2, and 5, or on the tonic, supertonic, and dominant. So, for example, a riff on the tonic and supertonic trichords would be completely harmonically ambiguous; it would fit with any one of the four scales. Somewhat surprisingly, the dominant is the same for all four.</p>
+<p>Not surprising is where the most variation occurs between the harmonizations: on the mediant and leading tone. Both of these degrees (or modes) contain both the third and the sixth, which is where all of the variation between these four scales takes place. Contrast this with the subdominant and submediant. The subdominant trichords contain the third, so the two with the lowered third are the same, and the two with the natural third are the same. For the submediant, the two with the lowered sixth are the same, and the two with the natural sixth are the same.</p>
+<figure>
+<p><a href="https://www.chesterjankowski.com/quartal-trichords-harmonizations/"><picture><source type="image/avif" srcset="/chesterjankowski blog/2018-07-19-quartal-harmony-trichords/I7OodzGtyd-759.avif 759w"><source type="image/webp" srcset="/chesterjankowski blog/2018-07-19-quartal-harmony-trichords/I7OodzGtyd-759.webp 759w"><source type="image/png" srcset="/chesterjankowski blog/2018-07-19-quartal-harmony-trichords/I7OodzGtyd-759.png 759w"><img loading="lazy" decoding="async" src="/chesterjankowski blog/2018-07-19-quartal-harmony-trichords/I7OodzGtyd-759.jpeg" alt="Quartal trichords harmonized with the major, melodic minor, harmonic minor, harmonic major scales." width="759" height="428"></picture></a></p>
+<figcaption>
+<p>Figure 1. Major, Melodic Minor, Harmonic Minor, Harmonic Major scales harmonized with Quartal Trichords.</p>
+</figcaption>
+</figure>
+<figure>
+<p><a href="https://www.chesterjankowski.com/quartal-trichords-harmonization-statistics/"><picture><source type="image/avif" srcset="/chesterjankowski blog/2018-07-19-quartal-harmony-trichords/BvlEjwyJ8L-1663.avif 1663w"><source type="image/webp" srcset="/chesterjankowski blog/2018-07-19-quartal-harmony-trichords/BvlEjwyJ8L-1663.webp 1663w"><img loading="lazy" decoding="async" src="/chesterjankowski blog/2018-07-19-quartal-harmony-trichords/BvlEjwyJ8L-1663.png" alt="Quartal Trichords in scale harmonizations." width="1663" height="465"></picture></a></p>
+<figcaption>
+<p>Firgure 2. How many times does each trichord appear in the four scale harmonizations?</p>
+</figcaption>
+</figure>
+<h3 id="key-takeaways"><strong>Key Takeaways</strong></h3>
+<p>From a practical standpoint, here are a few things to keep in mind using quartal tichords for comping or soloing:</p>
+<ul>
+<li>The texture of a trichord is very useful for comping, especially on the guitar</li>
+<li>Any quartal trichord material built on I, II, and V will work for each of the four different scales</li>
+<li>The quartal trichord material on II, VI, and VII is where all the harmonic differences are</li>
+</ul>
+<p>That's it for today's installment. In later posts, I will look at quartal tetrachords, as well as usage of inversions for the trichords we looked at today.</p>
+
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<hr>
+			Web site for composer <a href="/">Chester Jankowski</a> • <a href="/feed/feed.xml">RSS</a><br>
+			Written by humans for humans. • No ads, no trackers, no affiliate links, no pop-ups, no AI.<br>	
+			Built with <a href="https://www.11ty.dev/">Eleventy v4.0.0</a> • “Keep building for the web!” -- Zach Leatherman<br>
+		</footer>
+
+		<!-- This page `/chesterjankowski blog/2018-07-19-quartal-harmony-trichords/` was built on 2025-11-10T17:05:23.350Z -->
+		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
+	</body>
+</html>
