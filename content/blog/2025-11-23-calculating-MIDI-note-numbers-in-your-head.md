@@ -33,15 +33,15 @@ To find $E\flat_9\\,$ we need to add $3\\,$ the pitch class number for $E\flat\\
 
 $$E\flat_9=(12\times10)+3=123$$
 
-Now, let's do the reverse. For MIDI note number $89\\,$ we see that it is between $84$ and $96\\,$ so that it is the $7th$ MIDI octave. That means it will be in the $C_6$ octave in SPN. $89=84+5$, so the pitch class is $5$, which is the pitch class $F$. So the SPN name for this note is $F_6$:
+Now, let’s do the reverse. For MIDI note number $89\\,$ we see that it is between $84$ and $96\\,$ so that it is the $7th$ MIDI octave. That means it will be in the $C_6$ octave in SPN. $89=84+5$, so the pitch class is $5$, which is the pitch class $F$. So the SPN name for this note is $F_6$:
 
 $$89=(12\times7)+5=F_6$$
 
 ## Memorizing, or quickly calculating, multiples of 12
 
-OK, that is straightforward, but what if you don't have pitch class numbers or multiples of $12$ memorized? In the case of pitch class numbers, there's no way around it. These need to be memorized in order to work effectively with music theory past, say, the 1960s. As for multiples of $12$? I did a quick poll on Mastodon, and over half the respondents indeed had their "12 times tables" memorized since school days. So where does that leave the rest of us?
+OK, that is straightforward, but what if you don’t have pitch class numbers or multiples of $12$ memorized? In the case of pitch class numbers, there’s no way around it. These need to be memorized in order to work effectively with music theory past, say, the 1960s. As for multiples of $12\\?$ I did a quick poll on Mastodon, and over half the respondents indeed had their “12 times tables” memorized since school days. So where does that leave the rest of us?
 
-Let's take a look:
+Let’s take a look:
 
 | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ | $6$ | $7$ | $8$ | $9$ | $10$ |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -49,7 +49,7 @@ Let's take a look:
 
 The first thing we might notice is that the last digit follows a repeating sequence: $0, 2, 4, 6, 8, 0, 2, \ldots$. This on its own is a fact worth remembering, and it may even be enough of a hint for you to easily remember this whole list!
 
-Now, let's look at the sequence $12, 24, 36, 48\\.$ Notice that the second digit is always twice the first digit. And in fact, that pattern keeps going, *but*, while we have the numbers twenty-four, thirty-six, forty-eight, we *don't* have the numbers fifty-ten, sixty-12, seventy-fourteen, etc., so at that point, we need to perform addition, like so:
+Now, let’s look at the sequence $12, 24, 36, 48\\.$ Notice that the second digit is always twice the first digit. And in fact, that pattern keeps going, *but*, while we have the numbers twenty-four, thirty-six, forty-eight, we *don’t* have the numbers fifty-ten, sixty-12, seventy-fourteen, etc., so at that point, we need to perform addition, like so:
 
 $$\begin{align}12&=(1\times10)+(1\times2)\\
 24&=(2\times10)+(2\times2)\\
@@ -58,4 +58,4 @@ $$\begin{align}12&=(1\times10)+(1\times2)\\
 12m&=(m\times10)+(m\times2)
 \end{align}$$
 
-So now, even if you don't have the table memorized, you can quickly do the math in your head.
+So now, even if you don’t have the table memorized, you can quickly do the math in your head.
