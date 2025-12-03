@@ -42,11 +42,13 @@
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
 		"cross-env": "^7.0.3",
 		"luxon": "^3.6.1",
+		"markdown-it": "^14.1.0",
 		"prismjs": "^1.30.0",
 		"zod": "^3.25.67",
 		"zod-validation-error": "^3.5.2"
 	},
 	"dependencies": {
-		"@zachleat/heading-anchors": "^1.0.5"
+		"@zachleat/heading-anchors": "^1.0.5",
+		"markdown-it-mathjax3": "^5.2.0"
 	}
 }

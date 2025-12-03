@@ -3,7 +3,8 @@ import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
-
+import markdownIt from "markdown-it";
+const mathjaxPlugin = await import('markdown-it-mathjax3');
 import pluginFilters from "./_config/filters.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
@@ -126,6 +127,16 @@ export default async function(eleventyConfig) {
 	// https://www.11ty.dev/docs/copy/#emulate-passthrough-copy-during-serve
 
 	// eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+
+	let options = {
+		html: true,
+		breaks: true,
+		linkify: true,
+	};
+
+	eleventyConfig.setLibrary("md", markdownIt(options));
+	eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(mathjaxPlugin.default));
+
 };
 
 export const config = {
