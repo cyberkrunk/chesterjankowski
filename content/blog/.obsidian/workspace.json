@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-12-13-acoustics-of-musical-instruments.md",
+                "file": "2025-12-15-rob-reiner.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "2025-12-13-acoustics-of-musical-instruments"
+              "title": "2025-12-15-rob-reiner"
             }
           }
         ],
@@ -188,8 +188,9 @@
   },
   "active": "189a2ebe29271009",
   "lastOpenFiles": [
-    "2025-11-23-calculating-MIDI-note-numbers-in-your-head.md",
     "2025-12-13-acoustics-of-musical-instruments.md",
+    "2025-12-15-rob-reiner.md",
+    "2025-11-23-calculating-MIDI-note-numbers-in-your-head.md",
     "2023-02-01-resources-for-jazz-guitar-three-octave-runs.md",
     "export",
     "New folder",
@@ -216,7 +217,6 @@
     "2005-03-25-friday-cat-blogging-4.md",
     "2005-03-22-les-paul-at-iridium.md",
     "2005-03-21-another-sad-day-for-nyc.md",
-    "2005-03-20-sunday-bobble-head-blogging.md",
     "Untitled.base"
   ]
 }
