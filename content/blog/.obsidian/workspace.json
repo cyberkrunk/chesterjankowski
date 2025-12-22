@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-12-15-rob-reiner.md",
+                "file": "2025-12-21-bisqc-2025.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "2025-12-15-rob-reiner"
+              "title": "2025-12-21-bisqc-2025"
             }
           }
         ],
@@ -188,8 +188,8 @@
   },
   "active": "189a2ebe29271009",
   "lastOpenFiles": [
-    "2025-12-13-acoustics-of-musical-instruments.md",
     "2025-12-15-rob-reiner.md",
+    "2025-12-13-acoustics-of-musical-instruments.md",
     "2025-11-23-calculating-MIDI-note-numbers-in-your-head.md",
     "2023-02-01-resources-for-jazz-guitar-three-octave-runs.md",
     "export",
