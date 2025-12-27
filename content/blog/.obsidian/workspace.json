@@ -22,17 +22,30 @@
             }
           },
           {
-            "id": "189a2ebe29271009",
+            "id": "197405f4faeb1b56",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-12-21-bisqc-2025.md",
+                "file": "2025-12-27-a-nice-python-documentary.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-12-21-bisqc-2025"
+              "title": "2025-12-27-a-nice-python-documentary"
+            }
+          },
+          {
+            "id": "189a2ebe29271009",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "Untitled.base",
+                "viewName": "Table"
+              },
+              "icon": "lucide-table",
+              "title": "Untitled"
             }
           }
         ],
@@ -93,8 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 489.501522064209,
-    "collapsed": true
+    "width": 489.501522064209
   },
   "right": {
     "id": "503c9963e62a230f",
@@ -183,14 +195,18 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "webpage-html-export:Export as HTML": false
+      "webpage-html-export:Export as HTML": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "189a2ebe29271009",
+  "active": "197405f4faeb1b56",
   "lastOpenFiles": [
     "2025-12-15-rob-reiner.md",
-    "2025-12-13-acoustics-of-musical-instruments.md",
+    "2025-12-27-a-nice-python-documentary.md",
+    "2025-12-21-bisqc-2025.md",
     "2025-11-23-calculating-MIDI-note-numbers-in-your-head.md",
+    "Untitled.base",
+    "2025-12-13-acoustics-of-musical-instruments.md",
     "2023-02-01-resources-for-jazz-guitar-three-octave-runs.md",
     "export",
     "New folder",
@@ -214,9 +230,6 @@
     "2005-04-06-off-to-the-races.md",
     "2005-04-06-firewire-audio-interfaces-such.md",
     "2005-04-01-in-their-own-words.md",
-    "2005-03-25-friday-cat-blogging-4.md",
-    "2005-03-22-les-paul-at-iridium.md",
-    "2005-03-21-another-sad-day-for-nyc.md",
-    "Untitled.base"
+    "2005-03-25-friday-cat-blogging-4.md"
   ]
 }
