@@ -29,10 +29,24 @@
               "state": {
                 "file": "2025-12-27-a-nice-python-documentary.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "2025-12-27-a-nice-python-documentary"
+            }
+          },
+          {
+            "id": "4ac560f690c439bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-01-04-the-time-iggy-pop-was-on-top-of-us.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-01-04-the-time-iggy-pop-was-on-top-of-us"
             }
           },
           {
@@ -49,7 +63,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -199,10 +213,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "197405f4faeb1b56",
+  "active": "4ac560f690c439bc",
   "lastOpenFiles": [
-    "2025-12-15-rob-reiner.md",
     "2025-12-27-a-nice-python-documentary.md",
+    "2026-01-04-the-time-iggy-pop-was-on-top-of-us.md",
+    "2025-12-15-rob-reiner.md",
     "2025-12-21-bisqc-2025.md",
     "2025-11-23-calculating-MIDI-note-numbers-in-your-head.md",
     "Untitled.base",
@@ -229,7 +244,6 @@
     "2005-04-07-politcs-and-the-schiavo-story.md",
     "2005-04-06-off-to-the-races.md",
     "2005-04-06-firewire-audio-interfaces-such.md",
-    "2005-04-01-in-their-own-words.md",
-    "2005-03-25-friday-cat-blogging-4.md"
+    "2005-04-01-in-their-own-words.md"
   ]
 }
