@@ -19,18 +19,18 @@ Anyway, here’s the thread:
 
 > Just saw a clip of someone or other doing a very cautious dive off a stage to do some crowd surfing. And that reminded me of the first time we saw Iggy Pop play with the reunited Stooges.
 >
-It was the early aughts. Walking home from work in Midtown, I saw a poster at a construction site: Iggy and the Stooges, Roseland Ballroom. Wait, Iggy and THE STOOGES? Holy crap! As soon as I got home, I called and ordered tickets.
+> It was the early aughts. Walking home from work in Midtown, I saw a poster at a construction site: Iggy and the Stooges, Roseland Ballroom. Wait, Iggy and THE STOOGES? Holy crap! As soon as I got home, I called and ordered tickets.
 >
-Day of the show, we get to Roseland really, really early. We are second in line. The two young guys ahead of us were, believe it or not, were there to see one of the opening acts: Godsmack.
+> Day of the show, we get to Roseland really, really early. We are second in line. The two young guys ahead of us were, believe it or not, were there to see one of the opening acts: Godsmack.
 >
-The hall opens, and everyone makes a mad dash to the stage. We are front and center, directly behind the Godsmack guys. We’re chatting a bit. They do not know from Iggy Pop, and are only mildly interested.
+> The hall opens, and everyone makes a mad dash to the stage. We are front and center, directly behind the Godsmack guys. We’re chatting a bit. They do not know from Iggy Pop, and are only mildly interested.
 >
-The first band plays. They do not connect with the audience at all. A lot of boos, which they ignore. Singer is wearing a T-Shirt that has “Art Fag” scrawled on it, which is admittedly pretty cool.
+> The first band plays. They do not connect with the audience at all. A lot of boos, which they ignore. Singer is wearing a T-Shirt that has “Art Fag” scrawled on it, which is admittedly pretty cool.
 >
-Godsmack comes on. They are so cool about the event: “Listen, we know you are all here to see the Stooges, so we are going to do a short acoustic set.” Crowd goes wild!
+> Godsmack comes on. They are so cool about the event: “Listen, we know you are all here to see the Stooges, so we are going to do a short acoustic set.” Crowd goes wild!
 >
-The Stooges come on. Ron Asheton plays a couple of chords into a big Marshall stack. Like a hoof to the chest. Boom! They launch into the first tune: Loose. Hard to put into words the energy that Iggy puts out. For me, one of the purest expressions of Rock and Roll.
+> The Stooges come on. Ron Asheton plays a couple of chords into a big Marshall stack. Like a hoof to the chest. Boom! They launch into the first tune: Loose. Hard to put into words the energy that Iggy puts out. For me, one of the purest expressions of Rock and Roll.
 >
-With no warning whatsoever, barely enough time to react, Iggy Pop is on top of us, writhing on our heads. We’re grabbing his body, his chest, his crotch—you have no other choice, there is a person riding on you! A few seconds later and he’s back on the stage. Holy fuck!
+> With no warning whatsoever, barely enough time to react, Iggy Pop is on top of us, writhing on our heads. We’re grabbing his body, his chest, his crotch—you have no other choice, there is a person riding on you! A few seconds later and he’s back on the stage. Holy fuck!
 >
-Rest of the set is amazing. Godsmack guys leave after a few songs. We’re front & center. Eventually we move back, it’s probably 120 degrees. One of the best rock shows ever. You can’t see the Stooges anymore, but if you’ve never caught an Iggy Pop show, do yourself a favor!
+> Rest of the set is amazing. Godsmack guys leave after a few songs. We’re front & center. Eventually we move back, it’s probably 120 degrees. One of the best rock shows ever. You can’t see the Stooges anymore, but if you’ve never caught an Iggy Pop show, do yourself a favor!
