@@ -15,7 +15,7 @@ I’m doing a review of algebra using this nice video which is originally from t
 
 So far, the code works with ints and floats. It properly plots open and closed intervals. It would be nice to add support later for rationals, radicals, and the like.
 
-```
+```python
 # -----------------------------------------------------------------------------
 # plot_interval is a Python function to plot an interval, e.g., [-4, 2.5)
 # on the number line

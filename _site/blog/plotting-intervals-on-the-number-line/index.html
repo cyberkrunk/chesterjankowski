@@ -228,7 +228,7 @@ code {
 	background-color: var(--quote-background);
 	padding: 10px 20px 10px 20px;
 	font-family: var(--font-family-monospace);
-	font-size: smaller;
+	font-size: 16px;
 }
 pre:not([class*="language-"]) {
 	margin: .5em 0;
@@ -632,101 +632,100 @@ pre[class*="language-diff-"] {
 <p>I’m doing a review of algebra using this nice video which is originally from the <a href="https://youtu.be/LwCRRUa8yTU">UNC Chapel Hill Math 110</a> course. I'm doing this in a Jupyter notebook, with the plan of adding Python code where needed. On the section on intervals, I was looking for some code to plot intervals on the number line, but, surprisingly, a search didn't turn anything up, so I wrote the code listed below.</p>
 <p>(This may be yet another example of how search is now broken. Search used to give you various options for what your search term might mean; now it just decides it knows precisely what you mean, and gives you 100 variations on the one answer, with SEO and slop sites listed first.)</p>
 <p>So far, the code works with ints and floats. It properly plots open and closed intervals. It would be nice to add support later for rationals, radicals, and the like.</p>
-<pre><code># -----------------------------------------------------------------------------
-# plot_interval is a Python function to plot an interval, e.g., [-4, 2.5)
-# on the number line
-# 2026-01-22
-# -----------------------------------------------------------------------------
+<pre class="language-python" tabindex="0"><code class="language-python"><span class="token comment"># -----------------------------------------------------------------------------</span>
+<span class="token comment"># plot_interval is a Python function to plot an interval, e.g., [-4, 2.5)</span>
+<span class="token comment"># on the number line</span>
+<span class="token comment"># 2026-01-22</span>
+<span class="token comment"># -----------------------------------------------------------------------------</span>
 
-import matplotlib.pyplot as plt
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
 
-def plot_interval(input_interval: str):
-    &quot;&quot;&quot;
-    Plots an interval on the number line using Matplotlib
+<span class="token keyword">def</span> <span class="token function">plot_interval</span><span class="token punctuation">(</span>input_interval<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""
+    Plots an interval on the number line using Matplotlib
 
-    Args:
-        input_interval (str): an interval, e.g., '[-4, 2.5)'.
-    &quot;&quot;&quot;
+    Args:
+        input_interval (str): an interval, e.g., '[-4, 2.5)'.
+    """</span>
 
-    # Parse the input into 4 elements
-    parsed_interval = [&quot;(&quot;, &quot;1&quot;, &quot;2&quot;, &quot;)&quot;]
-    parsed_interval[0] = input_interval[0]
-    parsed_interval[1] = input_interval.split(&quot;,&quot;)[0][1:]
-    parsed_interval[2] = input_interval.split(&quot;,&quot;)[1][:-1].strip()
-    parsed_interval[3] = input_interval.split(&quot;,&quot;)[1][-1]
+    <span class="token comment"># Parse the input into 4 elements</span>
+    parsed_interval <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"("</span><span class="token punctuation">,</span> <span class="token string">"1"</span><span class="token punctuation">,</span> <span class="token string">"2"</span><span class="token punctuation">,</span> <span class="token string">")"</span><span class="token punctuation">]</span>
+    parsed_interval<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> input_interval<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+    parsed_interval<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> input_interval<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">","</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+    parsed_interval<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> input_interval<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">","</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    parsed_interval<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">=</span> input_interval<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">","</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
 
-    # Convert the numbers to either floats or ints
-    for i in range(1, 3):
-        if &quot;.&quot; in parsed_interval[i]:
-            parsed_interval[i] = float(parsed_interval[i])
-        else:
-            parsed_interval[i] = int(parsed_interval[i])
+    <span class="token comment"># Convert the numbers to either floats or ints</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token string">"."</span> <span class="token keyword">in</span> parsed_interval<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">:</span>
+            parsed_interval<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span>parsed_interval<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            parsed_interval<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>parsed_interval<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
 
-    # Set up the number line
-    x_range = [int(parsed_interval[1]) - 1, int(parsed_interval[2]) + 1]
-    y_pos = 0
-    fig, ax = plt.subplots(figsize=(10, 2))
+    <span class="token comment"># Set up the number line</span>
+    x_range <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">(</span>parsed_interval<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token builtin">int</span><span class="token punctuation">(</span>parsed_interval<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span>
+    y_pos <span class="token operator">=</span> <span class="token number">0</span>
+    fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 
-    # Draw the horizontal number line
-    ax.hlines(
-        y_pos,
-        x_range[0],
-        x_range[1],
-        color=&quot;gray&quot;,
-        linestyles=&quot;solid&quot;,
-        linewidth=0.5
-    )
+    <span class="token comment"># Draw the horizontal number line</span>
+    ax<span class="token punctuation">.</span>hlines<span class="token punctuation">(</span>
+        y_pos<span class="token punctuation">,</span>
+        x_range<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        x_range<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        color<span class="token operator">=</span><span class="token string">"gray"</span><span class="token punctuation">,</span>
+        linestyles<span class="token operator">=</span><span class="token string">"solid"</span><span class="token punctuation">,</span>
+        linewidth<span class="token operator">=</span><span class="token number">0.5</span>
+    <span class="token punctuation">)</span>
 
-    # Draw the ticks and label them
-    for tick in range(x_range[0], x_range[1] + 1):
-        ax.vlines(tick, y_pos - 0.2, y_pos + 0.2, color=&quot;black&quot;, linewidth=1)
-        ax.text(
-            tick,
-            y_pos - 0.8,
-            str(tick),
-            horizontalalignment=&quot;center&quot;,
-            verticalalignment=&quot;bottom&quot;,
-        )
+    <span class="token comment"># Draw the ticks and label them</span>
+    <span class="token keyword">for</span> tick <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>x_range<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> x_range<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        ax<span class="token punctuation">.</span>vlines<span class="token punctuation">(</span>tick<span class="token punctuation">,</span> y_pos <span class="token operator">-</span> <span class="token number">0.2</span><span class="token punctuation">,</span> y_pos <span class="token operator">+</span> <span class="token number">0.2</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">"black"</span><span class="token punctuation">,</span> linewidth<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+        ax<span class="token punctuation">.</span>text<span class="token punctuation">(</span>
+            tick<span class="token punctuation">,</span>
+            y_pos <span class="token operator">-</span> <span class="token number">0.8</span><span class="token punctuation">,</span>
+            <span class="token builtin">str</span><span class="token punctuation">(</span>tick<span class="token punctuation">)</span><span class="token punctuation">,</span>
+            horizontalalignment<span class="token operator">=</span><span class="token string">"center"</span><span class="token punctuation">,</span>
+            verticalalignment<span class="token operator">=</span><span class="token string">"bottom"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">)</span>
 
-    # Draw the line between the interval numbers
-    ax.hlines(
-        y_pos,
-        parsed_interval[1],
-        parsed_interval[2],
-        color=&quot;black&quot;,
-        linestyles=&quot;solid&quot;,
-        linewidth=2,
-    )
+    <span class="token comment"># Draw the line between the interval numbers</span>
+    ax<span class="token punctuation">.</span>hlines<span class="token punctuation">(</span>
+        y_pos<span class="token punctuation">,</span>
+        parsed_interval<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        parsed_interval<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        color<span class="token operator">=</span><span class="token string">"black"</span><span class="token punctuation">,</span>
+        linestyles<span class="token operator">=</span><span class="token string">"solid"</span><span class="token punctuation">,</span>
+        linewidth<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span>
 
-    # Plot the left number
-    if parsed_interval[0] == &quot;(&quot;:
-        ax.plot(parsed_interval[1], y_pos, &quot;ko&quot;, ms=10, mfc=&quot;w&quot;)
-    else:
-        ax.plot(parsed_interval[1], y_pos, &quot;ko&quot;, ms=10, mfc=&quot;k&quot;)
+    <span class="token comment"># Plot the left number</span>
+    <span class="token keyword">if</span> parsed_interval<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">"("</span><span class="token punctuation">:</span>
+        ax<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>parsed_interval<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> y_pos<span class="token punctuation">,</span> <span class="token string">"ko"</span><span class="token punctuation">,</span> ms<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">,</span> mfc<span class="token operator">=</span><span class="token string">"w"</span><span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        ax<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>parsed_interval<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> y_pos<span class="token punctuation">,</span> <span class="token string">"ko"</span><span class="token punctuation">,</span> ms<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">,</span> mfc<span class="token operator">=</span><span class="token string">"k"</span><span class="token punctuation">)</span>
 
-    # Plot the right number
-    if parsed_interval[-1] == &quot;)&quot;:
-        ax.plot(parsed_interval[2], y_pos, &quot;ko&quot;, ms=10, mfc=&quot;w&quot;)
-    else:
-        ax.plot(parsed_interval[2], y_pos, &quot;ko&quot;, ms=10, mfc=&quot;k&quot;)
+    <span class="token comment"># Plot the right number</span>
+    <span class="token keyword">if</span> parsed_interval<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">")"</span><span class="token punctuation">:</span>
+        ax<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>parsed_interval<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> y_pos<span class="token punctuation">,</span> <span class="token string">"ko"</span><span class="token punctuation">,</span> ms<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">,</span> mfc<span class="token operator">=</span><span class="token string">"w"</span><span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        ax<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>parsed_interval<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> y_pos<span class="token punctuation">,</span> <span class="token string">"ko"</span><span class="token punctuation">,</span> ms<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">,</span> mfc<span class="token operator">=</span><span class="token string">"k"</span><span class="token punctuation">)</span>
 
-    # Add the numbers as text above the points
-    for number in parsed_interval[1:3]:
-        ax.text(
-            number,
-            y_pos + 0.3,
-            str(number),
-            horizontalalignment=&quot;center&quot;,
-            verticalalignment=&quot;bottom&quot;,
-        )
+    <span class="token comment"># Add the numbers as text above the points</span>
+    <span class="token keyword">for</span> number <span class="token keyword">in</span> parsed_interval<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+        ax<span class="token punctuation">.</span>text<span class="token punctuation">(</span>
+            number<span class="token punctuation">,</span>
+            y_pos <span class="token operator">+</span> <span class="token number">0.3</span><span class="token punctuation">,</span>
+            <span class="token builtin">str</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span><span class="token punctuation">,</span>
+            horizontalalignment<span class="token operator">=</span><span class="token string">"center"</span><span class="token punctuation">,</span>
+            verticalalignment<span class="token operator">=</span><span class="token string">"bottom"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">)</span>
 
-    # Set axis limits and hide the y-axis
-    ax.set_xlim(x_range[0], x_range[1])
-    ax.set_ylim(-1, 1)
-    ax.axis(&quot;off&quot;)  # Hide all axes and labels
-    plt.title(f&quot;Interval: {input_interval}&quot;)
-    plt.show()
-</code></pre>
+    <span class="token comment"># Set axis limits and hide the y-axis</span>
+    ax<span class="token punctuation">.</span>set_xlim<span class="token punctuation">(</span>x_range<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> x_range<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    ax<span class="token punctuation">.</span>set_ylim<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    ax<span class="token punctuation">.</span>axis<span class="token punctuation">(</span><span class="token string">"off"</span><span class="token punctuation">)</span>  <span class="token comment"># Hide all axes and labels</span>
+    plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"Interval: </span><span class="token interpolation"><span class="token punctuation">{</span>input_interval<span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
 
 
 <hr>
@@ -743,7 +742,7 @@ def plot_interval(input_interval: str):
 			Built with <a href="https://www.11ty.dev/">Eleventy v4.0.0</a> • “Keep building for the web!” -- Zach Leatherman<br>
 		</footer>
 
-		<!-- This page `/blog/plotting-intervals-on-the-number-line/` was built on 2026-01-22T19:35:59.555Z -->
+		<!-- This page `/blog/plotting-intervals-on-the-number-line/` was built on 2026-01-22T19:41:52.983Z -->
 		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 	</body>
 </html>
