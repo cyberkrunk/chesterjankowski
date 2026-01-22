@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b7208ff58477ab29",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025-11-23-calculating-MIDI-note-numbers-in-your-head.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "2025-11-23-calculating-MIDI-note-numbers-in-your-head"
-            }
-          },
-          {
             "id": "197405f4faeb1b56",
             "type": "leaf",
             "state": {
@@ -50,16 +36,17 @@
             }
           },
           {
-            "id": "189a2ebe29271009",
+            "id": "83331fc12c698ffb",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "Untitled.base",
-                "viewName": "Table"
+                "file": "2026-01-22-plotting-intervals-on-the-number-line.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-table",
-              "title": "Untitled"
+              "icon": "lucide-file",
+              "title": "2026-01-22-plotting-intervals-on-the-number-line"
             }
           }
         ],
@@ -213,19 +200,21 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4ac560f690c439bc",
+  "active": "83331fc12c698ffb",
   "lastOpenFiles": [
-    "2025-12-27-a-nice-python-documentary.md",
+    "2025-11-06-nobuyuki-tsujii-at-carnegie-hall.md",
+    "2026-01-22-plotting-intervals-on-the-number-line.md",
     "2026-01-04-the-time-iggy-pop-was-on-top-of-us.md",
+    "images/interval_plot.png",
+    "Untitled.base",
+    "2025-12-27-a-nice-python-documentary.md",
+    "2025-11-23-calculating-MIDI-note-numbers-in-your-head.md",
     "2025-12-15-rob-reiner.md",
     "2025-12-21-bisqc-2025.md",
-    "2025-11-23-calculating-MIDI-note-numbers-in-your-head.md",
-    "Untitled.base",
     "2025-12-13-acoustics-of-musical-instruments.md",
     "2023-02-01-resources-for-jazz-guitar-three-octave-runs.md",
     "export",
     "New folder",
-    "2025-11-06-nobuyuki-tsujii-at-carnegie-hall.md",
     "images/nobuyuki-tsujii-program.jpg",
     "2004-11-29-hello-world-2.md",
     "2025-04-18-so-long-onedrive.md",
@@ -242,8 +231,6 @@
     "2005-04-29-enron.md",
     "2005-04-27-steve-martin-tax-attorney.md",
     "2005-04-07-politcs-and-the-schiavo-story.md",
-    "2005-04-06-off-to-the-races.md",
-    "2005-04-06-firewire-audio-interfaces-such.md",
-    "2005-04-01-in-their-own-words.md"
+    "2005-04-06-off-to-the-races.md"
   ]
 }
