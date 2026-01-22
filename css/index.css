@@ -208,7 +208,10 @@ table th {
 
 pre,
 code {
+	background-color: var(--quote-background);
+	padding: 10px 20px 10px 20px;
 	font-family: var(--font-family-monospace);
+	font-size: smaller;
 }
 pre:not([class*="language-"]) {
 	margin: .5em 0;
