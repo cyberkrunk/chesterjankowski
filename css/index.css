@@ -208,7 +208,7 @@ table th {
 
 pre,
 code {
-	background-color: var(--quote-background);
+	# background-color: var(--quote-background);
 	padding: 10px 20px 10px 20px;
 	font-family: var(--font-family-monospace);
 	font-size: 16px;
