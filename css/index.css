@@ -206,10 +206,10 @@ table th {
 	padding-right: 1em;
 }
 
-pre,
-code {
-	background-color: var(--quote-background);
-	padding: 10px 20px 10px 20px;
+code[class*="language-"],
+pre[class*="language-"] {
+	/* background-color: var(--quote-background);
+	padding: 10px 20px 10px 20px; */
 	font-family: var(--font-family-monospace);
 	font-size: 10px;
 }
