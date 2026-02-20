@@ -4,7 +4,7 @@ layout: layouts/base.njk
 {# Only include the syntax highlighter CSS on blog posts, included with the CSS per-page bundle #}
 <style>{% include "node_modules/prismjs/themes/prism-okaidia.css" %}</style>
 <style>{% include "css/prism-diff.css" %}</style>
-<h1>{{ title }}</h1>
+<div data-pagefind-body><h1>{{ title }}</h1></div>
 
 {# <ul class="post-metadata">
 	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
@@ -37,7 +37,13 @@ layout: layouts/base.njk
 {% endfor %}
 </div>
 
+<div data-pagefind-body>
+
+<p></p>
+
 {{ content | safe }}
+
+</div>
 
 <hr>
 

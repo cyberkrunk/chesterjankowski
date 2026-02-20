@@ -1,5 +1,5 @@
 ---
-layout: layouts/home.njk
+layout: layouts/article.njk
 ---
 
 <img eleventy:ignore src="/img/chester-jankowski-guitar-dock.jpg" alt="Chester Jankowski playing guitar on the Fair Harbor dock in Fire Island NY as a water taxi approaches." />

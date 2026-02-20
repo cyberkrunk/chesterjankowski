@@ -48,9 +48,37 @@
               "icon": "lucide-file",
               "title": "2026-01-22-plotting-intervals-on-the-number-line"
             }
+          },
+          {
+            "id": "c7ce95c1aa5047b0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-01-22-plotting-intervals-on-the-number-line.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "2026-01-22-plotting-intervals-on-the-number-line"
+            }
+          },
+          {
+            "id": "3d9beb57c8bd69b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-02-03-a-reference-recording-of-the-bach-cantatas.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "2026-02-03-a-reference-recording-of-the-bach-cantatas"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -69,7 +97,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byCreatedTime",
+                "sortOrder": "alphabetical",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -107,7 +135,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 489.501522064209
+    "width": 489.501522064209,
+    "collapsed": true
   },
   "right": {
     "id": "503c9963e62a230f",
@@ -200,14 +229,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "83331fc12c698ffb",
+  "active": "3d9beb57c8bd69b9",
   "lastOpenFiles": [
+    "2025-12-27-a-nice-python-documentary.md",
+    "2026-01-04-the-time-iggy-pop-was-on-top-of-us.md",
+    "2026-02-03-a-reference-recording-of-the-bach-cantatas.md",
     "2025-11-06-nobuyuki-tsujii-at-carnegie-hall.md",
     "2026-01-22-plotting-intervals-on-the-number-line.md",
-    "2026-01-04-the-time-iggy-pop-was-on-top-of-us.md",
-    "images/interval_plot.png",
+    "2026-01-30-thank-you-catherine-o'hara.md",
     "Untitled.base",
-    "2025-12-27-a-nice-python-documentary.md",
+    "images/interval_plot.png",
     "2025-11-23-calculating-MIDI-note-numbers-in-your-head.md",
     "2025-12-15-rob-reiner.md",
     "2025-12-21-bisqc-2025.md",
@@ -230,7 +261,6 @@
     "2005-05-05-breaking-news.md",
     "2005-04-29-enron.md",
     "2005-04-27-steve-martin-tax-attorney.md",
-    "2005-04-07-politcs-and-the-schiavo-story.md",
-    "2005-04-06-off-to-the-races.md"
+    "2005-04-07-politcs-and-the-schiavo-story.md"
   ]
 }

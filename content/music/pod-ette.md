@@ -1,6 +1,6 @@
 ---
 title: pod-ette
-layout: layouts/base.njk
+
 ---
 
 # pod-ette
