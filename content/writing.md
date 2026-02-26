@@ -1,4 +1,5 @@
 ---
+layout: layouts/article.njk
 title: Chester Jankowski - Writing
 eleventyNavigation:
     key: Writing
