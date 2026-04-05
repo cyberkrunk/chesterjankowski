@@ -6,4 +6,4 @@ While the people at Cyberkrunk labs normally shy away from imposing programmatic
 
 Duration = 7'18"
 
-[Music](/audio/spectre_v_kaos.mp3)
+<audio controls src="/audio/spectre_v_kaos.mp3"></audio>
