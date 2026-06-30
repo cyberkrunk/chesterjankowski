@@ -10,6 +10,7 @@ tags:
   - "aws"
   - "microsoft"
   - "githubPages"
+draft: true
 description: "I’ve moved my last site off WordPress, and also off AWS! I'm using 11ty, which is great! Also using Pagefind for search, and authoring blog posts using Obsidian."
 ---
 
