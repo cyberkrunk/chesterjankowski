@@ -1529,13 +1529,6 @@
 	
 		
 		<url>
-			<loc>https://www.chesterjankowski.com/</loc>
-			<lastmod>2026-06-21</lastmod>
-		</url>
-	
-	
-		
-		<url>
 			<loc>https://www.chesterjankowski.com/music/bagatelles/</loc>
 			<lastmod>2026-06-21</lastmod>
 		</url>
@@ -1704,8 +1697,15 @@
 	
 		
 		<url>
+			<loc>https://www.chesterjankowski.com/</loc>
+			<lastmod>2026-10-09</lastmod>
+		</url>
+	
+	
+		
+		<url>
 			<loc>https://www.chesterjankowski.com/feed/feed.xml</loc>
-			<lastmod>2026-07-01</lastmod>
+			<lastmod>2026-10-09</lastmod>
 		</url>
 	
 </urlset>
